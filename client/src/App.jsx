@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import MachineDetails from './pages/MachineDetails';
+import WhatsAppFloat from './components/common/WhatsAppFloat';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
-
+        <WhatsAppFloat />
         <Footer />
       </div>
     </Router>
