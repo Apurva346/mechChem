@@ -13,12 +13,6 @@ const Navbar = () => {
       .replace(/\s+/g, '-')
       .replace(/[^a-z0-9-]/g, '')
 
-  // const fabrication = [
-  //   'Hacksaw Machines', 'Bandsaw Machines', 'Cutting/Shearing Machines',
-  //   'Plate Rolling Machines', 'Pipe / Profile Machines', 'Press Machines',
-  //   'Bus Bar Machines', 'Hydraulic Iron Worker Machines', 'Laser Machines',
-  //   'Bending / Press Brake Machines'
-  // ].map(name => ({ name, link: `/machine/${formatId(name)}` }))
 
   const fabrication = [
     {
@@ -35,10 +29,7 @@ const Navbar = () => {
         'Roll Turning Lathe Machine'
       ]
     },
-    {
-      category: 'Milling Machine',
-      subItems: ['Universal Milling Machine', 'Vertical Milling Machine']
-    },
+    
     {
       category: 'Conventional Division',
       subItems: [
@@ -56,6 +47,10 @@ const Navbar = () => {
         'Heavy Duty Radical Drilling Machine',
         'Universal Portable Radical Drilling Machine'
       ]
+    },
+    {
+      category: 'Milling Machine',
+      subItems: ['Universal Milling Machine', 'Vertical Milling Machine']
     },
     {
       category: 'Shearing Machine',
@@ -124,39 +119,21 @@ const Navbar = () => {
       category: 'Powder Coating Machine',
       subItems: ['Powder Coating Machine']
     }
-  ];
-
+  ]
 
   return (
     <header className='w-full relative z-50'>
       <TopHeader />
       <nav className='bg-white border-b sticky top-0 shadow-md'>
         <div className='w-full px-8 md:px-3 flex justify-between items-center h-24'>
-        
-          {/* LOGO */}
-          {/* <Link to='/' className='shrink-0 group'>
-            <h1 className='text-3xl font-black text-[#003366] tracking-tighter'>
-              MECH<span className='text-orange-500'>CHEM</span>
-            </h1>
-            <p className='text-[10px] tracking-[0.3em] text-gray-400 font-bold uppercase'>
-              Engineering Solutions
-            </p>
-          </Link> */}
-{/* 
-          <Link to='/' className='shrink-0 group py-2'>
-            <img 
-              src="/images/mechlogo.jpeg"
-              alt="Mech Chem Engineering Services" 
-              className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            />
-          </Link> */}
+          
 
           <Link to='/' className='shrink-0 flex items-center group py-2'>
-            <img 
-              src="/images/mechlogo.jpeg"
-              alt="Mech Chem Engineering Services" 
+            <img
+              src='/images/mechlogo.jpeg'
+              alt='Mech Chem Engineering Services'
               /* Desktop वर h-20 आणि Mobile वर h-14 ठेवल्याने तो सुटसुटीत दिसेल */
-              className="h-16 md:h-20 lg:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className='h-16 md:h-24 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105'
             />
           </Link>
 
@@ -171,21 +148,14 @@ const Navbar = () => {
 
             <DropdownMenu title='Machines' items={fabrication} />
 
-            {/* <Link
-              to='/i-nax'
-              className='text-[#003366] hover:text-orange-500 font-black uppercase text-[13px] tracking-widest transition-colors'
+            <a
+              href='https://inax.mechchemindia.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-[#003366] hover:text-orange-500 font-black uppercase text-[13px] tracking-widest transition-colors inline-block'
             >
               i-NAX
-            </Link> */}
-
-            <a
-  href='https://inax.mechchemindia.com/'
-  target='_blank'
-  rel='noopener noreferrer'
-  className='text-[#003366] hover:text-orange-500 font-black uppercase text-[13px] tracking-widest transition-colors inline-block'
->
-  i-NAX
-</a>
+            </a>
 
             <Link
               to='/about'
