@@ -1,6 +1,3 @@
-
-
-
 import { Search, Mail, Facebook, Youtube, Instagram, X } from 'lucide-react';
 
 const TopHeader = () => {

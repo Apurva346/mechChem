@@ -13,10 +13,9 @@ const Navbar = () => {
       .replace(/\s+/g, '-')
       .replace(/[^a-z0-9-]/g, '')
 
-
   const fabrication = [
     {
-      category: 'Lathe Machine',
+      category: 'Lathe Machines',
       subItems: [
         'Medium Duty Lathe Machine',
         'Heavy Duty Lathe Machine',
@@ -25,99 +24,96 @@ const Navbar = () => {
         'Light Duty Lathe Machine',
         'All Geared Lathe Machine',
         'Mini Lathe Machine',
-        'Vertical Milling Cum Drilling Machine',
         'Roll Turning Lathe Machine'
       ]
     },
-    
     {
-      category: 'Conventional Division',
+      category: 'Milling Machines',
       subItems: [
-        'High Precision all Geared Lathe Machine',
-        'Manual Surface Grinder',
-        'High Precision Hydrailic Surface Grinder Machine',
+        'Universal Milling Machine',
+        'Vertical Milling Machine',
         'Heavy Duty Milling Machine',
         'Turret Milling Machine'
       ]
     },
     {
-      category: 'Radical Drilling Machine',
+      category: 'Drilling Machines',
       subItems: [
+        'Vertical Milling Cum Drilling Machine',
+        'Heavy Drilling Machine',
         'Radial Drilling Machine',
-        'Heavy Duty Radical Drilling Machine',
-        'Universal Portable Radical Drilling Machine'
+        'Heavy Duty Radial Drilling Machine',
+        'Universal Portable Radial Drilling Machine',
+        'Geared Radial Drilling Machine'
       ]
     },
     {
-      category: 'Milling Machine',
-      subItems: ['Universal Milling Machine', 'Vertical Milling Machine']
-    },
-    {
-      category: 'Shearing Machine',
-      subItems: [
-        'Hydraulic Shearing Machine',
-        'Shearing Machine',
-        'Hydraulic Sheet Shearing Machine'
+      category: 'Sheet Metal Machines',
+      // Ithe groups add kele aahet
+      isGrouped: true,
+      groups: [
+        {
+          groupName: 'Shearing Machines',
+          items: [
+            'Hydraulic Shearing Machine',
+            'Hydraulic Sheet Shearing Machine',
+            'Metal Forming Shearing Machine'
+          ]
+        },
+        {
+          groupName: 'Press Brake Machines',
+          items: ['Hydraulic Press Brake Machine']
+        },
+        {
+          groupName: 'Power Press Machines',
+          items: [
+            'H Type Power Press Machine',
+            'C Type Power Press Machine',
+            'C Type Hydraulic Power Press Machine'
+          ]
+        }
       ]
     },
     {
-      category: 'Lathe Machine for Industries',
-      subItems: ['CNC Turning Machine', 'Lathe Machine For Industries']
-    },
-    {
-      category: 'Press Brake Machine',
-      subItems: [
-        'CNC Hydraulic Press Brake Machine',
-        'Hydraulic Press Brake Machine'
-      ]
-    },
-    {
-      category: 'Lathe Machine Chuck',
+      category: 'Workholding Tools',
       subItems: [
         'Zither True Chuck',
         'Four Jaw Independent Chuck',
-        'Three And Four Jaw Chuck'
+        'Three & Four Jaw Chuck'
       ]
     },
     {
-      category: 'Drilling Machine',
-      subItems: ['Geared Radial Drilling Machine', 'Heavy Drilling Machine']
+      category: 'Grinding Machines',
+      subItems: [
+        'Surface Grinder Machine',
+        'Manual Surface Grinder',
+        'Hydraulic Surface Grinder Machine'
+      ]
     },
     {
-      category: 'Metal Forming Division',
-      subItems: ['Hydraulic Shearing Machine', 'Vertical Boring Machine']
+      category: 'Shaping & Slotting Machines',
+      subItems: [
+        'Gear Shaping Machine',
+        'Partition Slotting Machine',
+        'Heavy Duty Slotting Machine',
+        'Light Duty Slotting Machine'
+      ]
     },
     {
-      category: 'Power Press Machine',
-      subItems: ['H type power press']
-    },
-    {
-      category: 'Shaping Machine',
-      subItems: ['Gear Shaping Machine']
-    },
-    {
-      category: 'Surface Grinder',
-      subItems: ['Surface Grinder Machine']
-    },
-    {
-      category: 'Band Saw Machine',
+      category: 'Cutting Machines',
       subItems: ['Band Saw Machine']
     },
     {
-      category: 'Slotting Machine',
-      subItems: ['Partition Slotting Machine']
+      category: 'Threading Machines',
+      subItems: ['Thread Rolling Machine', 'Bolt Thread Rolling Machine']
     },
     {
-      category: 'Threading Machine',
-      subItems: ['Thread Rolling Machine']
-    },
-    {
-      category: 'Heavy Duty Lathe Machine',
-      subItems: ['All Geared Lathe Machine']
-    },
-    {
-      category: 'Powder Coating Machine',
+      category: 'Finishing Machines',
       subItems: ['Powder Coating Machine']
+    },
+    {
+      category: 'Heavy Machines',
+      subItems: ['Vertical Boring Machine']
     }
   ]
 
@@ -126,14 +122,12 @@ const Navbar = () => {
       <TopHeader />
       <nav className='bg-white border-b sticky top-0 shadow-md'>
         <div className='w-full px-8 md:px-3 flex justify-between items-center h-24'>
-          
-
           <Link to='/' className='shrink-0 flex items-center group py-2'>
             <img
-              src='/images/mechlogo.jpeg'
+              src='/images/Mech Chem Engineering Services Logo (2).png'
               alt='Mech Chem Engineering Services'
               /* Desktop वर h-20 आणि Mobile वर h-14 ठेवल्याने तो सुटसुटीत दिसेल */
-              className='h-16 md:h-24 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105'
+              className='h-14 md:h-14 lg:h-18 w-auto object-contain transition-transform duration-300 group-hover:scale-105'
             />
           </Link>
 

@@ -6,7 +6,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import MachineDetails from './pages/MachineDetails';
 import WhatsAppFloat from './components/common/WhatsAppFloat';
-import Inax from './pages/Inax';
+import CategoryPage from './pages/CategoryPage';
+
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/category/:id" element={<CategoryPage />} />
             <Route path="/machine/:id" element={<MachineDetails />} />
             <Route path="*" element={<Home />} />
             {/* <Route path="/i-nax" element={<Inax />} /> */}

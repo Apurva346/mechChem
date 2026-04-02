@@ -31,7 +31,7 @@ const Footer = () => {
             <div className='flex flex-col mb-6'>
               <Link to='/' className='inline-block mb-2'>
                 <img
-                  src='/images/mechlogo.jpeg'
+                  src='/images/Mech Chem Engineering Services Logo (2).png'
                   alt='Mech Chem Engineering Services'
                   /* फुटरमध्ये लोगोची उंची डेस्कटॉपवर h-20 आणि मोबाईलवर h-16 ठेवली आहे */
                   className='h-16 md:h-20 w-auto object-contain bg-white p-1 rounded-sm'

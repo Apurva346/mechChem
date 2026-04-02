@@ -683,15 +683,15 @@
 
 
 
-import React from 'react'
-import { Link } from 'react-router-dom'
+// import React from 'react'
+// import { Link } from 'react-router-dom'
 
-const Inax = () => {
-  return (
-    <div>
-      <a href='https://inax.mechchemindia.com/' ></a>
-    </div>
-  )
-}
+// const Inax = () => {
+//   return (
+//     <div>
+//       <a href='https://inax.mechchemindia.com/' ></a>
+//     </div>
+//   )
+// }
 
-export default Inax
+// export default Inax
