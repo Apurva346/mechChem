@@ -28,6 +28,7 @@ function App() {
           </Routes>
         </main>
         <WhatsAppFloat />
+        
         <Footer />
       </div>
     </Router>

@@ -1,373 +1,423 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion' // Framer Motion Added
 import {
-  Settings,
-  Wrench,
   ShieldCheck,
-  Factory,
-  Zap,
-  Award,
   Users,
-  Hammer,
-  CheckCircle2,
-  Phone,
-  Mail,
+  Settings,
+  BadgeIndianRupee,
+  Truck,
+  Headset,
+  Factory,
+  Wrench,
+  Car,
+  Cpu,
+  Zap,
+  Target,
+  Box,
+  Scissors,
   ChevronRight
 } from 'lucide-react'
+import React, { useState, useEffect } from 'react' // useState ani useEffect add kara
+import axios from 'axios'
 
 const Home = () => {
+  const [machines, setMachines] = useState([])
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:5000/api/machines')
+      .then(res => setMachines(res.data))
+      .catch(err => console.log(err))
+  }, [])
   return (
-    <div className='bg-white w-full overflow-hidden font-sans'>
-      {/* 1. HERO SECTION */}
-
-      <section className='relative w-full min-h-[90vh] flex items-center bg-[#003366] overflow-hidden py-1'>
-        {/* Background Image Layer - Less blur, better visibility */}
-        <div className='absolute inset-0 z-0'>
+    <div className='font-sans'>
+      {/* --- 1. Hero Section --- */}
+      <section className='relative overflow-hidden'>
+        <div className='relative z-0'>
           <img
-            src='https://wallpaperaccess.com/full/8885056.jpg'
-            className='w-full h-full object-cover ' // Opacity वाढवली जेणेकरून इमेज स्पष्ट दिसेल
-            alt='Industrial Background'
+            src='/images/background/Home Page Update/Images/Industrial Machine Sales & Services.png'
+            alt='Industrial Machines'
+            className='block w-full'
           />
-          {/* Gradient Overlay for Text Readability */}
-          <div className='absolute inset-0 bg-gradient-to-r from-[#003366] via-[#003366]/60 to-transparent'></div>
+          <div className='absolute inset-0 bg-black/30'></div>
         </div>
 
-        <div className='container mx-auto px-6 md:px-12 lg:px-20 relative z-10'>
-          <div className='max-w-4xl'>
-            {' '}
-            {/* उजव्या बाजूची इमेज काढल्यामुळे आता कंटेन्टला जास्त जागा मिळेल */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className='space-y-10 md:py-10' // Padding वाढवले आहे
-            >
-              <div className='inline-block border-l-4 border-orange-500 pl-6'>
-                {/* Mech Chem चा फॉन्ट साईज कमी केला आहे (text-4xl to 6xl) */}
-                <h1 className='text-white text-4xl md:text-4xl font-black uppercase leading-tight tracking-tighter'>
-                  Mech Chem <br />
-                  <span className='text-orange-500'>Engineering Services</span>
-                </h1>
-              </div>
+        <div className='absolute top-0 left-0 w-full mt-10 z-10 flex flex-col justify-center px-10 lg:px-10'>
+          <div className='max-w-2xl'>
+            <h1 className='text-white text-3xl lg:text-5xl font-bold leading-tight drop-shadow-lg'>
+              Industrial Machinery <br />
+              Sales & Service <br />
+              in Nagpur
+            </h1>
 
-              <h2 className='text-gray-200 text-xl md:text-2xl font-bold uppercase tracking-wide max-w-2xl'>
-                Industrial Machinery Sales & Services Since 2012
-              </h2>
-
-              <div className='space-y-6 max-w-2xl'>
-                <p className='text-white text-lg md:text-xl font-bold italic border-b border-orange-500/30 pb-1 inline-block'>
-                  Reliable Industrial Solutions. Trusted Engineering Expertise.
-                </p>
-                <p className='text-gray-300 text-lg leading-relaxed font-medium'>
-                  Mech Chem Engineering Services is a trusted name in industrial
-                  machinery sales, service, and support. Since our establishment
-                  in 2012 in Nagpur, Maharashtra, we have been delivering
-                  reliable engineering solutions that help industries operate
-                  efficiently and productively.
-                </p>
-              </div>
-
-              <div className='flex flex-wrap gap-6 pt-1'>
-                <Link
-                  to='/contact'
-                  className='bg-orange-500 text-white px-12 py-4 font-black hover:bg-white hover:text-[#003366] transition-all duration-300 uppercase text-xs tracking-widest shadow-2xl flex items-center gap-2'
-                >
-                  Get in Touch <ChevronRight size={16} />
-                </Link>
-                <Link
-                  to='/i-nax'
-                  className='bg-white/10 backdrop-blur-md border-2 border-white text-white px-12 py-4 font-black hover:bg-white hover:text-[#003366] transition-all duration-300 uppercase text-xs tracking-widest'
-                >
-                  Discover i-NAX™
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-      {/* 2. STATS BAR */}
-      <section className='w-full bg-gray-50 border-y'>
-        <div className='container mx-auto px-6 lg:px-20'>
-          <div className='grid grid-cols-2 lg:grid-cols-4 divide-x divide-gray-200'>
-            {[
-              { label: 'Established', val: '2012' },
-              { label: 'Experience', val: '12+ Years' },
-              { label: 'Supplied', val: '100+ Machines' },
-              { label: 'Client Trust', val: 'Reliable' }
-            ].map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className='py-10 text-center'
-              >
-                <p className='text-[#003366] text-3xl font-black'>{stat.val}</p>
-                <p className='text-gray-500 text-[10px] font-bold uppercase tracking-[0.2em] mt-1'>
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 3. i-NAX™ BRAND HIGHLIGHT */}
-
-      <section className='w-full relative min-h-[600px] flex items-start bg-[#003366] overflow-hidden'>
-        {/* items-start मुळे मजकूर एकदम टॉपला जाईल */}
-
-        {/* 1. Background Layer */}
-        <div className='absolute inset-0 z-0'>
-          <img
-            src='./images/whychooseinax.png'
-            alt='i-NAX Background'
-            className='w-full h-full object-cover opacity-80'
-            style={{
-              objectPosition: 'center bottom'
-            }}
-          />
-          <div className='absolute inset-0 bg-gradient-to-r from-[#003366]/90 via-[#003366]/40 to-transparent'></div>
-        </div>
-
-        {/* 2. Content Layer - Zero Top Padding */}
-        <div className='relative z-10 w-full'>
-          {/* pt-0 (Padding Top Zero) आणि px-3 वापरले आहे */}
-          <div className='w-full px-3 pt-0 pb-10 text-left'>
-            <motion.div
-              initial={{ opacity: 0, y: -20 }} // वरून खाली येणारे ॲनिमेशन
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className='max-w-3xl space-y-4'
-            >
-              {/* 'Introducing...' च्या वर असलेली डीफॉल्ट जागा घालवण्यासाठी mt-0 वापरले आहे */}
-              <h2 className='text-orange-500 text-[10px] font-black tracking-[0.4em] uppercase mt-0 pt-4'>
-                Introducing Our Premium Brand
-              </h2>
-
-              <h3 className='text-white text-5xl md:text-7xl font-black italic tracking-tighter uppercase leading-none'>
-                i-NAX™
-              </h3>
-
-              <div className='inline-block border-b-4 border-orange-500 pb-2'>
-                <p className='text-white text-xl md:text-2xl font-bold italic leading-tight'>
-                  Built for Performance. Engineered for Precision.
-                </p>
-              </div>
-
-              <p className='text-white text-sm md:text-lg leading-relaxed max-w-xl font-semibold drop-shadow-lg'>
-                In 2025, Mech Chem Engineering Services launched i-NAX™, a
-                premium brand of advanced CNC and precision machinery. I-NAX™
-                machines are built to deliver high precision, long-lasting
-                durability, and reliable performance for modern manufacturing
-                industries.
+            <div className='mt-4 pt-4'>
+              <p className='text-white text-xl lg:text-2xl font-medium'>
+                Lathe | Milling | Drilling | Power <br />
+                Press | Workshop Machines
               </p>
+            </div>
 
-              <div className='pt-4'>
-                <Link
-                  to='/i-nax'
-                  className='inline-flex bg-orange-500 text-white px-10 py-4 font-black hover:bg-white hover:text-[#003366] transition-all uppercase text-[10px] tracking-widest shadow-2xl'
-                >
-                  Explore i-NAX™ Products
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* 4. WHO WE ARE */}
-      <section className='w-full py-24 bg-gray-50'>
-        <div className='container mx-auto px-6 lg:px-20 grid lg:grid-cols-2 gap-20 items-center'>
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className='bg-orange-500 w-20 h-1 mb-6'></div>
-            <h2 className='text-[#003366] text-5xl font-black uppercase tracking-tighter mb-8'>
-              Who We Are
-            </h2>
-            <p className='text-gray-700 text-xl font-bold leading-relaxed mb-6 italic'>
-              Founded in 2012, Mech Chem Engineering Services specializes in the
-              sale, installation, servicing, and maintenance of industrial
-              machinery.
-            </p>
-            <p className='text-gray-600 text-lg leading-relaxed'>
-              With over a decade of hands-on industry experience, we are
-              committed to providing dependable machines, expert technical
-              support, and long-term value to our clients. Our strength lies in
-              combining practical engineering knowledge with customer-focused
-              service, ensuring smooth operations and minimal downtime for our
-              customers.
-            </p>
-          </motion.div>
-          <div className='grid grid-cols-2 gap-6'>
-            <img
-              src='https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=500'
-              className='rounded-2xl h-64 w-full object-cover shadow-lg'
-              alt='Workshop'
-            />
-            <div className='bg-[#003366] p-10 rounded-2xl text-white flex flex-col justify-center text-center shadow-xl'>
-              <h4 className='text-4xl font-black text-orange-500 mb-2'>12+</h4>
-              <p className='text-[10px] uppercase font-bold tracking-widest'>
-                Years of Expertise
-              </p>
+            <div className='mt-10 flex gap-4'>
+              <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-red-800 shadow-xl transition'>
+                Get Quote
+              </button>
+              <button className='bg-[#eeb44b] text-slate-900 px-8 py-3 rounded-md font-bold text-lg hover:bg-yellow-500 shadow-xl transition'>
+                View Products
+              </button>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* 5. OUR SERVICES */}
-      <section className='w-full py-24 bg-white'>
-        <div className='container mx-auto px-6 lg:px-20'>
-          <div className='mb-20 text-center lg:text-left'>
-            <h2 className='text-[#003366] text-5xl font-black uppercase tracking-tighter'>
-              Our Services
-            </h2>
-            <p className='text-orange-500 text-xl font-bold uppercase italic mt-2'>
-              Industrial Solutions You Can Rely On
-            </p>
-          </div>
-
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-1'>
-            {[
-              {
-                icon: <Settings size={40} />,
-                title: 'Industrial Machinery Sales',
-                desc: 'High-quality industrial machines designed to meet modern manufacturing needs.'
-              },
-              {
-                icon: <Hammer size={40} />,
-                title: 'Installation & Commissioning',
-                desc: 'Professional installation and setup for optimal machine performance.'
-              },
-              {
-                icon: <Wrench size={40} />,
-                title: 'Repair & Maintenance Services',
-                desc: 'Quick and reliable servicing to reduce downtime and increase productivity.'
-              },
-              {
-                icon: <ShieldCheck size={40} />,
-                title: 'Spare Parts Support',
-                desc: 'Genuine spare parts to ensure durability and consistent performance.'
-              }
-            ].map((s, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ y: -10 }}
-                className='bg-gray-50 p-12 hover:bg-[#003366] hover:text-white transition-all duration-500 group border-b-4 border-transparent hover:border-orange-500 shadow-sm'
-              >
-                <div className='text-orange-500 mb-8 group-hover:scale-110 transition-transform'>
-                  {s.icon}
-                </div>
-                <h4 className='text-lg font-black uppercase mb-4 leading-tight'>
-                  {s.title}
-                </h4>
-                <p className='text-sm opacity-70 group-hover:opacity-100 leading-relaxed'>
-                  {s.desc}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. WHY CHOOSE & INDUSTRIES */}
-      <section className='w-full py-24 bg-[#001a33] text-white'>
-        <div className='container mx-auto px-6 lg:px-20 grid lg:grid-cols-2 gap-24'>
-          <div className='space-y-12'>
-            <h2 className='text-3xl font-black uppercase border-b-2 border-orange-500 pb-4 inline-block'>
-              Why Choose Us
-            </h2>
-            <div className='space-y-6'>
-              {[
-                'Established in 2012 with proven industry experience',
-                'Trusted partner for sales and after-sales support',
-                'Skilled technical and service team',
-                'Customer-first approach',
-                'Commitment to quality and reliability'
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className='flex items-start gap-4'
-                >
-                  <CheckCircle2
-                    className='text-orange-500 shrink-0'
-                    size={24}
-                  />
-                  <span className='text-lg font-bold text-gray-200'>
-                    {item}
+        {/* --- Trust Bar --- */}
+        <div className='relative z-20 max-w-5xl mx-auto px-6'>
+          <div className='bg-white py-6 border border-slate-200 shadow-2xl rounded-sm -mt-12'>
+            <div className='flex flex-col md:flex-row justify-around items-center gap-8 md:gap-0'>
+              <div className='flex items-center gap-4 px-6 md:border-r border-slate-200'>
+                <span className='text-4xl'>⭐</span>
+                <div className='flex flex-col'>
+                  <span className='text-2xl font-black text-slate-900 leading-none'>
+                    20+ Years
                   </span>
-                </motion.div>
-              ))}
+                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1'>
+                    Experience
+                  </span>
+                </div>
+              </div>
+
+              <div className='flex items-center gap-4 px-6 md:border-r border-slate-200'>
+                <span className='text-4xl text-slate-400'>🛡️</span>
+                <div className='flex flex-col'>
+                  <span className='text-2xl font-black text-slate-900 leading-none tracking-tight'>
+                    Trusted Machine
+                  </span>
+                  <span className='text-[10px] font-black text-red-600 uppercase tracking-widest mt-1'>
+                    Supplier
+                  </span>
+                </div>
+              </div>
+
+              <div className='flex items-center gap-4 px-6'>
+                <span className='text-4xl'>🚚</span>
+                <div className='flex flex-col'>
+                  <span className='text-2xl font-black text-slate-900 leading-none'>
+                    Fast Delivery
+                  </span>
+                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1'>
+                    Across India
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className='space-y-12'>
-            <h2 className='text-3xl font-black uppercase border-b-2 border-orange-500 pb-4 inline-block'>
+        </div>
+      </section>
+
+      {/* --- 2. Our Industrial Machines Section --- */}
+      <section className='py-20 px-6 bg-slate-50'>
+        <div className='max-w-7xl mx-auto text-center'>
+          <h2 className='text-3xl font-bold mb-12 uppercase tracking-tight text-slate-800'>
+            Our Industrial Machines
+          </h2>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
+            {machines
+              .filter(m => m.category === 'Industrial Machines')
+              .map(machine => (
+                <div
+                  key={machine._id}
+                  className='bg-white p-4 rounded-xl shadow-sm border hover:shadow-md transition group'
+                >
+                  <div className='overflow-hidden rounded-lg mb-4 h-44 flex items-center justify-center bg-slate-50'>
+                    <img
+                      src={machine.image}
+                      alt={machine.name}
+                      className='max-h-full object-contain group-hover:scale-105 transition-transform'
+                    />
+                  </div>
+                  <h4 className='font-bold text-lg mb-2 text-slate-800'>
+                    {machine.name}
+                  </h4>
+                  <p className='text-sm text-slate-500 mb-4 line-clamp-2'>
+                    {machine.shortDescription ||
+                      'High precision and durable machine for industrial manufacturing tasks.'}
+                  </p>
+                  <Link to={`/machine/${machine._id}`}>
+                    <button className='w-full bg-slate-800 text-white py-2 rounded hover:bg-slate-900 transition font-semibold'>
+                      View Details
+                    </button>
+                  </Link>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- 3. i-NAX Promo & Product Cards --- */}
+      <div className='mx-[20px] my-6 rounded-sm overflow-hidden border border-slate-800'>
+        {/* i-NAX Banner */}
+        <section className='relative bg-[#0a0f1a] min-h-[400px] lg:min-h-[500px] flex items-center'>
+          <div className='absolute inset-0 z-0 flex justify-end'>
+            <img
+              src='/images/background/Home Page Update/Images/i-NAX CNC Laser Machines.png'
+              alt='i-NAX CNC Laser Machines'
+              className='h-full object-contain'
+            />
+            <div className='absolute inset-0 bg-gradient-to-r from-[#0a0f1a] via-[#0a0f1a]/80 to-transparent'></div>
+          </div>
+          <div className='relative z-10 w-full max-w-7xl mx-auto px-8 lg:px-8'>
+            <div className='max-w-[90%] lg:max-w-[50%]'>
+              <h2 className='text-white text-3xl lg:text-4xl leading-tight tracking-tight mb-4 drop-shadow-lg'>
+                Introducing i-NAX – <br /> CNC & Laser Machine Solutions
+              </h2>
+              <p className='text-slate-300 text-sm lg:text-lg leading-relaxed mb-8 opacity-95'>
+                i-NAX is our newly launched brand specializing in advanced CNC
+                and Laser Cutting Machines. Engineered for high precision and
+                efficiency in modern manufacturing.
+              </p>
+              <button className='bg-[#8b1d31] hover:bg-red-800 text-white px-10 py-3 rounded-sm font-bold text-sm lg:text-base uppercase tracking-wider transition-all shadow-2xl'>
+                Explore i-NAX Machines
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* i-NAX Machines Cards */}
+        <section className='bg-[#0a0f1a] pb-20 px-6 border-t border-slate-800'>
+          <div className='max-w-7xl mx-auto'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-12'>
+              {machines
+                .filter(m => m.category === 'inax')
+                .map(item => (
+                  <div
+                    key={item._id}
+                    className='bg-[#111827] p-4 rounded-xl border border-slate-700 hover:border-[#8b1d31] transition group'
+                  >
+                    <div className='overflow-hidden rounded-lg mb-4 h-48 bg-slate-800 flex items-center justify-center'>
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className='max-h-full object-contain group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100'
+                      />
+                    </div>
+                    <div className='flex items-start gap-2 mb-2'>
+                      <span className='text-[#8b1d31] mt-1'>
+                        <Zap size={18} />
+                      </span>
+                      <h4 className='font-bold text-lg text-white leading-tight'>
+                        {item.name}
+                      </h4>
+                    </div>
+                    <p className='text-xs text-slate-400 mb-6 leading-relaxed line-clamp-2'>
+                      {item.shortDescription ||
+                        `Precision-engineered ${item.name} for modern manufacturing speed.`}
+                    </p>
+                    <Link to={`/machine/${item._id}`}>
+                      <button className='w-full bg-[#8b1d31] text-white py-2.5 rounded-lg font-bold text-sm hover:bg-red-800 transition'>
+                        View Details
+                      </button>
+                    </Link>
+                  </div>
+                ))}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* --- 4. Why Choose Us (Services) --- */}
+      <section className='bg-slate-50 py-16 px-6'>
+        <div className='max-w-7xl mx-auto mb-20 text-center'>
+          <h2 className='text-[#8b1d31] text-3xl lg:text-4xl font-bold mb-12'>
+            Why Choose Mech Chem Engineering Services
+          </h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            <FeatureCard
+              icon={<ShieldCheck className='w-10 h-10 text-[#8b1d31]' />}
+              title='Trusted Supplier'
+              desc='Reliable machines and dependable service support.'
+            />
+            <FeatureCard
+              icon={<Users className='w-10 h-10 text-[#8b1d31]' />}
+              title='Experienced Team'
+              desc='Skilled professionals ensuring accurate installation.'
+            />
+            <FeatureCard
+              icon={<Settings className='w-10 h-10 text-[#8b1d31]' />}
+              title='Performance Tested'
+              desc='Durable machines built for long-term industrial use.'
+            />
+            <FeatureCard
+              icon={<BadgeIndianRupee className='w-10 h-10 text-[#8b1d31]' />}
+              title='Competitive Pricing'
+              desc='Quality industrial machines at cost-effective prices.'
+            />
+          </div>
+        </div>
+
+        {/* --- 5. Industries We Serve (Banner with Blur) --- */}
+        <div className='relative mb-20 overflow-hidden rounded-md py-16 max-w-7xl mx-auto'>
+          <div className='absolute inset-0 z-0'>
+            <img
+              src='/images/background/Home Page Update/Images/Industrial Machinery Sales & Services.png'
+              alt='Industries'
+              className='w-full h-full object-cover blur-sm scale-110'
+            />
+            <div className='absolute inset-0 bg-slate-950/75'></div>
+          </div>
+          <div className='relative z-10 px-8'>
+            <h2 className='text-white bg-[#8b1d31] py-3 px-8 w-fit text-2xl font-bold mb-10 rounded-r-full shadow-lg'>
               Industries We Serve
             </h2>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-              {[
-                'Manufacturing Units',
-                'Engineering Workshops',
-                'Automotive & Components',
-                'Fabrication & Tool Rooms',
-                'Industrial Production Facilities'
-              ].map((ind, i) => (
-                <div
-                  key={i}
-                  className='flex items-center gap-3 p-4 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition-colors'
-                >
-                  <Factory size={18} className='text-orange-500' />
-                  <span className='text-xs font-black uppercase tracking-widest'>
-                    {ind}
-                  </span>
-                </div>
-              ))}
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+              <IndustryCard
+                icon={<Factory />}
+                title='Fabrication'
+                desc='Metal cutting and structural work machines.'
+              />
+              <IndustryCard
+                icon={<Cpu />}
+                title='Manufacturing'
+                desc='Solutions for production units and plants.'
+              />
+              <IndustryCard
+                icon={<Wrench />}
+                title='Workshops'
+                desc='Precision machining for daily operations.'
+              />
+              <IndustryCard
+                icon={<Car />}
+                title='Automotive'
+                desc='High-performance machine solutions.'
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* --- 6. Services Grid --- */}
+        <div className='max-w-7xl mx-auto text-center'>
+          <h2 className='text-[#1e293b] text-3xl font-bold mb-12 border-b-2 border-[#8b1d31] w-fit mx-auto pb-2'>
+            Our Services
+          </h2>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-200 bg-white shadow-sm'>
+            <ServiceItem
+              title='Machine Installation'
+              desc='Professional engineering installation.'
+            />
+            <ServiceItem
+              title='Machine Repair'
+              desc='Quick response repair services.'
+            />
+            <ServiceItem
+              title='Spare Parts'
+              desc='Genuine parts for all machines.'
+            />
+            <ServiceItem
+              title='Fast Delivery'
+              desc='Timely delivery for all services.'
+            />
+            <ServiceItem
+              title='AMC Support'
+              desc='Annual maintenance contract support.'
+            />
+            <div className='p-8 bg-slate-50 flex items-center justify-center italic text-slate-400'>
+              Mech Chem Support
             </div>
           </div>
         </div>
       </section>
 
-      {/* 7. FINAL CTA */}
-      <section className='w-full py-32 bg-white text-center'>
-        <div className='container mx-auto px-6 max-w-5xl'>
-          <h2 className='text-[#003366] text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6'>
-            Let’s Build Reliable Industrial <br />{' '}
-            <span className='text-orange-500'>Solutions Together</span>
+      {/* --- 7. What Our Customers Say --- */}
+      <section className='py-20 px-6 bg-white'>
+        <div className='max-w-7xl mx-auto'>
+          <h2 className='text-[#8b1d31] text-3xl lg:text-4xl font-bold mb-12 text-center underline decoration-slate-200 underline-offset-8'>
+            What Our Customers Say
           </h2>
-          <p className='text-gray-500 text-xl font-bold italic mb-12'>
-            Looking for trusted industrial machinery or expert service support?{' '}
-            <br />
-            Our team is ready to help you choose the right solution for your
-            business.
-          </p>
-          <div className='flex flex-col sm:flex-row justify-center gap-6'>
-            <Link
-              to='/contact'
-              className='bg-[#003366] text-white px-12 py-5 font-black uppercase tracking-widest text-xs hover:bg-orange-500 transition-all shadow-2xl flex items-center justify-center gap-3'
-            >
-              <Phone size={18} /> Contact Us Today
-            </Link>
-            <Link
-              to='/contact'
-              className='bg-white border-2 border-[#003366] text-[#003366] px-12 py-5 font-black uppercase tracking-widest text-xs hover:bg-[#003366] hover:text-white transition-all flex items-center justify-center gap-3'
-            >
-              <Mail size={18} /> Request a Service or Quotation
-            </Link>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+            {/* Static Testimonials */}
+            <div className='space-y-8'>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <span className='absolute -top-4 -left-2 text-6xl text-slate-100 font-serif'>
+                  "
+                </span>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic relative z-10'>
+                  "Reliable machine supplier with good service support."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Fabrication Workshop, Nagpur
+                </p>
+              </div>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic'>
+                  "Quality machines and timely delivery."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Engineering Company
+                </p>
+              </div>
+              <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-sm font-bold text-sm uppercase transition-all shadow-lg active:scale-95'>
+                View More Photos
+              </button>
+            </div>
+
+            {/* Dynamic Photo Gallery from Atlas */}
+            <div className='grid grid-cols-2 gap-3 h-[350px]'>
+              <div className='space-y-3 h-full'>
+                {machines
+                  .filter(m => m.dataType === 'testimonial')
+                  .slice(0, 2)
+                  .map((t, idx) => (
+                    <div
+                      key={idx}
+                      className='h-1/2 overflow-hidden rounded-sm shadow-md'
+                    >
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                      />
+                    </div>
+                  ))}
+              </div>
+              <div className='h-full overflow-hidden rounded-sm shadow-md'>
+                {machines
+                  .filter(m => m.dataType === 'testimonial')
+                  .slice(2, 3)
+                  .map((t, idx) => (
+                    <img
+                      key={idx}
+                      src={t.image}
+                      alt={t.name}
+                      className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                    />
+                  ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
   )
 }
+
+// --- Helper Components ---
+const FeatureCard = ({ icon, title, desc }) => (
+  <div className='bg-white p-8 rounded-sm shadow-sm border-b-4 border-[#8b1d31] hover:shadow-md transition flex flex-col items-center text-center'>
+    <div className='mb-4'>{icon}</div>
+    <h3 className='font-bold text-slate-800 mb-2'>{title}</h3>
+    <p className='text-sm text-slate-500'>{desc}</p>
+  </div>
+)
+
+const IndustryCard = ({ icon, title, desc }) => (
+  <div className='bg-white p-6 rounded-sm border border-slate-200 hover:bg-slate-900 hover:text-white transition group'>
+    <div className='text-[#8b1d31] group-hover:text-white mb-4'>{icon}</div>
+    <h3 className='font-bold mb-2'>{title}</h3>
+    <p className='text-sm opacity-80'>{desc}</p>
+  </div>
+)
+
+const ServiceItem = ({ title, desc }) => (
+  <div className='p-8 border border-slate-100 hover:bg-slate-50 transition text-left'>
+    <h3 className='font-bold text-[#1e293b] mb-1'>{title}</h3>
+    <p className='text-sm text-slate-500'>{desc}</p>
+  </div>
+)
 
 export default Home

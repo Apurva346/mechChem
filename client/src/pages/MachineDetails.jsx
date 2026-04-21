@@ -1,179 +1,11 @@
-
-
-
-// import React, { useEffect, useState } from 'react';
-// import { useParams, Link } from 'react-router-dom';
-// import axios from 'axios';
-
-// const MachineDetails = () => {
-//   const { id } = useParams();
-//   const [machine, setMachine] = useState(null);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//     const fetchMachineDetails = async () => {
-//       try {
-//         setLoading(true);
-//         // Backend API call
-//         const response = await axios.get(`http://localhost:5000/api/machines/name/${id}`);
-//         setMachine(response.data);
-//       } catch (error) {
-//         console.error("Error fetching data:", error);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-//     fetchMachineDetails();
-//   }, [id]);
-
-//   if (loading) return <div className="py-32 text-center font-bold uppercase tracking-widest text-gray-400 animate-pulse">Loading Machine Details...</div>;
-
-//   if (!machine) {
-//     return (
-//       <div className="py-32 text-center">
-//         <h2 className="text-3xl font-bold text-red-700 uppercase">Machine Not Found</h2>
-//         <Link to="/" className="mt-6 inline-block bg-gray-900 text-white px-8 py-3 rounded font-bold uppercase text-sm">Back to Home</Link>
-//       </div>
-//     );
-//   }
-
-//   return (
-//     <div className="max-w-7xl mx-auto px-4 py-12 lg:py-20">
-//       <div className="flex flex-col lg:flex-row lg:items-start gap-12">
-        
-//         {/* LEFT: Image Section */}
-//         <div className="w-full lg:w-[45%] lg:sticky lg:top-24">
-//           <div className="relative rounded-2xl overflow-hidden shadow-2xl border-b-[10px] border-red-700 aspect-[4/5] bg-gray-100">
-//             <img 
-//               src={machine.image} 
-//               alt={machine.altText || machine.name} 
-//               className="w-full h-full object-cover" 
-//             />
-//             <div className="absolute top-4 left-4 bg-red-700 text-white px-4 py-1 text-[10px] font-bold uppercase tracking-widest">
-//               Industrial Grade
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* RIGHT: Content Section */}
-//         <div className="w-full lg:w-[55%] flex flex-col">
-//           {/* Breadcrumb */}
-//           <nav className="flex mb-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
-//             <Link to="/" className="hover:text-red-700">Home</Link>
-//             <span className="mx-2">/</span>
-//             <span className="text-red-700">{machine.category}</span>
-//           </nav>
-
-//           {/* H1: Machine Name */}
-//           <h1 className="text-4xl lg:text-5xl font-black text-gray-900 uppercase leading-tight">
-//             {machine.name}
-//           </h1>
-
-//           {/* H2: Subtitle/Robust Equipment Line */}
-//           {machine.subTitle && (
-//             <h2 className="text-xl lg:text-2xl font-bold text-red-700 mt-2 leading-snug">
-//               {machine.subTitle}
-//             </h2>
-//           )}
-
-//           <div className="w-16 h-1.5 bg-gray-900 my-8"></div>
-          
-//           <div className="space-y-12">
-//             {/* H3: Product Description */}
-//             <section>
-//               <h3 className="text-sm font-black uppercase mb-4 tracking-wider text-gray-400 border-b pb-2">Product Description</h3>
-//               <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-line font-medium">
-//                 {machine.description}
-//               </p>
-//             </section>
-            
-//             {/* H2: Specifications Table */}
-//             <section>
-//               <h2 className="text-2xl font-black uppercase mb-6 tracking-tight text-gray-900">Specifications</h2>
-//               <div className="grid grid-cols-1 gap-3">
-//                 {machine.specifications && Object.entries(machine.specifications).map(([key, value], index) => (
-//                   <div key={index} className="flex justify-between items-center bg-gray-50 p-4 rounded border-l-4 border-red-700 shadow-sm">
-//                     <span className="text-gray-500 text-[12px] uppercase font-bold">{key}</span>
-//                     <span className="text-gray-900 font-black text-[14px]">{value}</span>
-//                   </div>
-//                 ))}
-//               </div>
-//             </section>
-
-//             {/* H2: Key Features */}
-//             <section>
-//               <h2 className="text-2xl font-black uppercase mb-6 tracking-tight text-gray-900">Key Features</h2>
-//               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-//                 {machine.features?.map((feature, i) => (
-//                   <li key={i} className="text-gray-800 font-bold text-sm flex items-start gap-3 bg-white p-3 border border-gray-100 rounded shadow-sm">
-//                     <span className="w-2 h-2 bg-red-700 rounded-full mt-1.5 shrink-0"></span> {feature}
-//                   </li>
-//                 ))}
-//               </ul>
-//             </section>
-
-//             {/* H2: Applications */}
-//             <section>
-//               <h2 className="text-2xl font-black uppercase mb-6 tracking-tight text-gray-900 text-right border-r-8 border-gray-900 pr-4">Applications</h2>
-//               <div className="flex flex-wrap justify-end gap-2">
-//                 {machine.applications?.map((app, i) => (
-//                   <span key={i} className="bg-gray-900 text-white px-4 py-2 text-[11px] font-bold uppercase tracking-wide rounded">
-//                     {app}
-//                   </span>
-//                 ))}
-//               </div>
-//             </section>
-
-//             {/* H2: FAQ Section */}
-//             {machine.faqs && machine.faqs.length > 0 && (
-//               <section className="bg-gray-50 p-8 rounded-3xl border border-gray-200">
-//                 <h2 className="text-2xl font-black uppercase mb-8 text-gray-900">FAQ</h2>
-//                 <div className="space-y-8">
-//                   {machine.faqs.map((faq, i) => (
-//                     <div key={i} className="border-b border-gray-200 last:border-0 pb-6">
-//                       <h3 className="text-[15px] font-black text-red-700 uppercase mb-2">Q{i+1}: {faq.question}</h3>
-//                       <p className="text-gray-600 font-medium">{faq.answer}</p>
-//                     </div>
-//                   ))}
-//                 </div>
-//               </section>
-//             )}
-
-//             {/* CTA / Closing Text */}
-//             {machine.ctaText && (
-//               <section className="py-8 border-y-2 border-gray-100 italic text-gray-500 text-center font-medium px-4">
-//                 "{machine.ctaText}"
-//               </section>
-//             )}
-//           </div>
-
-//           {/* Action Buttons */}
-//           <div className="mt-12 flex flex-col sm:flex-row gap-4">
-//             <button className="flex-1 px-8 py-5 bg-red-700 text-white font-black rounded-xl shadow-xl hover:bg-gray-800 transition-all uppercase text-xs tracking-widest active:scale-95">
-//               Inquire Now
-//             </button>
-//             <button className="flex-1 px-8 py-5 border-2 border-gray-900 text-gray-900 font-black rounded-xl hover:bg-gray-900 hover:text-white transition-all uppercase text-xs tracking-widest active:scale-95">
-//               Download Catalog
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default MachineDetails;
-
-
-
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
+import { ArrowLeft, CheckCircle, Info, MessageSquare, Target, Zap, HelpCircle, ChevronRight } from 'lucide-react';
 
 const MachineDetails = () => {
   const { id } = useParams();
-  const [data, setData] = useState(null); // 'data' madhe machine ani siblings donhi asatil
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -182,7 +14,7 @@ const MachineDetails = () => {
       try {
         setLoading(true);
         const response = await axios.get(`http://localhost:5000/api/machines/name/${id}`);
-        setData(response.data); // Backend response: { machine, siblings }
+        setData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -192,13 +24,25 @@ const MachineDetails = () => {
     fetchMachineDetails();
   }, [id]);
 
-  if (loading) return <div className="py-32 text-center font-bold text-gray-400 animate-pulse uppercase tracking-widest">Loading...</div>;
+  if (loading) return (
+    <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-12 h-12 border-4 border-red-600 border-t-transparent rounded-full animate-spin"></div>
+        <p className="text-slate-500 font-bold tracking-widest uppercase text-xs">Loading Precision Data</p>
+      </div>
+    </div>
+  );
 
   if (!data || !data.machine) {
     return (
-      <div className="py-32 text-center">
-        <h2 className="text-3xl font-bold text-red-700 uppercase">Machine Not Found</h2>
-        <Link to="/" className="mt-6 inline-block bg-gray-900 text-white px-8 py-3 rounded font-bold uppercase text-sm">Back to Home</Link>
+      <div className="py-32 text-center bg-slate-50 min-h-screen">
+        <div className="max-w-md mx-auto bg-white p-10 rounded-2xl shadow-lg border border-slate-200 text-center">
+          <h2 className="text-4xl font-black text-slate-900 uppercase mb-4">404</h2>
+          <p className="text-slate-500 mb-8 uppercase text-sm font-bold tracking-widest">Machine Not Found</p>
+          <Link to="/" className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-bold uppercase text-xs hover:bg-red-700 transition">
+            <ArrowLeft size={16} /> Back to Catalog
+          </Link>
+        </div>
       </div>
     );
   }
@@ -206,106 +50,343 @@ const MachineDetails = () => {
   const { machine, siblings } = data;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="bg-white min-h-screen font-sans selection:bg-red-100 selection:text-red-900">
       
-      {/* 1. TOP SECTION: Category Context */}
-      <div className="mb-16 bg-gray-900 text-white p-10 rounded-3xl shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-red-700 opacity-10 rounded-full -mr-20 -mt-20"></div>
-        <nav className="flex mb-4 text-[10px] font-bold text-red-500 uppercase tracking-widest">
-          <Link to="/" className="hover:text-white">Home</Link>
-          <span className="mx-2">/</span>
-          <span>{machine.category}</span>
-        </nav>
-        <h2 className="text-4xl font-black uppercase mb-4">{machine.category}</h2>
-        <p className="text-gray-400 max-w-3xl leading-relaxed text-lg italic">
-          {machine.categoryDescription || `Explore our high-performance range of ${machine.category} engineered for precision and durability.`}
-        </p>
-      </div>
-
-      {/* 2. MIDDLE SECTION: Explore Sub-items (Siblings) */}
-      {siblings && siblings.length > 0 && (
-        <div className="mb-20">
-          <h3 className="text-sm font-black uppercase mb-8 tracking-widest text-gray-400 border-l-4 border-red-700 pl-4">Explore More in {machine.category}</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {siblings.map((item, index) => (
-              <div key={index} className="group bg-white border border-gray-100 rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300">
-                <div className="aspect-square overflow-hidden rounded-xl mb-4 bg-gray-50">
-                  <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2 truncate uppercase text-sm">{item.name}</h4>
-                <p className="text-gray-500 text-[11px] mb-4 line-clamp-2">{item.shortDescription}</p>
-                <Link 
-                  to={`/machine/${item.name.toLowerCase().replace(/ /g, '-')}`} 
-                  className="block text-center py-2 bg-gray-50 text-gray-900 text-[10px] font-black uppercase rounded-lg group-hover:bg-red-700 group-hover:text-white transition-colors"
-                >
-                  Explore Now
-                </Link>
-              </div>
-            ))}
+      {/* 1. HEADER SECTION */}
+      <div className="bg-slate-900 py-12 px-6">
+        <div className="max-w-7xl mx-auto">
+          <nav className="flex items-center gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-6">
+            <Link to="/" className="hover:text-red-500 transition">Home</Link>
+            <span className="text-slate-700">/</span>
+            <span className="text-slate-300">{machine.category}</span>
+          </nav>
+          <div className="flex flex-col md:flex-row justify-between items-end gap-6 border-l-4 border-red-600 pl-6">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-black text-white uppercase leading-none">{machine.name}</h1>
+              <p className="text-red-500 font-bold mt-2 text-lg uppercase tracking-tight">{machine.subTitle}</p>
+            </div>
           </div>
         </div>
-      )}
+      </div>
 
-      {/* 3. BOTTOM SECTION: Particular Machine Details */}
-      <hr className="mb-20 border-gray-100" />
-      
-      <div className="flex flex-col lg:flex-row gap-16">
-        {/* Left: Image */}
-        <div className="w-full lg:w-1/2 lg:sticky lg:top-24 h-fit">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-b-[12px] border-red-700">
-            <img src={machine.image} alt={machine.name} className="w-full h-auto object-cover" />
-            <div className="absolute top-6 left-6 bg-red-700 text-white px-6 py-2 text-xs font-black uppercase tracking-tighter">
-              Currently Viewing
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        {/* 2. MAIN IMAGE & OVERVIEW */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+          <div className="lg:col-span-7">
+            <div className="relative group rounded-3xl overflow-hidden bg-slate-100 border border-slate-200 shadow-2xl">
+              <img src={machine.image} alt={machine.name} className="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700" />
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 flex flex-col justify-center">
+            <div className="space-y-6">
+              <div className="flex items-center gap-2">
+                 <Info size={18} className="text-red-600" />
+                 <h3 className="text-xs font-black uppercase text-slate-400 tracking-widest">Overview</h3>
+              </div>
+              <p className="text-slate-700 leading-relaxed text-xl font-medium border-l-2 border-slate-100 pl-6 italic">
+                {machine.description}
+              </p>
+              <div className="pt-6">
+                <button className="w-full bg-red-600 text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-red-700 transition shadow-xl shadow-red-100 flex items-center justify-center gap-3 active:scale-95 mb-4">
+                  <MessageSquare size={18} /> Request Price Quote
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Right: Content */}
-        <div className="w-full lg:w-1/2">
-          <h1 className="text-5xl font-black text-gray-900 uppercase leading-none mb-4">{machine.name}</h1>
-          <h2 className="text-xl font-bold text-red-700 mb-8">{machine.subTitle}</h2>
-          
-          <div className="space-y-12">
-            <section>
-              <h3 className="text-xs font-black uppercase text-gray-400 mb-4 tracking-widest">Overview</h3>
-              <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-line">{machine.description}</p>
-            </section>
+        {/* 3. KEY FEATURES SECTION */}
+        {machine.features && machine.features.length > 0 && (
+          <div className="mb-24 py-16 px-8 bg-slate-50 rounded-[3rem] border border-slate-100">
+            <h2 className="text-2xl font-black uppercase text-slate-900 mb-12 flex items-center gap-3">
+              <Zap className="text-amber-500 fill-amber-500" size={24} /> Key Performance Features
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {machine.features.map((feature, i) => (
+                <div key={i} className="flex gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-white text-red-600 rounded-full shadow-sm flex items-center justify-center border border-slate-100 font-bold text-sm">
+                    {i + 1}
+                  </div>
+                  <div>
+                    <h4 className="font-black text-slate-900 mb-1 uppercase text-xs tracking-wide">
+                      {typeof feature === 'string' ? 'Industrial Quality' : feature.title}
+                    </h4>
+                    <p className="text-slate-500 text-xs leading-relaxed">
+                      {typeof feature === 'string' ? feature : feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
-            <section>
-              <h3 className="text-xs font-black uppercase text-gray-400 mb-6 tracking-widest">Specifications</h3>
-              <div className="grid gap-2">
-                {machine.specifications && Object.entries(machine.specifications).map(([key, value], i) => (
-                  <div key={i} className="flex justify-between bg-gray-50 p-4 rounded-xl border-r-4 border-gray-200">
-                    <span className="text-gray-500 text-[11px] uppercase font-bold">{key}</span>
-                    <span className="text-gray-900 font-black text-sm">{value}</span>
+        {/* 4. TECHNICAL SPECIFICATIONS TABLE */}
+        <div className="mb-24">
+           <div className="flex items-center gap-4 mb-10">
+              <h2 className="text-2xl font-black uppercase text-slate-900">Technical Data</h2>
+              <div className="h-px flex-1 bg-slate-100"></div>
+           </div>
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-1">
+              {machine.specifications && Object.entries(machine.specifications).map(([key, value], i) => (
+                <div key={i} className="flex justify-between items-center py-5 border-b border-slate-50 group hover:bg-slate-50 px-4 transition rounded-lg">
+                  <span className="text-slate-400 text-[10px] uppercase font-black tracking-widest">{key}</span>
+                  <span className="text-slate-900 font-black text-sm">{value}</span>
+                </div>
+              ))}
+           </div>
+        </div>
+
+        {/* 5. APPLICATIONS SECTION */}
+        {machine.applications && machine.applications.length > 0 && (
+          <div className="mb-24 bg-slate-900 text-white p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
+            <div className="absolute -bottom-10 -right-10 opacity-5"><Target size={300} /></div>
+            <div className="relative z-10">
+              <h2 className="text-2xl font-black uppercase mb-10 border-b border-white/10 pb-4 inline-block">Best Suited For</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                {machine.applications.map((app, i) => (
+                  <div key={i} className="bg-white/5 border border-white/10 p-5 rounded-2xl flex items-center gap-4 group hover:bg-red-600 transition duration-500">
+                    <ChevronRight size={16} className="text-red-500 group-hover:text-white" />
+                    <span className="font-bold uppercase text-[10px] tracking-widest">{app}</span>
                   </div>
                 ))}
               </div>
-            </section>
+            </div>
+          </div>
+        )}
 
-            {/* FAQ Section */}
-            {machine.faqs && machine.faqs.length > 0 && (
-              <section className="bg-red-50 p-8 rounded-3xl border border-red-100">
-                <h3 className="text-xl font-black uppercase mb-8 text-gray-900">Frequently Asked Questions</h3>
-                <div className="space-y-6">
-                  {machine.faqs.map((faq, i) => (
-                    <div key={i} className="border-b border-red-200 last:border-0 pb-4">
-                      <h4 className="text-red-700 font-black uppercase text-sm mb-2">Q: {faq.question}</h4>
-                      <p className="text-gray-600 text-sm font-medium">{faq.answer}</p>
-                    </div>
-                  ))}
+        {/* 6. FAQ SECTION (BACK AGAIN!) */}
+        {machine.faqs && machine.faqs.length > 0 && (
+          <div className="mb-24 max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+               <HelpCircle className="mx-auto text-red-600 mb-4" size={32} />
+               <h2 className="text-3xl font-black uppercase text-slate-900">Service & Support FAQ</h2>
+               <p className="text-slate-400 text-xs font-bold uppercase tracking-widest mt-2">Everything you need to know</p>
+            </div>
+            <div className="grid gap-4">
+              {machine.faqs.map((faq, i) => (
+                <div key={i} className="group border border-slate-100 bg-slate-50/50 rounded-2xl p-6 hover:bg-white hover:border-red-100 hover:shadow-xl hover:shadow-red-500/5 transition duration-300">
+                  <h4 className="text-slate-900 font-black uppercase text-sm mb-3 flex items-start gap-4">
+                     <span className="w-6 h-6 bg-red-100 text-red-600 rounded flex items-center justify-center text-[10px] flex-shrink-0">Q</span> 
+                     {faq.question}
+                  </h4>
+                  <p className="text-slate-500 text-sm font-medium pl-10 leading-relaxed">{faq.answer}</p>
                 </div>
-              </section>
-            )}
+              ))}
+            </div>
           </div>
+        )}
 
-          <div className="mt-12 flex gap-4">
-            <button className="flex-1 bg-red-700 text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-gray-900 transition-all shadow-lg active:scale-95">Inquiry Now</button>
+        {/* 7. RELATED PRODUCTS */}
+        {siblings && siblings.length > 0 && (
+          <div className="pt-20 border-t border-slate-100">
+            <h3 className="text-xl font-black uppercase text-slate-900 mb-10 tracking-tighter">Other machines in this category</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+               {siblings.map((item, index) => (
+                 <Link key={index} to={`/machine/${item.name.toLowerCase().replace(/ /g, '-')}`} className="group block">
+                   <div className="aspect-video overflow-hidden rounded-2xl bg-slate-100 border border-slate-100 mb-4 shadow-sm group-hover:shadow-md transition">
+                     <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                   </div>
+                   <h4 className="font-black text-slate-900 uppercase text-[10px] tracking-widest truncate">{item.name}</h4>
+                   <span className="text-red-600 font-black text-[9px] uppercase mt-1 block">View Details →</span>
+                 </Link>
+               ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
 };
 
 export default MachineDetails;
+
+
+
+// import React, { useEffect, useState } from 'react';
+// import { useParams, Link } from 'react-router-dom';
+// import axios from 'axios';
+// import { ArrowRight, Check, Minus, Plus, MessageSquare, Shield, Settings, Zap, HelpCircle } from 'lucide-react';
+
+// const MachineDetails = () => {
+//   const { id } = useParams();
+//   const [data, setData] = useState(null);
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//     const fetchMachineDetails = async () => {
+//       try {
+//         setLoading(true);
+//         const response = await axios.get(`http://localhost:5000/api/machines/name/${id}`);
+//         setData(response.data);
+//       } catch (error) {
+//         console.error("Error fetching data:", error);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+//     fetchMachineDetails();
+//   }, [id]);
+
+//   if (loading) return <div className="h-screen flex items-center justify-center bg-white italic text-slate-400 animate-pulse">Initializing Precision View...</div>;
+
+//   if (!data || !data.machine) return <div className="py-20 text-center font-bold">Machine Not Found.</div>;
+
+//   const { machine, siblings } = data;
+
+//   return (
+//     <div className="bg-white text-slate-900 font-sans antialiased">
+      
+//       {/* --- 1. MINIMAL NAVIGATION --- */}
+//       <nav className="px-6 py-4 border-b border-slate-100 sticky top-0 bg-white/80 backdrop-blur-md z-50">
+//         <div className="max-w-7xl mx-auto flex justify-between items-center">
+//           <div className="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-widest text-slate-400">
+//             <Link to="/" className="hover:text-red-600">Catalog</Link>
+//             <ArrowRight size={10} />
+//             <span className="text-slate-900">{machine.name}</span>
+//           </div>
+//           <button className="bg-red-600 text-white px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-tighter hover:bg-slate-900 transition">
+//             Inquire Now
+//           </button>
+//         </div>
+//       </nav>
+
+//       <main className="max-w-7xl mx-auto px-6 py-12">
+        
+//         {/* --- 2. HERO SECTION: TWO COLUMN STICKY --- */}
+//         <div className="flex flex-col lg:flex-row gap-16 items-start mb-32">
+          
+//           {/* Left: Image (Sticky) */}
+//           <div className="w-full lg:w-3/5 lg:sticky lg:top-24">
+//             <div className="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 group">
+//               <img 
+//                 src={machine.image} 
+//                 alt={machine.name} 
+//                 className="w-full h-full object-center object-cover group-hover:scale-105 transition-transform duration-1000"
+//               />
+//             </div>
+//           </div>
+
+//           {/* Right: Essential Info */}
+//           <div className="w-full lg:w-2/5 space-y-10">
+//             <div>
+//               <span className="text-red-600 font-black text-xs uppercase tracking-[0.2em]">{machine.category}</span>
+//               <h1 className="text-5xl font-black text-slate-900 uppercase mt-2 mb-4 leading-[0.9]">{machine.name}</h1>
+//               <p className="text-xl text-slate-500 font-medium tracking-tight">{machine.subTitle}</p>
+//             </div>
+
+//             <div className="py-6 border-y border-slate-100">
+//               <h3 className="text-[10px] font-black uppercase text-slate-400 mb-4 tracking-widest">Description</h3>
+//               <p className="text-slate-600 leading-relaxed font-light text-lg">
+//                 {machine.description}
+//               </p>
+//             </div>
+
+//             {/* CTA Buttons */}
+//             <div className="grid grid-cols-1 gap-4">
+//                <button className="bg-slate-900 text-white py-6 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-red-600 transition-all flex items-center justify-center gap-3">
+//                  <MessageSquare size={16} /> Get Commercial Quote
+//                </button>
+//                <p className="text-center text-[10px] font-bold text-slate-400 uppercase tracking-widest">Nagpur's Certified Machinery Partner</p>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* --- 3. KEY FEATURES (CLEAN GRID) --- */}
+//         {machine.features && (
+//           <section className="mb-32">
+//             <h2 className="text-xs font-black uppercase tracking-[0.3em] text-slate-300 mb-12 text-center">Core Engineering Features</h2>
+//             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-100 border border-slate-100 rounded-3xl overflow-hidden">
+//               {machine.features.map((feature, i) => (
+//                 <div key={i} className="bg-white p-10 hover:bg-slate-50 transition">
+//                   <div className="w-12 h-12 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
+//                     <Zap size={20} className="fill-red-600" />
+//                   </div>
+//                   <h4 className="font-black text-sm uppercase mb-3 text-slate-900">
+//                     {typeof feature === 'string' ? "Performance Optimization" : feature.title}
+//                   </h4>
+//                   <p className="text-slate-500 text-sm leading-relaxed font-light">
+//                     {typeof feature === 'string' ? feature : feature.description}
+//                   </p>
+//                 </div>
+//               ))}
+//             </div>
+//           </section>
+//         )}
+
+//         {/* --- 4. TECHNICAL SPECIFICATIONS (MODERN LIST) --- */}
+//         <section className="mb-32 grid grid-cols-1 lg:grid-cols-3 gap-16">
+//           <div className="lg:col-span-1">
+//             <h2 className="text-3xl font-black uppercase leading-tight text-slate-900 mb-4">Technical <br /><span className="text-red-600">Specifications</span></h2>
+//             <p className="text-slate-400 text-sm font-medium">Precision engineering data for heavy-duty industrial requirements.</p>
+//           </div>
+//           <div className="lg:col-span-2 space-y-2">
+//             {machine.specifications && Object.entries(machine.specifications).map(([key, value], i) => (
+//               <div key={i} className="flex justify-between items-center py-5 border-b border-slate-50 group px-2">
+//                 <span className="text-slate-400 text-[10px] font-black uppercase tracking-widest group-hover:text-red-600 transition">{key}</span>
+//                 <span className="text-slate-900 font-bold text-sm tracking-tight">{value}</span>
+//               </div>
+//             ))}
+//           </div>
+//         </section>
+
+//         {/* --- 5. APPLICATIONS SECTION --- */}
+//         {machine.applications && (
+//           <section className="mb-32 bg-slate-50 p-16 rounded-[3rem]">
+//             <h2 className="text-center text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-16">Industry Applications</h2>
+//             <div className="flex flex-wrap justify-center gap-4">
+//               {machine.applications.map((app, i) => (
+//                 <div key={i} className="bg-white px-8 py-5 rounded-2xl border border-slate-200 font-black text-[10px] uppercase tracking-widest text-slate-700 shadow-sm hover:border-red-600 transition">
+//                   {app}
+//                 </div>
+//               ))}
+//             </div>
+//           </section>
+//         )}
+
+//         {/* --- 6. FAQ (ACCORDION STYLE) --- */}
+//         {machine.faqs && (
+//           <section className="mb-32 max-w-3xl mx-auto">
+//             <h2 className="text-3xl font-black uppercase text-center mb-16">Service & Support</h2>
+//             <div className="space-y-4">
+//               {machine.faqs.map((faq, i) => (
+//                 <div key={i} className="border border-slate-100 rounded-2xl p-8 hover:bg-slate-50 transition">
+//                   <h4 className="text-slate-900 font-black uppercase text-xs mb-4 flex items-center gap-3">
+//                      <span className="text-red-600 italic">Q.</span> {faq.question}
+//                   </h4>
+//                   <p className="text-slate-500 text-sm leading-relaxed font-light pl-6 border-l border-red-100">{faq.answer}</p>
+//                 </div>
+//               ))}
+//             </div>
+//           </section>
+//         )}
+
+//         {/* --- 7. RELATED PRODUCTS --- */}
+//         {siblings && (
+//           <section className="border-t border-slate-100 pt-20">
+//             <h3 className="text-xs font-black uppercase tracking-widest text-slate-400 mb-10">More from the series</h3>
+//             <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+//                {siblings.map((item, index) => (
+//                  <Link key={index} to={`/machine/${item.name.toLowerCase().replace(/ /g, '-')}`} className="group block space-y-4">
+//                    <div className="aspect-[4/3] bg-slate-50 rounded-2xl overflow-hidden border border-slate-50 group-hover:border-red-100 transition">
+//                      <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+//                    </div>
+//                    <div>
+//                      <h4 className="font-black text-[10px] text-slate-900 uppercase tracking-widest group-hover:text-red-600 transition">{item.name}</h4>
+//                      <p className="text-[9px] font-bold text-slate-400 uppercase mt-1">Explore Tech Specs →</p>
+//                    </div>
+//                  </Link>
+//                ))}
+//             </div>
+//           </section>
+//         )}
+
+//       </main>
+//     </div>
+//   );
+// };
+
+// export default MachineDetails;
