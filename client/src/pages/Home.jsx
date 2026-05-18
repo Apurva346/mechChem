@@ -43,10 +43,10 @@ const Home = () => {
 
         <div className='absolute top-0 left-0 w-full mt-10 z-10 flex flex-col justify-center px-10 lg:px-10'>
           <div className='max-w-2xl'>
-            <h1 className='text-white text-3xl lg:text-5xl font-bold leading-tight drop-shadow-lg'>
-              Industrial Machinery <br />
-              Sales & Service <br />
-              in Nagpur
+            <h1 className='text-white text-3xl lg:text-3xl font-bold leading-tight drop-shadow-lg'>
+              Trusted Supplier of Industrial Machines in Nagpur - Serving
+              Maharashtra Since 2012
+              
             </h1>
 
             <div className='mt-4 pt-4'>
@@ -68,40 +68,46 @@ const Home = () => {
         </div>
 
         {/* --- Trust Bar --- */}
-        <div className='relative z-20 max-w-5xl mx-auto px-6'>
-          <div className='bg-white py-6 border border-slate-200 shadow-2xl rounded-sm -mt-12'>
-            <div className='flex flex-col md:flex-row justify-around items-center gap-8 md:gap-0'>
-              <div className='flex items-center gap-4 px-6 md:border-r border-slate-200'>
+        <div className='relative z-20 max-w-6xl mx-auto px-6'>
+          {' '}
+          {/* Max width 6xl keli aahe */}
+          <div className='bg-gray-300 py-3 border border-slate-200 shadow-2xl rounded-sm -mt-12'>
+            {/* Grid vaprun content 3 columns madhe divide kela aahe */}
+            <div className='grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200'>
+              {/* Item 1 */}
+              <div className='flex flex-col items-center text-center gap-2 py-4 md:py-0 px-6'>
                 <span className='text-4xl'>⭐</span>
                 <div className='flex flex-col'>
                   <span className='text-2xl font-black text-slate-900 leading-none'>
-                    20+ Years
+                    12+ Years
                   </span>
-                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1'>
+                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-2'>
                     Experience
                   </span>
                 </div>
               </div>
 
-              <div className='flex items-center gap-4 px-6 md:border-r border-slate-200'>
+              {/* Item 2 */}
+              <div className='flex flex-col items-center text-center gap-2 py-4 md:py-0 px-6'>
                 <span className='text-4xl text-slate-400'>🛡️</span>
                 <div className='flex flex-col'>
                   <span className='text-2xl font-black text-slate-900 leading-none tracking-tight'>
                     Trusted Machine
                   </span>
-                  <span className='text-[10px] font-black text-red-600 uppercase tracking-widest mt-1'>
+                  <span className='text-[10px] font-black text-red-600 uppercase tracking-widest mt-2'>
                     Supplier
                   </span>
                 </div>
               </div>
 
-              <div className='flex items-center gap-4 px-6'>
+              {/* Item 3 */}
+              <div className='flex flex-col items-center text-center gap-2 py-4 md:py-0 px-6'>
                 <span className='text-4xl'>🚚</span>
                 <div className='flex flex-col'>
                   <span className='text-2xl font-black text-slate-900 leading-none'>
                     Fast Delivery
                   </span>
-                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1'>
+                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-2'>
                     Across India
                   </span>
                 </div>
