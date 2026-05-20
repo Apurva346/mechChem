@@ -8,6 +8,7 @@ import MachineDetails from './pages/MachineDetails'
 import WhatsAppFloat from './components/common/WhatsAppFloat'
 import CategoryPage from './pages/CategoryPage'
 import Services from './pages/Services'
+import AllMachines from './pages/AllMachines'
 
 function App () {
   return (
@@ -24,6 +25,7 @@ function App () {
             <Route path='/category/:id' element={<CategoryPage />} />
             <Route path='/machine/:id' element={<MachineDetails />} />
             <Route path='*' element={<Home />} />
+            <Route path='/allmachine' element={<AllMachines />} />
           </Routes>
         </main>
         <WhatsAppFloat />

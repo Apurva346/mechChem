@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, Links } from 'react-router-dom'
 import {
   ShieldCheck,
   Users,
@@ -46,7 +46,6 @@ const Home = () => {
             <h1 className='text-white text-3xl lg:text-3xl font-bold leading-tight drop-shadow-lg'>
               Trusted Supplier of Industrial Machines in Nagpur - Serving
               Maharashtra Since 2012
-              
             </h1>
 
             <div className='mt-4 pt-4'>
@@ -57,12 +56,16 @@ const Home = () => {
             </div>
 
             <div className='mt-10 flex gap-4'>
-              <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-red-800 shadow-xl transition'>
-                Get Quote
-              </button>
-              <button className='bg-[#eeb44b] text-slate-900 px-8 py-3 rounded-md font-bold text-lg hover:bg-yellow-500 shadow-xl transition'>
-                View Products
-              </button>
+              <Link to='/contact'>
+                <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-red-800 shadow-xl transition'>
+                  Get Quote
+                </button>
+              </Link>
+              <Link to='/allmachine'>
+                <button className='bg-[#eeb44b] text-slate-900 px-8 py-3 rounded-md font-bold text-lg hover:bg-yellow-500 shadow-xl transition'>
+                  View Products
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -72,7 +75,8 @@ const Home = () => {
           {' '}
           {/* Max width 6xl keli aahe */}
           <div className='bg-gray-300 py-3 border border-slate-200 shadow-2xl rounded-sm -mt-12'>
-            {/* Grid vaprun content 3 columns madhe divide kela aahe */}
+            {/* Grid
+             vaprun content 3 columns madhe divide kela aahe */}
             <div className='grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200'>
               {/* Item 1 */}
               <div className='flex flex-col items-center text-center gap-2 py-4 md:py-0 px-6'>
@@ -145,7 +149,19 @@ const Home = () => {
                     {machine.shortDescription ||
                       'High precision and durable machine for industrial manufacturing tasks.'}
                   </p>
-                  <Link to={`/machine/${machine._id}`}>
+
+                  {/* ✅ दुरुस्त केलेला कोड: machines ऐवजी machine? वापरलं आणि category चा slug बनवला */}
+                  <Link
+                    to={`/category/${
+                      machine?.name
+                        ? machine.name.toLowerCase().trim().replace(/ /g, '-')
+                        : ''
+                    }${
+                      machine?.name?.toLowerCase().endsWith('machine')
+                        ? 's'
+                        : ''
+                    }`}
+                  >
                     <button className='w-full bg-slate-800 text-white py-2 rounded hover:bg-slate-900 transition font-semibold'>
                       View Details
                     </button>
@@ -178,9 +194,19 @@ const Home = () => {
                 and Laser Cutting Machines. Engineered for high precision and
                 efficiency in modern manufacturing.
               </p>
-              <button className='bg-[#8b1d31] hover:bg-red-800 text-white px-10 py-3 rounded-sm font-bold text-sm lg:text-base uppercase tracking-wider transition-all shadow-2xl'>
+
+              {/* <button className='bg-[#8b1d31] hover:bg-red-800 text-white px-10 py-3 rounded-sm font-bold text-sm lg:text-base uppercase tracking-wider transition-all shadow-2xl'>
                 Explore i-NAX Machines
-              </button>
+              </button> */}
+              <a
+                href='https://inaxlaser.mechchemindia.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='bg-[#8b1d31] hover:bg-red-800 text-white px-10 py-3 rounded-sm font-bold text-sm lg:text-base tracking-wider transition-all shadow-2xl'
+                onClick={() => setMobileMenu(false)}
+              >
+                Explore i-NAX Machines
+              </a>
             </div>
           </div>
         </section>

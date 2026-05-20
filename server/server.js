@@ -1,38 +1,3 @@
-// // // const express = require('express');
-// // // const connectDB = require('./config/db'); // db.js la import kara
-// // // require('dotenv').config();
-
-// // // const app = express();
-
-// // // // Database connect karnyacha function call kara
-// // // connectDB(); 
-
-// // // const PORT = process.env.PORT || 5000;
-// // // app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-
-// // require('dotenv').config();
-// // const express = require('express');
-// // const cors = require('cors');
-// // const connectDB = require('./config/db');
-
-
-// // const app = express();
-
-// // // Database Connection
-// // connectDB();
-
-// // // Middleware
-// // app.use(cors()); // He Netlify deployment sathi garjeche aahe
-// // app.use(express.json()); // JSON data vachnyasathi
-
-// // app.get('/', (req, res) => {
-// //   res.send("API is running...");
-// // });
-
-// // const PORT = process.env.PORT || 5000;
-// // app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
