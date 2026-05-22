@@ -343,7 +343,7 @@ const latheMachines = [
             { question: "Is a light duty lathe machine suitable for beginners?", answer: "Yes, simple to operate and widely used in ITI institutes and training centres." }
         ],
         ctaText: "Get free quote from Mech Chem Engineering Services.",
-        image: "\images\machines\Light duty lathe machine.png",
+        image: "/images/machines/Light duty lathe machine.png",
         altText: "light-duty-lathe-machine-nagpur",
         metaTitle: "Light Duty Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Light Duty Lathe Machine in Nagpur at competitive prices. Ideal for small workshops, ITI institutes & job shops."
@@ -375,7 +375,7 @@ const latheMachines = [
             { question: "Can heavy duty lathe machines do threading operations?", answer: "Yes, they come with a threading gearbox that supports metric, inch, and module threads." }
         ],
         ctaText: "Call now for best price & quick delivery.",
-        image: "\images\machines\medium & heavy duty lathe machine.png",
+        image: "/images/machines/medium & heavy duty lathe machine.png",
         altText: "heavy-duty-lathe-machine-nagpur",
         metaTitle: "Medium & Heavy Duty Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Supplier of Medium & Heavy Duty Lathe Machines in Nagpur. Suitable for fabrication, auto components & general engineering."
@@ -406,7 +406,7 @@ const latheMachines = [
             { question: "What is an extra heavy duty lathe machine?", answer: "A large industrial lathe designed to machine very heavy and large diameter workpieces such as shafts, rolls, and flanges." }
         ],
         ctaText: "Get best price from Mech Chem Engineering.",
-        image: "\images\machines\Extra heavy duty lathe machine.png",
+        image: "/images/machines/Extra heavy duty lathe machine.png",
         altText: "extra-heavy-duty-lathe-machine-nagpur",
         metaTitle: "Extra Heavy Duty Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Extra Heavy Duty Lathe Machines in Nagpur for steel, paper & power industries. High torque, large swing capacity."
@@ -438,7 +438,7 @@ const latheMachines = [
             { question: "What is the spindle runout accuracy?", answer: "Precision lathe machines typically have spindle runout within 0.005mm." }
         ],
         ctaText: "Get free quote today for micron-level accuracy.",
-        image: "\images\machines\Tool Room & Precision Lathe Machine.jpeg",
+        image: "/images/machines/Tool Room & Precision Lathe Machine.jpeg",
         altText: "high-accuracy-lathe-machine-tool-room",
         metaTitle: "Tool Room & Precision Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Tool Room & Precision Lathe Machines in Nagpur for die, mould & aerospace applications."

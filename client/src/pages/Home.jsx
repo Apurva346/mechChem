@@ -24,7 +24,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/machines')
+      .get('https://mechchem-backend.onrender.com/api/machines')
       .then(res => setMachines(res.data))
       .catch(err => console.log(err))
   }, [])
