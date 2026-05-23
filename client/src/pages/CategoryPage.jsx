@@ -13,7 +13,7 @@ const CategoryPage = () => {
       try {
         setLoading(true);
         // Backend API call: Category pramane data aan-nya sathi
-        const response = await axios.get(`http://localhost:5000/api/machines/category/${id}`);
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE}/category/${id}`);
         setMachines(response.data);
       } catch (error) {
         console.error("Error fetching category data:", error);

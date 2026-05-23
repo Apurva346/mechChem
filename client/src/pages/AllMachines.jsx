@@ -12,7 +12,7 @@ const AllMachines = () => {
       try {
         setLoading(true);
         // Navin backend endpoint run kela
-        const response = await axios.get('http://localhost:5000/api/machines/catalog-grouped');
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE}/catalog-grouped`);
         setCatalog(response.data);
       } catch (error) {
         console.error("Error fetching catalog grid:", error);
