@@ -24,7 +24,8 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get('https://mechchem-backend.onrender.com/api/machines')
+      .get(import.meta.env.VITE_API_BASE)
+
       .then(res => setMachines(res.data))
       .catch(err => console.log(err))
   }, [])
@@ -36,33 +37,35 @@ const Home = () => {
           <img
             src='/images/background/Home Page Update/Images/Industrial Machine Sales & Services.png'
             alt='Industrial Machines'
-            className='block w-full'
+            className='block w-full min-h-[420px] sm:min-h-[550px] lg:min-h-full object-cover'
           />
           <div className='absolute inset-0 bg-black/30'></div>
         </div>
 
-        <div className='absolute top-0 left-0 w-full mt-10 z-10 flex flex-col justify-center px-10 lg:px-10'>
+        {/* Hero Content */}
+        <div className='absolute top-0 left-0 w-full mt-4 sm:mt-10 z-10 flex flex-col justify-center px-4 sm:px-10 lg:px-10'>
           <div className='max-w-2xl'>
-            <h1 className='text-white text-3xl lg:text-3xl font-bold leading-tight drop-shadow-lg'>
+            <h1 className='text-white text-lg sm:text-3xl lg:text-3xl font-bold leading-snug sm:leading-tight drop-shadow-lg'>
               Trusted Supplier of Industrial Machines in Nagpur - Serving
               Maharashtra Since 2012
             </h1>
 
-            <div className='mt-4 pt-4'>
-              <p className='text-white text-xl lg:text-2xl font-medium'>
+            <div className='mt-2 sm:mt-4 pt-2 sm:pt-4'>
+              <p className='text-white text-sm sm:text-xl lg:text-2xl font-medium leading-relaxed'>
                 Lathe | Milling | Drilling | Power <br />
                 Press | Workshop Machines
               </p>
             </div>
 
-            <div className='mt-10 flex gap-4'>
+            <div className='mt-4 sm:mt-10 flex gap-2 sm:gap-4'>
               <Link to='/contact'>
-                <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-red-800 shadow-xl transition'>
+                <button className='bg-[#8b1d31] text-white px-4 sm:px-8 py-2 sm:py-3 rounded-md font-bold text-xs sm:text-lg hover:bg-red-800 shadow-xl transition'>
                   Get Quote
                 </button>
               </Link>
+
               <Link to='/allmachine'>
-                <button className='bg-[#eeb44b] text-slate-900 px-8 py-3 rounded-md font-bold text-lg hover:bg-yellow-500 shadow-xl transition'>
+                <button className='bg-[#eeb44b] text-slate-900 px-4 sm:px-8 py-2 sm:py-3 rounded-md font-bold text-xs sm:text-lg hover:bg-yellow-500 shadow-xl transition'>
                   View Products
                 </button>
               </Link>
@@ -71,47 +74,49 @@ const Home = () => {
         </div>
 
         {/* --- Trust Bar --- */}
-        <div className='relative z-20 max-w-6xl mx-auto px-6'>
-          {' '}
-          {/* Max width 6xl keli aahe */}
-          <div className='bg-gray-300 py-3 border border-slate-200 shadow-2xl rounded-sm -mt-12'>
-            {/* Grid
-             vaprun content 3 columns madhe divide kela aahe */}
-            <div className='grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200'>
+        <div className='relative z-20 max-w-6xl mx-auto px-2 sm:px-6'>
+          <div className='bg-gray-300 py-3 border border-slate-200 shadow-2xl rounded-md -mt-6 sm:-mt-10 lg:-mt-16 overflow-hidden'>
+            <div className='grid grid-cols-3 divide-x divide-slate-200'>
               {/* Item 1 */}
-              <div className='flex flex-col items-center text-center gap-2 py-4 md:py-0 px-6'>
-                <span className='text-4xl'>⭐</span>
+              <div className='flex flex-col items-center text-center gap-1 py-3 px-2 sm:px-6'>
+                <span className='text-2xl sm:text-4xl'>⭐</span>
+
                 <div className='flex flex-col'>
-                  <span className='text-2xl font-black text-slate-900 leading-none'>
+                  <span className='text-[13px] sm:text-2xl font-black text-slate-900 leading-tight'>
                     12+ Years
                   </span>
-                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-2'>
+
+                  <span className='text-[7px] sm:text-[10px] font-black text-slate-500 uppercase tracking-wide sm:tracking-widest mt-1'>
                     Experience
                   </span>
                 </div>
               </div>
 
               {/* Item 2 */}
-              <div className='flex flex-col items-center text-center gap-2 py-4 md:py-0 px-6'>
-                <span className='text-4xl text-slate-400'>🛡️</span>
+              <div className='flex flex-col items-center text-center gap-1 py-3 px-2 sm:px-6'>
+                <span className='text-2xl sm:text-4xl text-slate-400'>🛡️</span>
+
                 <div className='flex flex-col'>
-                  <span className='text-2xl font-black text-slate-900 leading-none tracking-tight'>
+                  <span className='text-[13px] sm:text-2xl font-black text-slate-900 leading-tight'>
                     Trusted Machine
                   </span>
-                  <span className='text-[10px] font-black text-red-600 uppercase tracking-widest mt-2'>
+
+                  <span className='text-[7px] sm:text-[10px] font-black text-red-600 uppercase tracking-wide sm:tracking-widest mt-1'>
                     Supplier
                   </span>
                 </div>
               </div>
 
               {/* Item 3 */}
-              <div className='flex flex-col items-center text-center gap-2 py-4 md:py-0 px-6'>
-                <span className='text-4xl'>🚚</span>
+              <div className='flex flex-col items-center text-center gap-1 py-3 px-2 sm:px-6'>
+                <span className='text-2xl sm:text-4xl'>🚚</span>
+
                 <div className='flex flex-col'>
-                  <span className='text-2xl font-black text-slate-900 leading-none'>
+                  <span className='text-[13px] sm:text-2xl font-black text-slate-900 leading-tight'>
                     Fast Delivery
                   </span>
-                  <span className='text-[10px] font-black text-slate-500 uppercase tracking-widest mt-2'>
+
+                  <span className='text-[7px] sm:text-[10px] font-black text-slate-500 uppercase tracking-wide sm:tracking-widest mt-1'>
                     Across India
                   </span>
                 </div>
@@ -185,34 +190,69 @@ const Home = () => {
             <div className='absolute inset-0 bg-gradient-to-r from-[#0a0f1a] via-[#0a0f1a]/80 to-transparent'></div>
           </div>
           <div className='relative z-10 w-full max-w-7xl mx-auto px-8 lg:px-8'>
-            <div className='max-w-[90%] lg:max-w-[50%]'>
+            <div className='max-w-[90%] lg:max-w-[70%]'>
               <h2 className='text-white text-3xl lg:text-4xl leading-tight tracking-tight mb-4 drop-shadow-lg'>
                 Introducing i-NAX – <br /> CNC & Laser Machine Solutions
               </h2>
               <p className='text-slate-300 text-sm lg:text-lg leading-relaxed mb-8 opacity-95'>
                 i-NAX is our newly launched brand specializing in advanced CNC
-                and Laser Cutting Machines. Engineered for high precision and
-                efficiency in modern manufacturing.
+                and Laser<br></br> Cutting Machines. Engineered for high precision and
+                efficiency in modern <br></br>manufacturing.
               </p>
 
               {/* <button className='bg-[#8b1d31] hover:bg-red-800 text-white px-10 py-3 rounded-sm font-bold text-sm lg:text-base uppercase tracking-wider transition-all shadow-2xl'>
                 Explore i-NAX Machines
               </button> */}
-              <a
-                href='https://inaxlaser.mechchemindia.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='bg-[#8b1d31] hover:bg-red-800 text-white px-10 py-3 rounded-sm font-bold text-sm lg:text-base tracking-wider transition-all shadow-2xl'
-                onClick={() => setMobileMenu(false)}
-              >
-                Explore i-NAX Machines
-              </a>
+
+              <div className='flex flex-col gap-4'>
+                {/* First Button */}
+                <div>
+                  <a
+                    href='https://inaxlaser.mechchemindia.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-block bg-[#8b1d31] hover:bg-red-800 text-white px-10 py-3 rounded-sm font-bold text-sm lg:text-base tracking-wider transition-all shadow-2xl'
+                  >
+                    Explore i-NAX Machines
+                  </a>
+                </div>
+
+                {/* Next 4 Buttons */}
+                <div className='flex lg:flex-nowrap items-center gap-3 mt-2'>
+                  <a
+                    href='https://inaxlaser.mechchemindia.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className=' hover:text-red-800 text-white px-4 py-2  font-semibold text-xs lg:text-sm tracking-wide transition-all shadow-lg  hover:scale-105'
+                  >
+                    Fiber Laser Cutting Machine
+                  </a>
+
+                  <a
+                    href='https://inaxlaser.mechchemindia.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className=' hover:text-red-800 text-white px-4 py-2  font-semibold text-xs lg:text-sm tracking-wide transition-all shadow-lg  hover:scale-105'
+                  >
+                    CNC Press Brake Machine
+                  </a>
+
+                  <a
+                    href='https://inaxlaser.mechchemindia.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className=' hover:text-red-800 text-white px-4 py-2  font-semibold text-xs lg:text-sm tracking-wide transition-all shadow-lg  hover:scale-105'
+                  >
+                    CNC Plasma Cutting Machine
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* i-NAX Machines Cards */}
-        <section className='bg-[#0a0f1a] pb-20 px-6 border-t border-slate-800'>
+        {/* <section className='bg-[#0a0f1a] pb-20 px-6 border-t border-slate-800'>
           <div className='max-w-7xl mx-auto'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-12'>
               {machines
@@ -250,7 +290,7 @@ const Home = () => {
                 ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
 
       {/* --- 4. Why Choose Us (Services) --- */}

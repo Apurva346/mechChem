@@ -89,9 +89,11 @@ const MachineDetails = () => {
                 {machine.description}
               </p>
               <div className="pt-6">
+                <Link to='/contact'>
                 <button className="w-full bg-red-600 text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-red-700 transition shadow-xl shadow-red-100 flex items-center justify-center gap-3 active:scale-95 mb-4">
                   <MessageSquare size={18} /> Request Price Quote
                 </button>
+                </Link>
               </div>
             </div>
           </div>

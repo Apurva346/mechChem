@@ -7,12 +7,10 @@ const MONGO_URI = "mongodb+srv://apurvajibhakate007_db_user:YXS8g9XndPuuK8IP@clu
 
 // --- CATEGORY DESCRIPTIONS ---
 const millingDesc = `A milling machine is a versatile and essential machine tool used for removing material from a workpiece using rotary cutters. At Mech Chem Engineering Services, we offer reliable milling machines designed for accuracy, durability, and high productivity, making them suitable for workshops, tool rooms, and industrial manufacturing units.`;
-const cuttingDesc = `Mech Chem Engineering Services provides high-performance Cutting Machines designed for fast, accurate, and economical cutting of metal bars, pipes, and structural profiles. Our range includes high-speed Band Saws and reliable Power Hacksaws, ensuring clean cuts and minimal material wastage for fabrication shops and engineering industries.`;
-const threadingDesc = `Our Threading Machines are engineered for high-speed, high-precision cold-forming of threads on bolts, nuts, studs, screws, shafts, and fasteners across automotive, construction, railway, aerospace, and general engineering industries. Using the proven cold thread rolling process, our machines produce threads that are significantly stronger, more fatigue-resistant, and dimensionally more accurate than conventionally cut threads — at production speeds several times faster than traditional threading methods. Whether you need a versatile Thread Rolling Machine for external threads on shafts and studs or a dedicated Bolt & Nut Thread Rolling Machine for continuous high-volume fastener production, our range offers reliable performance, long die life, and compatibility with Metric, UNC, UNF, BSW, and other international thread standards.`;
-const weldingDesc = `Mech Chem Engineering Services is a trusted Welding Machine and Fabrication Equipment Supplier in Nagpur, offering a comprehensive range of high-performance industrial welding machines designed for superior weld quality, productivity, and reliability. Our range includes Arc Welding Machines (SMAW) for robust, versatile stick welding; MIG Welding Machines (GMAW) for fast, high-deposition production welding; and TIG Welding Machines (GTAW) for precision, clean, and aesthetically superior welding. Built with advanced inverter IGBT technology and comprehensive arc management features, our machines meet the demands of fabrication shops, automotive manufacturers, shipyards, and general engineering industries.`;
+
 const workholdingDesc = `Our premium selection of Workholding Tools provides the ultimate foundation for turning, boring, and milling operations, ensuring maximum machining accuracy, part stability, and operator safety. Engineered for high performance on both CNC turning centers and manual lathes, our range features highly precise Self-Centering Lathe Chucks and heavy-duty 4-Jaw Independent Chucks. Built from premium-grade forged steel and hardened alloy components, these tools minimize setup times, eliminate part deflection, and deliver the tightest runout tolerances required for demanding engineering tasks.`;
 const finishingCoatingDesc = `Our comprehensive selection of Finishing & Coating Machines provides advanced surface treatment and protection solutions, ensuring your components achieve a flawless aesthetic appeal, high wear resistance, and long-lasting corrosion protection. Designed to cater to everything from large industrial production lines to specialized workshops, our range features high-efficiency Electrostatic Powder Coating Systems and rugged, high-speed Bench Polishing Machines. Built to international engineering standards, these systems maximize coating transfer efficiency, minimize downtime, and deliver mirror-smooth finishes across diverse metallic and structural substrates.`;
-const heavyDesc = `Our Heavy Machines are built to withstand the most demanding manufacturing applications, delivering uncompromised rigidity, exceptional structural dampening, and high-precision multi-axis machining capabilities for oversized industrial components. Featuring heavy-duty Vertical Boring Machines (VTLs) for large-diameter castings, flanges, and rings, and multi-axis Horizontal Boring Machines (HBMs) for complete face-milling, deep boring, and tapping operations in single setups, our lineup is engineered for maximum throughput. Built with advanced hydrostatic bearing technology, powerful gear-driven spindles, and closed-loop linear scale feedback, these machines provide the core infrastructure needed for power generation, heavy engineering, defense, oil & gas, and aerospace industries.`;
+const bandsawDesc = `Our Bandsaw Machines are designed for accurate, efficient, and heavy-duty metal cutting applications across various industries. Built with robust construction and advanced hydraulic systems, these machines deliver smooth cutting performance, high productivity, and long operational life. Suitable for cutting round bars, square sections, pipes, and structural materials, the machines ensure precise cutting accuracy with low vibration and reliable operation. Available in automatic and semi automatic models, our bandsaw machines are ideal for fabrication units, engineering workshops, steel industries, and manufacturing plants. We supply high-quality industrial Bandsaw Machines in Nagpur, Maharashtra, providing dependable metal cutting solutions for customers across India.`;
 
 const drillingDesc = `Mech Chem Engineering Services is a trusted Drill Machine and Workshop Machinery Supplier in Nagpur, offering a wide range of high-performance industrial drilling machines designed for precision, durability, and reliable operation. Our machines are widely used in fabrication workshops, manufacturing plants, engineering industries, and maintenance departments.`;
 const grindingDesc = `Mech Chem Engineering Services supplies a versatile range of grinding machines designed for precision and durability. From flat surface finishing to shaft grinding and cutting tool sharpening, our machines deliver tight tolerances and superior surface finish for toolrooms, production shops, and engineering industries.`;
@@ -469,7 +467,7 @@ const latheMachines = [
             { question: "What is a high speed lathe machine used for?", answer: "Fast machining of non-ferrous materials like aluminium and brass requiring high spindle speeds." }
         ],
         ctaText: "Contact us for price & availability of High Speed Lathes.",
-        image: "/images/machines/high-speed-lathe.png",
+        image: "/images/machines/High Speed Lathe Machine.png",
         altText: "high-rpm-lathe-machine-nagpur",
         metaTitle: "High Speed Lathe Machine Supplier in Nagpur | Mech Chem Engineering Services",
         metaDescription: "Buy High Speed Lathe Machines in Nagpur for aluminium, brass & non-ferrous machining."
@@ -531,7 +529,7 @@ const latheMachines = [
             { question: "What is a gap bed lathe machine?", answer: "It has a removable section called the gap, allowing machining of large diameter workpieces like discs and flanges." }
         ],
         ctaText: "Get free quote for large diameter disc and flange machining.",
-        image: "\images\machines\Facing & Gap Bed Lathe Machine.jpeg",
+        image: "/images/machines/Facing & Gap Bed Lathe Machine.jpeg",
         altText: "gap-bed-lathe-machine-nagpur",
         metaTitle: "Facing & Gap Bed Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Facing & Gap Bed Lathe Machines in Nagpur for large diameter disc, flange & pulley machining."
@@ -562,7 +560,7 @@ const latheMachines = [
             { question: "What is the difference between a capstan and a turret lathe?", answer: "Capstan has a lighter turret on a slide; Turret lathe has a heavier saddle-mounted turret for larger components." }
         ],
         ctaText: "Best price for batch production lathes from Mech Chem Engineering Services.",
-        image: "\images\machines\Facing & Gap Bed Lathe Machine.jpeg",
+        image: "/images/machines/Capstan & Turret Lathe Machine.jpeg",
         altText: "capstan-lathe-machine-nagpur",
         metaTitle: "Capstan & Turret Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Capstan & Turret Lathe Machines in Nagpur for high volume batch production."
@@ -594,7 +592,7 @@ const latheMachines = [
             { question: "What is a CNC lathe machine?", answer: "A computer-controlled machine that executes programmed operations like turning and boring with high precision." }
         ],
         ctaText: "Get free quote for CNC Lathes with Fanuc & Siemens controllers.",
-        image: "\images\machines\Cnc lathe machine.jpeg",
+        image: "/images/machines/Cnc lathe machine.jpeg",
         altText: "cnc-lathe-machine-nagpur",
         metaTitle: "CNC Lathe Machine Supplier in Nagpur | Mech Chem Engineering Services",
         metaDescription: "Buy CNC Lathe Machines in Nagpur. High precision, automatic turret, fast production."
@@ -625,7 +623,7 @@ const latheMachines = [
             { question: "What is the advantage of all geared lathe over belt driven lathe?", answer: "Consistent torque, less maintenance, and better for heavy cutting without slippage." }
         ],
         ctaText: "Get best price & quick delivery for All Geared Lathes in Nagpur.",
-        image: "\images\machines\All Geared Head Lathe Machine.jpeg",
+        image: "/images/machines/All Geared Head Lathe Machine.jpeg",
         altText: "all-geared-lathe-machine-workshop",
         metaTitle: "All Geared Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy All Geared & Geared Head Lathe Machines in Nagpur. Wide speed range, low maintenance."
@@ -656,7 +654,7 @@ const latheMachines = [
             { question: "What are the advantages of a belt driven lathe?", answer: "Affordable, quieter, and the belt acts as a safety slip mechanism against overloads." }
         ],
         ctaText: "Contact Mech Chem Engineering for free quote on economical lathes.",
-        image: "\images\machines\Belt driven lathe machine.jpeg",
+        image: "/images/machines/Belt driven lathe machine.jpeg",
         altText: "belt-driven-lathe-machine-nagpur",
         metaTitle: "Belt Driven Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Belt Driven Lathe Machines in Nagpur at lowest price. Ideal for ITI institutes & small workshops."
@@ -869,406 +867,7 @@ const grindingMachines = [
     }
 ];
 
-// --- CUTTING MACHINES DATA ---
-const cuttingMachines = [
-    {
-        name: "Band Saw Machine",
-        category: "Cutting Machines",
-        categoryDescription: cuttingDesc,
-        subTitle: "High-Efficiency Precision Metal Cutting Solution",
-        shortDescription: "The Band Saw Machine is a high-efficiency, precision metal cutting machine that uses a continuous loop of toothed blade for clean and economical material cutting.",
-        description: "The Band Saw Machine is a high-efficiency, precision metal cutting machine that uses a continuous loop of toothed blade (band saw blade) running over two or more wheels to cut through solid bars, hollow sections, pipes, tubes, structural profiles, billets, and non-ferrous materials. Available in horizontal (gravity or hydraulic feed) and vertical configurations, band saw machines deliver straight, angular, and miter cuts with minimal material wastage due to the thin kerf of the blade. The controlled cutting action produces low heat, burr-free cuts, and smooth cut surfaces, making band saws the preferred choice in fabrication shops, steel service centres, and automotive component manufacturers.",
-        specifications: {
-            "Cutting Capacity (Round)": "175 mm to 1000 mm",
-            "Cutting Capacity (Square)": "150 mm to 900 mm",
-            "Blade Size": "27 × 0.9 × 3000 mm to 67 × 1.6 × 8500 mm",
-            "Blade Speed": "20 to 100 m/min (Variable/Stepped)",
-            "Main Motor Power": "1.5 kW to 11 kW",
-            "Hydraulic Motor Power": "0.37 kW to 2.2 kW",
-            "Coolant Motor Power": "0.09 kW to 0.12 kW",
-            "Blade Tension": "Manual or Hydraulic",
-            "Machine Weight": "350 kg to 8,000 kg"
-        },
-        features: [
-            "Horizontal gravity-feed or hydraulic feed bow for controlled cutting pressure",
-            "Variable blade speed control (VFD) to match material type and hardness",
-            "Hardened tungsten carbide blade guides for precise blade alignment",
-            "Heavy-duty cast iron saw frame and vice for vibration-free cutting",
-            "Adjustable blade tensioning system to prevent blade breakage",
-            "Automatic shut-off at the end of the cut for operator safety",
-            "Integrated coolant system with pump and chip tray for blade cooling",
-            "Swiveling saw frame or vice for angular cutting up to 45° or 60°",
-            "Hydraulic vice clamping for secure workpiece holding (optional)"
-        ],
-        applications: ["Fabrication shops", "Steel service centres", "Automotive industry", "General engineering", "Aerospace manufacturing"],
-        faqs: [
-            { question: "What are the advantages of a band saw over a power hacksaw?", answer: "Band saws offer faster cutting speeds, thinner kerf (less material wastage), continuous cutting action, and the ability to cut larger sections with better accuracy." },
-            { question: "Why is coolant necessary during band sawing?", answer: "Coolant reduces friction and heat at the blade-material interface, extending blade life, improving surface finish, and flushing away chips." },
-            { question: "Can a band saw cut at an angle?", answer: "Yes, many horizontal band saws feature a swiveling saw bow or swiveling vice to perform precise angular cuts (typically 0° to 45°)." }
-        ],
-        ctaText: "Need high-speed precision cutting? Contact us for Band Saw Machine details.",
-        image: "/images/machines/Band Saw Machine.png",
-        altText: "Band Saw Machine – industrial horizontal band saw machine for cutting metal bars and pipes",
-        metaTitle: "Band Saw Machine | Industrial Metal Cutting Band Saw for Bars & Profiles",
-        metaDescription: "Heavy-duty Band Saw Machine for precise straight and angular cutting of solid bars, pipes, and structural profiles. Explore features and technical specs."
-    },
-    {
-        name: "Power Hacksaw Machine",
-        category: "Cutting Machines",
-        categoryDescription: cuttingDesc,
-        subTitle: "Simple and Reliable Reciprocating Metal Cutting Equipment",
-        shortDescription: "The Power Hacksaw Machine is a robust and economical metal cutting tool that uses a reciprocating blade to cut through various metal sections.",
-        description: "The Power Hacksaw Machine is a robust, simple, and economical metal cutting tool that uses a straight, rigid high-speed steel (HSS) blade with a reciprocating (back-and-forth) motion to cut through metal bars, rods, pipes, and structural sections. Known for its durability and ease of maintenance, the power hacksaw is a staple in maintenance workshops, small fabrication units, and general engineering shops. It features a mechanical or hydraulic lift on the return stroke to protect the blade teeth and ensure efficient cutting on the forward stroke.",
-        specifications: {
-            "Cutting Capacity (Round)": "150 mm to 450 mm",
-            "Cutting Capacity (Square)": "125 mm to 400 mm",
-            "Blade Size (Length)": "12\" (300 mm) to 24\" (600 mm)",
-            "No. of Strokes per Min": "60 to 100 SPM (Variable/Fixed)",
-            "Stroke Length": "100 mm to 150 mm",
-            "Main Motor Power": "0.75 kW to 3.7 kW",
-            "Vice Opening": "150 mm to 450 mm",
-            "Coolant Pump": "Self-priming centrifugal type",
-            "Machine Weight": "150 kg to 1,200 kg"
-        },
-        features: [
-            "Rigid cast iron base and saw frame for stability and long-term accuracy",
-            "Hydraulic or mechanical lift on the return stroke to prevent blade wear",
-            "Adjustable hydraulic feed control to regulate cutting pressure",
-            "Quick-clamping vice with swiveling jaw for 45° angular cutting",
-            "Automatic limit switch to stop the machine after the cut is completed",
-            "Built-in coolant system to prevent blade overheating",
-            "V-belt drive with protective guard for safety and smooth power transfer",
-            "Easy blade tensioning and replacement mechanism"
-        ],
-        applications: ["Maintenance workshops", "Small fabrication units", "General engineering shops", "Technical institutes", "Construction sites"],
-        faqs: [
-            { question: "What is the difference between a power hacksaw and a band saw?", answer: "A power hacksaw uses a reciprocating blade that cuts on the forward stroke only, making it simpler and more economical but slower than a band saw which cuts continuously." },
-            { question: "Why does the blade lift on the return stroke?", answer: "The blade lifts to prevent the tooth tips from dragging across the cut surface, which avoids premature blade wear and heat buildup." },
-            { question: "What maintenance does a power hacksaw machine require?", answer: "Regular maintenance includes lubricating the drive mechanism, checking blade tension, cleaning the coolant system, and verifying the limit switch operation." }
-        ],
-        ctaText: "Reliable cutting for your workshop. Contact us for Power Hacksaw pricing.",
-        image: "/images/machines/Power Hacksaw Machine.png",
-        altText: "Power Hacksaw Machine – reciprocating metal cutting machine for bars and rods",
-        metaTitle: "Power Hacksaw Machine | Robust Reciprocating Metal Cutting Equipment",
-        metaDescription: "Durable and economical Power Hacksaw Machine for metal cutting in workshops and fabrication units. Check technical specifications and features."
-    }
-];
 
-// --- THREADING MACHINES DATA ---
-const threadingMachines = [
-    {
-        name: "Thread Rolling Machine",
-        category: "Threading Machines",
-        categoryDescription: threadingDesc,
-        subTitle: "Cold Thread Rolling for Precision External Threads",
-        shortDescription: "The Thread Rolling Machine is a high-precision, high-speed cold-forming machine used to produce external threads on bolts, studs, screws, shafts, and fasteners.",
-        description: "The Thread Rolling Machine is a high-precision, high-speed cold-forming machine used to produce external threads on bolts, studs, screws, shafts, and fasteners by plastically deforming the workpiece material between hardened thread rolling dies — without cutting or removing any material. Unlike thread cutting, thread rolling displaces and compresses the material grain structure, resulting in threads with superior tensile strength, fatigue resistance, and surface finish compared to cut threads. Available in flat die and cylindrical die (2-die or 3-die) configurations, thread rolling machines are widely used in fastener manufacturing, automotive component production, aerospace hardware manufacturing, and precision engineering industries for high-volume, consistent thread production at significantly higher speeds than conventional thread cutting methods.",
-        specifications: {
-            "Thread Diameter Range": "M3 to M52 (model-dependent)",
-            "Thread Pitch Range": "0.5 mm to 5 mm",
-            "Rolling Speed": "20 m/min to 150 m/min",
-            "Die Size (Flat Die)": "Up to 300×60×25 mm (L×H×W)",
-            "Die Material": "High-speed steel (HSS) or carbide-tipped",
-            "Production Rate": "60 to 600 pieces per minute (model-dependent)",
-            "Feed System": "Automatic hopper feed / Manual feed",
-            "Rolling Mode": "In-feed / Through-feed / Tangential feed",
-            "Motor Power": "1.5 kW to 15 kW",
-            "Die Pressure Adjustment": "Hydraulic / Mechanical screw adjustment",
-            "Thread Standards": "Metric, UNC, UNF, BSW, BSF, ACME",
-            "Machine Weight": "300 kg to 3,000 kg"
-        },
-        features: [
-            "Flat die or cylindrical (2-die / 3-die) rolling configuration for different thread forms and production volumes",
-            "Hardened and precision-ground thread rolling dies for long die life and consistent thread accuracy",
-            "Variable speed drive (VFD) for adjustable rolling speed to suit different materials and thread pitches",
-            "Automatic feed hopper and escapement system for high-speed continuous blank feeding",
-            "Hydraulic or mechanical die pressure adjustment for consistent thread form across the full production run",
-            "In-feed and through-feed rolling modes for different workpiece lengths and thread configurations",
-            "Precision die alignment system for accurate pitch and thread form control",
-            "Thread form compatibility: Metric (M), UNC, UNF, BSW, BSF, ACME, and special thread profiles",
-            "Hardened guide rails and end stop for consistent blank positioning before rolling",
-            "Automatic blank ejection after thread rolling for uninterrupted production flow",
-            "Digital stroke counter and production batch counter for output monitoring",
-            "Safety guards with emergency stop for operator protection during high-speed operation"
-        ],
-        applications: [
-            "Fastener manufacturing",
-            "Automotive component production",
-            "Aerospace hardware manufacturing",
-            "Precision engineering industries"
-        ],
-        faqs: [
-            { 
-                question: "What is the difference between thread rolling and thread cutting?", 
-                answer: "Thread cutting removes material to form the thread profile using a tap, die, or lathe tool, which severs the grain flow of the metal. Thread rolling cold-forms the thread by displacing material between hardened dies, preserving and compressing the grain structure. Rolled threads are 20–30% stronger in tensile strength and significantly more fatigue-resistant than cut threads of the same size." 
-            },
-            { 
-                question: "What materials can be thread rolled?", 
-                answer: "Thread rolling is suitable for ductile materials with elongation greater than 12%, including mild steel, alloy steel, stainless steel, aluminum, brass, copper, and titanium. Hardened or brittle materials are not suitable for thread rolling as they lack the ductility needed for cold forming." 
-            },
-            { 
-                question: "What thread forms can be produced?", 
-                answer: "Thread rolling machines can produce Metric (M), Unified (UNC/UNF), British Standard Whitworth (BSW), British Standard Fine (BSF), ACME, Trapezoidal, worm threads, knurls, and special custom thread profiles by changing the rolling dies." 
-            },
-            { 
-                question: "What is the difference between flat die and cylindrical die thread rolling?", 
-                answer: "Flat die machines use two flat reciprocating dies — one stationary and one moving — and are ideal for high-speed production of short fasteners. Cylindrical die machines use two or three rotating cylindrical dies and are better suited for longer workpieces, precision threads, and through-feed rolling of shafts and studs." 
-            },
-            { 
-                question: "How long do thread rolling dies last?", 
-                answer: "Die life depends on material, thread size, and rolling speed. Typically, HSS flat dies produce 500,000 to 2,000,000 pieces before requiring regrinding. Carbide dies offer significantly longer life for abrasive materials and high-volume production runs." 
-            }
-        ],
-        ctaText: "High-speed Thread Rolling Machine for cold-forming precise, strong external threads. Explore features, technical specs, and FAQs.",
-        image: "/images/machines/Thread Rolling Machine.png",
-        altText: "Thread Rolling Machine – flat die or cylindrical die thread rolling machine for cold-forming external threads on bolts and studs",
-        metaTitle: "Thread Rolling Machine | Cold Thread Rolling for Precision External Threads",
-        metaDescription: "High-speed Thread Rolling Machine for cold-forming precise, strong external threads on bolts, studs, shafts, and fasteners. Explore features, technical specs, and FAQs."
-    },
-    {
-        name: "Bolt & Nut Thread Rolling Machine",
-        category: "Threading Machines",
-        categoryDescription: threadingDesc,
-        subTitle: "Fastener Thread Rolling Equipment",
-        shortDescription: "Dedicated Bolt & Nut Thread Rolling Machine for high-volume production of precision threads on bolts, nuts, and fasteners.",
-        description: "The Bolt & Nut Thread Rolling Machine is a dedicated, high-speed cold-forming machine specifically designed for the mass production of threads on bolts, nuts, screws, and other fasteners in the fastener manufacturing industry. Engineered for continuous, high-volume production, the machine uses precision-hardened flat or cylindrical thread rolling dies to cold-form accurate external threads on bolt blanks and internal threads on nut blanks at production rates far exceeding conventional thread cutting methods. The cold-rolling process enhances the mechanical strength of the fastener threads through grain flow compaction, producing bolts and nuts with superior fatigue resistance, smooth thread finish, and consistent pitch accuracy — making them ideal for automotive, construction, heavy engineering, railway, and infrastructure applications where fastener reliability and load capacity are critical.",
-        specifications: {
-            "Bolt Thread Diameter Range": "M4 to M64 (model-dependent)",
-            "Nut Thread Diameter Range": "M4 to M48 (model-dependent)",
-            "Thread Pitch Range": "0.7 mm to 6 mm",
-            "Production Rate (Bolts)": "60 to 500 pieces per minute",
-            "Production Rate (Nuts)": "40 to 300 pieces per minute",
-            "Die Type": "Flat die / Cylindrical die (2-die or 3-die)",
-            "Die Material": "HSS / Carbide-tipped",
-            "Rolling Mode": "Through-feed / In-feed",
-            "Feed System": "Vibratory bowl feeder / Hopper auto-feed",
-            "Motor Power": "2.2 kW to 22 kW",
-            "Thread Standards Supported": "Metric, UNC, UNF, BSW, BSF, DIN, ISO",
-            "Machine Weight": "500 kg to 5,000 kg"
-        },
-        features: [
-            "Dedicated bolt and nut thread rolling configuration optimised for fastener production",
-            "High-speed automatic blank feeding system with vibratory bowl feeder or hopper feed",
-            "Precision flat die or cylindrical die thread rolling for consistent thread form and pitch accuracy",
-            "Adjustable die gap and pressure setting for different bolt diameters and thread pitches",
-            "Through-feed rolling mode for continuous high-speed production of bolts and studs",
-            "In-feed rolling mode for precise thread length control on shoulder bolts and special fasteners",
-            "Hardened guide channel and end stop for accurate blank alignment before rolling entry",
-            "Die pressure monitoring system for real-time quality control during production",
-            "Automatic ejection chute with finished part collection bin for uninterrupted production",
-            "Quick die change system for fast changeover between different thread sizes and pitches",
-            "Variable speed control (VFD) for optimising rolling speed for each fastener material",
-            "Production counter with batch preset for automated production run management"
-        ],
-        applications: [
-            "Automotive applications",
-            "Construction industry",
-            "Heavy engineering",
-            "Railway and infrastructure applications"
-        ],
-        faqs: [
-            { 
-                question: "What is the production advantage of a bolt and nut thread rolling machine over thread cutting?", 
-                answer: "Thread rolling machines produce threads at 5 to 10 times the speed of thread cutting operations. A single thread rolling machine can produce 100 to 500 bolts per minute with consistent thread accuracy, whereas thread cutting with taps or dies is limited to 10 to 60 pieces per minute and involves higher tooling costs and more frequent tool replacement." 
-            },
-            { 
-                question: "Does thread rolling improve the strength of bolts and nuts?", 
-                answer: "Yes. The cold-forming process in thread rolling compacts and realigns the grain structure of the metal along the thread profile, increasing the tensile strength and fatigue resistance of the thread by 20 to 30% compared to cut threads. This is particularly important for high-strength bolts used in structural, automotive, and aerospace applications." 
-            },
-            { 
-                question: "What fastener sizes can be produced?", 
-                answer: "Bolt and nut thread rolling machines cover a wide range from small M4 fasteners to large M64 bolts and M48 nuts, depending on the machine model and die size. Custom dies can be made for special thread profiles, coarse pitch, and fine pitch threads as per DIN, ISO, ASTM, and BS standards." 
-            },
-            { 
-                question: "How quickly can dies be changed for different thread sizes?", 
-                answer: "Modern bolt and nut thread rolling machines feature quick-change die systems that allow die replacement and realignment in 15 to 30 minutes. Pre-set die holders and reference marks speed up the changeover process, minimising downtime between production runs of different fastener sizes." 
-            },
-            { 
-                question: "What quality standards can rolled bolt and nut threads meet?", 
-                answer: "Rolled threads on bolts and nuts can meet international standards including ISO 724 (Metric threads), DIN 13, ASME B1.1 (UNC/UNF), and BS 3643. Thread quality parameters including pitch accuracy, thread form, major and minor diameters, and surface finish are controlled by die precision and machine setup, and verified using thread gauges (go / no-go gauges) during production." 
-            }
-        ],
-        ctaText: "Dedicated Bolt & Nut Thread Rolling Machine for high-volume production of precision threads. View features, technical specs, and FAQs.",
-        image: "/images/machines/Bolt Nut Thread Rolling Machine.png",
-        altText: "Bolt and Nut Thread Rolling Machine – automatic fastener thread rolling machine for high-volume bolt and nut thread production",
-        metaTitle: "Bolt & Nut Thread Rolling Machine | Fastener Thread Rolling Equipment",
-        metaDescription: "Dedicated Bolt & Nut Thread Rolling Machine for high-volume production of precision threads on bolts, nuts, and fasteners. View features, technical specs, and FAQs."
-    }
-];
-
-// --- WELDING MACHINES DATA ---
-const weldingMachines = [
-    {
-        name: "Arc Welding Machine",
-        category: "Welding Machines",
-        categoryDescription: weldingDesc,
-        subTitle: "Industrial SMAW Stick Welder for Heavy Fabrication",
-        shortDescription: "The Arc Welding Machine (SMAW) is one of the most widely used and versatile welding machines in industrial and construction applications.",
-        description: "The Arc Welding Machine (also known as a Stick Welder or SMAW – Shielded Metal Arc Welding machine) is one of the most widely used and versatile welding machines in industrial and construction applications. It generates an electric arc between a consumable coated electrode (stick) and the base metal workpiece, producing intense heat that melts both the electrode and the base metal to form a strong fusion weld joint. The electrode coating melts simultaneously to produce a shielding gas and slag layer that protect the molten weld pool from atmospheric contamination. Available in transformer-based, rectifier-based (DC), and inverter-based models, arc welding machines are used across structural steel fabrication, shipbuilding, pipeline welding, construction, maintenance, repair, and heavy engineering industries for welding mild steel, stainless steel, cast iron, and low-alloy steels in all positions.",
-        specifications: {
-            "Welding Current Range": "20 A to 400 A / 500 A (model-dependent)",
-            "Rated Duty Cycle": "60% to 100% at maximum current",
-            "Input Power / Voltage": "220V (Single Phase) / 415V (Three Phase), 50/60 Hz",
-            "Open Circuit Voltage (OCV)": "60V to 90V",
-            "Compatible Electrode Diameter": "1.6 mm to 5.0 mm / 6.0 mm",
-            "Insulation Class": "Class F / Class H",
-            "Protection Class": "IP21S / IP23",
-            "Cooling Type": "Forced Air Cooling (Fan)",
-            "Technology Type": "Inverter IGBT / Core Transformer",
-            "Machine Weight": "5 kg (portable inverter) to 120 kg (heavy rectifier)"
-        },
-        features: [
-            "Advanced IGBT inverter technology for superior arc stability and energy efficiency",
-            "Built-in Hot Start function for easy arc ignition with cold electrodes",
-            "Adjustable Arc Force control to prevent electrode sticking in the weld pool",
-            "Anti-Stick technology that reduces welding current if the electrode shorts out",
-            "Digital display for accurate and real-time preset welding current adjustment",
-            "Thermal overload protection with auto-shutoff and LED warning indicator",
-            "VRD (Voltage Reduction Device) for enhanced operator safety in damp environments",
-            "Lightweight, compact, and portable design with a heavy-duty carrying handle",
-            "Wide input voltage tolerance for stable operation with field generators"
-        ],
-        applications: [
-            "Structural steel fabrication",
-            "Shipbuilding and marine engineering",
-            "Pipeline laying and cross-country welding",
-            "On-site construction and infrastructure projects",
-            "Maintenance, plant repair, and automotive workshops"
-        ],
-        faqs: [
-            { 
-                question: "What is the function of the coating (flux) on an arc welding electrode?", 
-                answer: "The flux coating melts during welding to generate a protective shielding gas envelope around the arc and forms a slag layer over the hot weld bead. This protects the molten metal from oxygen and nitrogen contamination, stabilises the arc, adds alloying elements, and controls weld bead cooling." 
-            },
-            { 
-                question: "What is duty cycle and why is it important?", 
-                answer: "Duty cycle is the percentage of a 10-minute period that a welding machine can safely operate at a specific current without overheating. For example, a 60% duty cycle at 300A means the machine can weld continuously for 6 minutes but must rest for 4 minutes with the fan running." 
-            },
-            { 
-                question: "What is the difference between AC and DC arc welding?", 
-                answer: "AC (Alternating Current) welding changes direction 50/60 times a second and is ideal for preventing arc blow in magnetic metals. DC (Direct Current) welding flows in one direction, providing a smoother arc, easier starting, less spatter, and better control. DC straight polarity (DCEN) offers faster deposition, while DC reverse polarity (DCEP) provides deeper penetration." 
-            }
-        ],
-        ctaText: "Robust Arc Welding Machine for stick welding of mild steel, stainless steel, and cast iron. Explore key features, technical specifications, and FAQs for industrial welding applications.",
-        image: "/images/machines/Arc Welding Machine.png",
-        altText: "Arc Welding Machine – industrial SMAW stick arc welding machine for heavy steel fabrication and structural welding",
-        metaTitle: "Arc Welding Machine | Industrial SMAW Stick Welder for Heavy Fabrication",
-        metaDescription: "Robust Arc Welding Machine for stick welding of mild steel, stainless steel, and cast iron. Explore key features, technical specifications, and FAQs for industrial welding applications."
-    },
-    {
-        name: "MIG Welding Machine",
-        category: "Welding Machines",
-        categoryDescription: weldingDesc,
-        subTitle: "High-Speed GMAW Wire Welder for Production Fabrication",
-        shortDescription: "The MIG Welding Machine is a semi-automatic gas metal arc welding process that offers high deposition rates and exceptional speed.",
-        description: "The MIG Welding Machine (Gas Metal Arc Welding – GMAW or Flux-Cored Arc Welding – FCAW) is a semi-automatic welding process widely preferred for its exceptional speed, high deposition rates, and ease of operation in production environments. It utilizes a continuous solid wire electrode fed automatically through a welding gun, combined with an external shielding gas (such as Carbon Dioxide, Argon, or gas mixes) to protect the weld pool from atmospheric gases. MIG machines can also use flux-cored wire (FCAW) for gasless outdoor operations. They are the go-to solution for high-volume fabrication of structural steel, automotive assemblies, sheet metal products, and heavy machinery parts.",
-        specifications: {
-            "Welding Current Range": "30 A to 400 A / 600 A (model-dependent)",
-            "Rated Duty Cycle": "60% to 100% at maximum current",
-            "Wire Feed Speed Range": "1.5 to 20 meters per minute",
-            "Compatible Wire Diameters": "0.8 mm, 1.0 mm, 1.2 mm, 1.6 mm",
-            "Wire Spool Capacity": "5 kg / 15 kg standard spools",
-            "Input Power / Voltage": "3-Phase 415V ±15%, 50/60 Hz",
-            "Wire Feeder Type": "Integrated or Remote 4-Roll Drive Feeder",
-            "Shielding Gas Compatibility": "CO2, Argon, Argon-CO2 Mix, Helium",
-            "Insulation / Protection Class": "Class H / IP23S",
-            "Machine Weight": "25 kg (compact inverter) to 95 kg (remote feeder type)"
-        },
-        features: [
-            "Advanced synergic control system that automatically matches wire feed speed to welding voltage",
-            "Heavy-duty 4-roll geared wire drive system for smooth, slip-free wire feeding over long torches",
-            "Dual process capability: supports both solid wire (GMAW) and flux-cored wire (FCAW)",
-            "Adjustable electronic inductance to control arc crispness, penetration profile, and spatter levels",
-            "Burnback control to prevent the wire from freezing in the weld pool or melting back into the contact tip",
-            "2T / 4T trigger latching options for comfortable long-distance production welding",
-            "Gas pre-flow and post-flow timing adjustments to ensure full weld start and stop shielding",
-            "Spool gun compatibility for trouble-free feeding of soft aluminium wires",
-            "Digital meters display voltage and current settings for weld procedure verification"
-        ],
-        applications: [
-            "High-volume manufacturing and assembly lines",
-            "Automotive manufacturing and chassis fabrication",
-            "Sheet metal processing and enclosure fabrication",
-            "Structural steel frames and metal furniture creation",
-            "Heavy earthmoving equipment manufacturing"
-        ],
-        faqs: [
-            { 
-                question: "What shielding gas should be used for MIG welding?", 
-                answer: "100% CO2 is the most economical choice for mild steel, giving deep penetration but more spatter. An Argon-CO2 mix (typically 80/20 or 75/25) is preferred for mild steel to achieve a smoother, low-spatter spray arc. Pure Argon is mandatory for welding aluminium, and an Argon-Helium-CO2 tri-mix is used for stainless steel." 
-            },
-            { 
-                question: "What is the difference between solid wire and flux-cored wire?", 
-                answer: "Solid MIG wire requires an external shielding gas cylinder and works best indoors on clean metal. Flux-cored wire (FCAW) contains flux inside the core that creates its own shielding when melted. It does not require an external gas tank, handles rusty or dirty metals better, and can be used outdoors in windy conditions." 
-            },
-            { 
-                question: "What causes wire birds-nesting and how can it be avoided?", 
-                answer: "Birds-nesting occurs when the welding wire tangles up at the drive rolls. It is caused by improper drive roll tension, using the wrong drive roll groove (V-groove for steel vs. U-groove for aluminium), a clogged torch liner, or a worn-out contact tip. Regular maintenance and setting correct tension prevent this." 
-            }
-        ],
-        ctaText: "High-productivity MIG welding solutions for production shops. Contact us for technical details and quotes.",
-        image: "/images/machines/MIG Welding Machine.png",
-        altText: "MIG Welding Machine – semi-automatic gas metal arc welding machine with external wire feeder",
-        metaTitle: "MIG Welding Machine | High-Speed GMAW Wire Welder for Production",
-        metaDescription: "High-productivity MIG Welding Machine for gas metal arc welding (GMAW). Features automatic wire feeding, high deposition rates, and synergic controls."
-    },
-    {
-        name: "TIG Welding Machine",
-        category: "Welding Machines",
-        categoryDescription: weldingDesc,
-        subTitle: "Precision GTAW Welder for High-Quality Stainless & Aluminium Fabrication",
-        shortDescription: "The TIG Welding Machine delivers unparalleled precision, control, and cleanliness for high-specification metal joints.",
-        description: "The TIG Welding Machine (Tungsten Inert Gas or GTAW – Gas Tungsten Arc Welding machine) is premium welding equipment designed to deliver unparalleled precision, control, and cleanliness for high-specification metal joints. It uses a non-consumable tungsten electrode to produce the welding arc, while a separate filler rod is manually added to the weld pool if necessary, shielded by pure Argon gas. Available in DC models for steel and stainless steel, or AC/DC models for aluminium, TIG welding produces no slag, zero spatter, and extremely neat, visually appealing weld beads. It is essential for industries where weld integrity, aesthetic finish, and thin-gauge capabilities are paramount, such as aerospace, food and dairy processing, petrochemical piping, and custom fabrication.",
-        specifications: {
-            "Welding Current Range": "5 A to 315 A / 400 A (precise low-current control)",
-            "Arc Ignition Mode": "HF (High Frequency) / Lift TIG",
-            "Current Output Capability": "DC only or AC/DC selectable models",
-            "Pulse Frequency Range": "0.5 Hz to 200 Hz / 500 Hz (adjustable pulse parameters)",
-            "AC Balance / Frequency": "15% to 85% / 20 Hz to 250 Hz (for aluminium models)",
-            "Rated Duty Cycle": "60% to 100% at rated output",
-            "Gas Pre/Post Flow Time": "Pre-flow: 0-5s, Post-flow: 1-20s",
-            "Upslope / Downslope Time": "0 to 10 seconds (crater fill control)",
-            "Input Power Specification": "220V Single-Phase / 415V Three-Phase, 50/60 Hz",
-            "Machine Cooling System": "Air Cooled or Integrated Water Cooling Unit"
-        },
-        features: [
-            "High-Frequency (HF) contactless arc starting to eliminate tungsten contamination in the weld",
-            "Full TIG pulse parameter tuning (peak current, base current, pulse width, and frequency) for heat-input control on thin metals",
-            "Adjustable AC frequency and AC balance controls on AC/DC models to modify oxide cleaning action and penetration width on aluminium",
-            "Precision digital micro-processor control panel with pre-set program storage capabilities",
-            "Foot control pedal compatibility for real-time amperage adjustment during intricate welding tasks",
-            "Comprehensive 2T / 4T trigger options with spot welding timer configurations",
-            "Adjustable upslope, downslope, and post-flow gas timings to prevent pinholes and crater cracking at weld terminations",
-            "Multi-process flexibility: functions as a high-performance stick welder (MMA) with adjustable hot start"
-        ],
-        applications: [
-            "Aerospace, aircraft piping, and component fabrication",
-            "Food processing equipment, dairy tanks, and pharma vessels",
-            "Chemical plant pipelines and high-pressure heat exchangers",
-            "Custom automotive exhausts, manifolds, and intercooler piping",
-            "Precision sheet metal shops and specialized alloy fabrication"
-        ],
-        faqs: [
-            { 
-                question: "Why is an AC/DC TIG welder required for welding aluminium?", 
-                answer: "Aluminium is covered by a tough, high-melting-point oxide layer. The AC (Alternating Current) cycle alternates between electrode positive (which breaks up and cleans the aluminium oxide layer) and electrode negative (which provides deep base metal penetration). DC TIG cannot provide this cleaning action and will fail to weld aluminium." 
-            },
-            { 
-                question: "What is pulse TIG welding and when is it used?", 
-                answer: "Pulse TIG welding alternates between a high peak current (for penetration) and a low base current (for cooling) at an adjustable frequency. This reduces total heat input and warping, making it perfect for welding thin sheet metals, heat-sensitive alloys, and out-of-position pipe joints." 
-            },
-            { 
-                question: "What tungsten electrode types are used in TIG welding?", 
-                answer: "Pure tungsten (green) is used for AC aluminium welding. Thoriated tungsten (red) offers excellent stability for DC welding of steel and stainless steel. Ceriated (grey) and lanthanated (gold) are popular thorium-free alternatives suitable for both AC and DC processes." 
-            }
-        ],
-        ctaText: "Precision TIG welding equipment for high-specification metal joints. Inquire today for details.",
-        image: "/images/machines/TIG Welding Machine.png",
-        altText: "TIG Welding Machine – precision gas tungsten arc welding machine with HF torch and foot control option",
-        metaTitle: "TIG Welding Machine | Precision GTAW Welder for Stainless & Aluminium",
-        metaDescription: "High-precision AC/DC TIG Welding Machine for immaculate welding of stainless steel, aluminium, and exotic alloys. Zero spatter, complete pulse controls."
-    }
-];
 
 // --- WORKHOLDING TOOLS DATA ---
 const workholdingTools = [
@@ -1528,137 +1127,199 @@ const finishingCoatingMachines = [
     }
 ];
 
-// --- HEAVY MACHINES DATA ---
-const heavyMachines = [
+
+
+// --- BANDSAW MACHINES DATA ---
+const bandsawMachines = [
     {
-        name: "Vertical Boring Machine",
-        category: "Heavy Machines",
-        categoryDescription: heavyDesc,
-        subTitle: "Heavy-Duty Vertical Turning and Boring for Large Diameter Workpieces",
-        shortDescription: "The Vertical Boring Machine — also known as a Vertical Turret Lathe (VTL) — is an indispensable machine for industries processing large, heavy, and short components.",
-        description: "The Vertical Boring Machine — also known as a Vertical Turret Lathe (VTL) — is an indispensable machine for industries processing large, heavy, and short components such as flanges, rings, gearboxes, pump casings, turbine housings, and railway wheels. In this machine, the workpiece is mounted horizontally on a large rotating worktable (faceplate), and the cutting tools are presented from above via ram and turret heads. This vertical orientation makes it far easier to load, clamp, and balance heavy workpieces compared to a horizontal lathe. VTLs are available in single-column (for smaller diameters) and double-column (for diameters exceeding 1,600 mm) configurations, with CNC control systems enabling fully automated machining cycles.",
+        name: "Double Column Automatic Bandsaw Machine",
+        category: "Bandsaw Machines",
+        categoryDescription: bandsawDesc,
+        subTitle: "Heavy Duty Metal Cutting Bandsaw",
+        shortDescription: "The Double Column Automatic Bandsaw Machine is designed for high-precision and heavy-duty metal cutting applications.",
+        description: "The Double Column Automatic Bandsaw Machine is designed for high-precision and heavy-duty metal cutting applications. Built with a rigid double-column structure, this machine ensures vibration-free operation, smooth blade movement, and superior cutting accuracy for industrial production environments. Suitable for cutting solid bars, pipes, square sections, and structural materials, the machine offers automatic hydraulic operation, multiple indexing stock feeding, and efficient coolant circulation for continuous production. It is widely used in fabrication industries, steel plants, engineering workshops, automobile industries, and manufacturing units. Our automatic bandsaw machines are engineered for durability, productivity, and low maintenance, making them ideal for industrial metal cutting requirements.",
         specifications: {
-            "Table Diameter Range": "800 mm to 5000 mm",
-            "Max Turning Diameter": "1000 mm to 5500 mm",
-            "Max Workpiece Height": "800 mm to 3000 mm",
-            "Max Workpiece Weight": "2,000 kg to 80,000 kg",
-            "Table Speed Range": "1 to 400 RPM (infinitely variable)",
-            "Main Motor Power": "22 kW to 100 kW",
-            "Number of Tool Heads": "1 Vertical Ram Head + 1 Side Head (optional)",
-            "Turret Positions": "4-station / 5-station manual or automatic changer",
-            "Rapid Traverse Speed": "4,000 to 12,000 mm/min",
-            "CNC Controller Options": "Fanuc / Siemens / Mitsubishi / Fagor"
+            "Models Available": "200 DCA / 330 DCA / 425 DCA",
+            "Cutting Capacity Round Dia.": "200 mm / 330 mm / 425 mm",
+            "Cutting Capacity Rectangle": "200 × 200 mm / 330 × 330 mm / 425 mm",
+            "Main Motor": "3 HP / 3 HP / 5 HP",
+            "Hydraulic Motor": "1 HP / 1 HP / 1 HP",
+            "Coolant Motor": "0.15 HP / 0.15 HP / 0.15 HP",
+            "Cutting Speed": "20–70 m/min / 20–70 m/min / AC Drive",
+            "Blade Size": "3760 × 0.9 × 1.1 mm / 4100 × 34 × 1.1 mm / 5450 × 41 × 1.1 mm",
+            "Floor Space Size": "2.25 × 2.35 × 1.5 m / 2.5 × 2.5 × 1.5 m / 2.5 × 2.5 × 1.5 m",
+            "Single Indexing Stock": "200 mm / 0–330 mm / 0–425 mm",
+            "Multiple Indexing Stock": "9 Times / 9 Times / 9 Times",
+            "Band Tension": "Hydraulic / Hydraulic / Hydraulic",
+            "Saw Feed Control": "Hydraulic / Hydraulic / Hydraulic",
+            "Hydraulic Tank Capacity": "40 Ltr / 50 Ltr / 75 Ltr",
+            "Coolant Tank Capacity": "80 Ltr / 80 Ltr / 90 Ltr",
+            "Total Power": "4.75 HP / 4.75 HP / 6.4 HP",
+            "Cutting Accuracy": "±0.2 / ±0.2 / ±0.4",
+            "Wire Brush Motor": "0.25 HP / 1.25 HP / 1.25 HP"
         },
         features: [
-            "Large horizontal worktable (faceplate) for heavy workpiece mounting",
-            "Single-column and double-column configurations",
-            "CNC and manual control options",
-            "High-rigidity cast iron structure (Meehanite cast iron)",
-            "Hydrostatic table bearing system for minimal friction and maximum load capacity",
-            "Hardened and precision-ground box guideways with Turcite-B lining",
-            "Dual-range or multi-range heavy gearbox for high torque at low RPM",
-            "Automatic lubrication system with pressure monitoring",
-            "Fully enclosed splash guard for CNC models",
-            "ChIP conveyor and coolant system with high-pressure delivery"
+            "Heavy-duty double column structure for stable cutting",
+            "Fully automatic hydraulic operation",
+            "High cutting accuracy and smooth finish",
+            "Suitable for round, square, and rectangular material cutting",
+            "Hydraulic blade tension system",
+            "Multiple indexing stock feeding system",
+            "Efficient coolant circulation for longer blade life",
+            "Hydraulic saw feed control for precise operation",
+            "Heavy-duty conveyor and vice system",
+            "Low vibration and low noise operation",
+            "Designed for continuous industrial production",
+            "User-friendly control panel",
+            "Durable and maintenance-friendly design"
         ],
         applications: [
-            "Flanges, rings, and gearboxes manufacturing",
-            "Pump casings and turbine housings processing",
-            "Railway wheels turning and boring",
-            "Large castings and heavy components machining"
+            "Steel industries",
+            "Heavy engineering industries",
+            "Fabrication workshops",
+            "Automobile industries",
+            "Forging units",
+            "Pipe and tube industries",
+            "Tool rooms",
+            "Metal processing industries",
+            "Industrial manufacturing plants",
+            "Structural steel cutting applications"
+        ],
+        serviceSupport: [
+            "Machine installation support",
+            "Operator training assistance",
+            "Spare parts availability",
+            "Technical troubleshooting",
+            "Preventive maintenance guidance",
+            "On-call service support",
+            "Machine operation consultation"
         ],
         faqs: [
             { 
-                question: "What is the main advantage of a Vertical Boring Machine over a standard Horizontal Lathe?", 
-                answer: "The primary advantage is the horizontal orientation of the worktable. On a VTL, a heavy workpiece rests flat on the table, making alignment, clamping, and balancing much simpler and safer. In a horizontal lathe, heavy parts hang off the spindle, creating immense bending stress and risk of distortion or imbalance." 
+                question: "What materials can this bandsaw machine cut?", 
+                answer: "The machine can cut mild steel, stainless steel, alloy steel, solid bars, pipes, square sections, and structural materials." 
             },
             { 
-                question: "What is the difference between single-column and double-column vertical boring machines?", 
-                answer: "Single-column VTLs have one main column supporting the tool head cross-rail, typically used for worktable diameters up to 1,600 mm. Double-column machines have two massive vertical columns linked by a top bridge, providing ultimate rigidity for large-diameter tables (2,000 mm to 5,000 mm or more) and allowing the machining of massive, multi-tonne castings." 
+                question: "Is this machine fully automatic?", 
+                answer: "Yes, this is a fully automatic hydraulic bandsaw machine designed for continuous industrial production." 
             },
             { 
-                question: "What is a hydrostatic table bearing system?", 
-                answer: "It is a system where the rotating worktable floats on a high-pressure film of oil, preventing metal-to-metal contact. This eliminates wear, provides extremely low friction, dampens vibrations, and allows the machine to carry heavy parts up to 50–80 tonnes with sub-micron rotation accuracy." 
+                question: "What cutting sizes are available?", 
+                answer: "The machine is available in 200 DCA, 330 DCA, and 425 DCA models with different cutting capacities." 
             },
             { 
-                question: "Can thread cutting and taper turning be done on a CNC VTL?", 
-                answer: "Yes, CNC systems allow precise coordination between the table rotation and the vertical/horizontal movement of the tool ram. This enables full interpolation for cutting internal and external tapers, profiles, arcs, and single or multi-start threads." 
+                question: "Does the machine include coolant and hydraulic systems?", 
+                answer: "Yes, the machine comes with built-in hydraulic and coolant systems for efficient operation and longer blade life." 
             },
             { 
-                question: "What maintenance does a Vertical Boring Machine require?", 
-                answer: "Key maintenance tasks include checking hydrostatic oil pressure and temperature daily, cleaning and lubricating guideways, verifying the automatic lube system oil level, clearing chips from the telescoPIC covers, checking gearbox oil levels, and performing annual laser calibration to maintain geometric accuracy." 
+                question: "Where is this machine commonly used?", 
+                answer: "It is commonly used in fabrication industries, engineering workshops, steel plants, and manufacturing industries." 
+            },
+            { 
+                question: "Do you provide installation and service support?", 
+                answer: "Yes, we provide installation guidance, technical support, spare parts support, and maintenance assistance." 
             }
         ],
-        ctaText: "Source high-performance Vertical Boring Machines (VTL) for your workshop. Single & double column CNC solutions available.",
-        image: "/images/machines/Vertical Boring Machine.png",
-        altText: "Vertical Boring Machine VTL for Large Diameter Turning and Boring of Heavy Workpieces",
-        metaTitle: "Vertical Boring Machine | VTL Vertical Turret Lathe Manufacturer & Supplier",
-        metaDescription: "Heavy-duty Vertical Boring Machines (VTL) for large diameter turning and boring. Single and double column configurations. Ideal for flanges, rings, housings, and large castings. CNC and manual versions available."
+        ctaText: "High-performance Double Column Automatic Bandsaw Machine for accurate and heavy-duty metal cutting. Ideal for industrial cutting applications with hydraulic control, automatic indexing, and precision cutting.",
+        image: "/images/machines/Double Column Automatic Bandsaw Machine.png",
+        altText: "Double Column Automatic Bandsaw Machine for Industrial Heavy Duty Metal Cutting",
+        metaTitle: "Double Column Automatic Bandsaw Machine Supplier in Nagpur | Heavy Duty Metal Cutting Bandsaw",
+        metaDescription: "High-performance Double Column Automatic Bandsaw Machine for accurate and heavy-duty metal cutting. Ideal for industrial cutting applications with hydraulic control, automatic indexing, and precision cutting. Available in 200 DCA, 330 DCA & 425 DCA models."
     },
     {
-        name: "Horizontal Boring Machine",
-        category: "Heavy Machines",
-        categoryDescription: heavyDesc,
-        subTitle: "Precision Multi-Axis Boring and Milling for Oversized Components",
-        shortDescription: "The Horizontal Boring Machine (HBM) is a highly versatile, heavy-duty machine tool designed to machine large, long, and bulky components.",
-        description: "The Horizontal Boring Machine (HBM) is a highly versatile, heavy-duty machine tool designed to machine large, long, and bulky components that cannot be easily rotated. Unlike a lathe or a VTL, the workpiece remains stationary on a multi-axis worktable or floor plate, while the cutting tool rotates on a horizontal spindle. HBMs excel at performing multiple operations — including deep hole boring, drilling, face milling, pocketing, tapping, and reaming — in a single setup. This dramatically increases efficiency and accuracy by eliminating stack-up errors from moving heavy components between multiple machines. They are available in table-type, planer-type, and floor-type configurations.",
+        name: "Double Column Semi Automatic Bandsaw Machine",
+        category: "Bandsaw Machines",
+        categoryDescription: bandsawDesc,
+        subTitle: "Heavy Duty Metal Cutting Bandsaw",
+        shortDescription: "The Double Column Semi Automatic Bandsaw Machine is designed for precise and efficient metal cutting operations in industrial environments.",
+        description: "The Double Column Semi Automatic Bandsaw Machine is designed for precise and efficient metal cutting operations in industrial environments. Built with a strong double-column structure, the machine ensures excellent cutting stability, smooth blade movement, and high operational reliability. This semi automatic bandsaw machine is suitable for cutting solid bars, pipes, square sections, and structural steel materials with high cutting accuracy. Equipped with hydraulic control systems and heavy-duty components, it delivers consistent performance for continuous industrial applications. We supply high-quality Double Column Semi Automatic Bandsaw Machines in Nagpur, Maharashtra, catering to fabrication industries, engineering workshops, steel industries, and manufacturing plants across India.",
         specifications: {
-            "Spindle Diameter Range": "80 mm to 260 mm",
-            "Spindle Taper": "ISO 50 / BT 50 / HSK-A100",
-            "X-Axis Travel (Table/Column)": "1,500 mm to 10,000 mm+",
-            "Y-Axis Travel (Vertical Headstock)": "1,000 mm to 4,000 mm",
-            "Z-Axis Travel (Column/Spindle)": "1,000 mm to 3,000 mm",
-            "W-Axis Travel (Spindle Extension)": "500 mm to 1,200 mm",
-            "Table Size / Loading Capacity": "1000×1000 mm to 3000×3000 mm / 5 to 30 tonnes",
-            "Spindle Speed Range": "10 to 3,500 RPM (gear-driven high torque)",
-            "Main Spindle Motor Power": "15 kW to 60 kW",
-            "CNC Axes Control": "3-axis to 5-axis full simultaneous control"
+            "Models Available": "200 DCSA / 330 DCSA / 425 DCSA / 500 DCSA / 600 DCSA",
+            "Cutting Capacity Round Dia.": "200 mm / 330 mm / 425 mm / 500 mm / 600 mm",
+            "Cutting Capacity Rectangle": "200 × 200 mm / 330 × 330 mm / 425 × 425 mm / 500 × 500 mm / 600 × 600 mm",
+            "Main Motor": "3 HP / 3 HP / 5 HP / 7.5 HP / 10 HP",
+            "Hydraulic Motor": "1 HP / 1 HP / 1.5 HP / 1.5 HP / 1.5 HP",
+            "Coolant Motor": "0.15 HP / 0.15 HP / 0.15 HP / 0.15 HP / 0.15 HP",
+            "Cutting Speed": "20–70 m/min / 20–70 m/min / AC Drive Counter / AC Drive Counter / AC Drive Counter",
+            "Blade Size": "3760 × 0.9 × 1.1 mm / 4100 × 34 × 1.1 mm / 5450 × 41 × 1.1 mm / 6900 × 54 × 1.3 mm / 8000 × 68 × 1.6 mm",
+            "Floor Space Size": "1.25 × 2.35 × 1.5 m / 2.5 × 2.5 × 1.5 m / 2.7 × 3.7 × 1.7 m / 3 × 3 × 1.7 m / 3 × 4 × 2.5 m",
+            "Single Indexing Stock": "– / – / – / – / –",
+            "Band Tension": "Hydraulic / Hydraulic / Hydraulic / Hydraulic / Hydraulic",
+            "Saw Feed Control": "Hydraulic / Hydraulic / Hydraulic / Hydraulic / Hydraulic",
+            "Hydraulic Tank Capacity": "40 Ltr / 45 Ltr / 75 Ltr / 55–60 Ltr / 80 Ltr",
+            "Coolant Tank Capacity": "80 Ltr / 80 Ltr / 90 Ltr / 80 Ltr / 120 Ltr",
+            "Net Weight": "1500 Kg / 1600 Kg / 1900 Kg / 2200 Kg / 4000 Kg",
+            "Total Power": "4.75 HP / 4.75 HP / 6.4 HP / 9.75 HP / 12 HP",
+            "Cutting Accuracy": "±0.2 / ±0.3 / ±0.4 / ±0.5 / ±0.6",
+            "Wire Brush Motor": "0.25 HP / 0.25 HP / 0.25 HP / 0.25 HP / 0.25 HP"
         },
         features: [
-            "Rotating horizontal spindle with independent axial extension (W-axis)",
-            "Built-in rotary table (B-axis) with 0.001-degree indexing resolution",
-            "Heavy box-column structure with dual counter-balanced headstock",
-            "Hardened steel linear guideways or heavy box guideways with hydrostatic dampening",
-            "High-torque gear-driven spindle system with automated high/low gear switching",
-            "Thermal compensation system for the spindle and headstock structure",
-            "Automated Tool Changer (ATC) with up to 40–120 tool capacity",
-            "High-pressure through-spindle coolant (CTS) system (up to 70 bar)",
-            "Heidenhain linear scales for closed-loop high precision feedback",
-            "Optional right-angle and universal milling heads for 5-sided machining"
+            "Heavy-duty double column design for stable operation",
+            "Semi automatic hydraulic control system",
+            "Smooth and accurate metal cutting performance",
+            "Suitable for round, square, and rectangular material cutting",
+            "Hydraulic band tension system",
+            "Hydraulic saw feed control",
+            "AC drive cutting speed control in higher models",
+            "Durable machine body for long working life",
+            "Efficient coolant circulation system",
+            "Low vibration and low maintenance operation",
+            "User-friendly control panel",
+            "High cutting efficiency for industrial production",
+            "Precision cutting with reliable accuracy"
         ],
         applications: [
-            "Power generation components machining",
-            "Heavy engineering, oil & gas equipment fabrication",
-            "Defense and shipbuilding structural components",
-            "Large gearbox production and press die manufacturing"
+            "Steel fabrication industries",
+            "Heavy engineering workshops",
+            "Automobile industries",
+            "Metal cutting industries",
+            "Pipe and tube cutting applications",
+            "Structural steel cutting",
+            "Manufacturing industries",
+            "Forging industries",
+            "Industrial production plants",
+            "Tool rooms and fabrication units"
+        ],
+        serviceSupport: [
+            "Installation guidance",
+            "Technical support assistance",
+            "Spare parts support",
+            "Machine operation guidance",
+            "Preventive maintenance support",
+            "Troubleshooting assistance",
+            "After-sales service support"
         ],
         faqs: [
             { 
-                question: "What operations can be performed on a Horizontal Boring Machine?", 
-                answer: "Boring, drilling, reaming, tapping, face milling, end milling, contouring, pocket milling, and angular operations (with right-angle head). It is a multi-process machine capable of replacing multiple machine setups." 
+                question: "What materials can this machine cut?", 
+                answer: "The machine can cut mild steel, stainless steel, alloy steel, pipes, bars, square sections, and structural materials." 
             },
             { 
-                question: "What is the difference between a table-type and a floor-type boring machine?", 
-                answer: "A table-type HBM has a worktable that moves in X and Y axes, suitable for components weighing up to approximately 30 tonnes. A floor-type HBM has no table — the workpiece is bolted to the shop floor, and the column travels on floor rails, allowing machining of extremely large workpieces (>100 tonnes)." 
+                question: "Is this machine suitable for industrial production?", 
+                answer: "Yes, the machine is designed for heavy-duty industrial metal cutting applications." 
             },
             { 
-                question: "How is accuracy maintained in a Horizontal Boring Machine?", 
-                answer: "Through precision ground and scraped guideways, linear encoder feedback systems, spindle air bearings or roller bearings with pre-loading, thermal compensation algorithms, and in-process probing." 
+                question: "What is the difference between automatic and semi automatic bandsaw machines?", 
+                answer: "Semi automatic bandsaw machines require partial operator control, while automatic models perform cutting cycles automatically." 
             },
             { 
-                question: "What is the typical spindle diameter range for Horizontal Boring Machines?", 
-                answer: "Spindle diameters range from 80 mm for lighter machines to 260 mm for heavy-duty floor-type machines. Larger spindle diameters provide greater rigidity and power transmission for heavy milling cuts." 
+                question: "Does the machine include hydraulic operation?", 
+                answer: "Yes, the machine comes with hydraulic feed control and hydraulic band tension systems." 
             },
             { 
-                question: "Which industries use Horizontal Boring Machines?", 
-                answer: "Power generation, heavy engineering, oil & gas, defense, shipbuilding, railway, steel plants, press and die manufacturing, large gearbox production, and aerospace structural component machining." 
+                question: "Which models are available?", 
+                answer: "Available models include 200 DCSA, 330 DCSA, 425 DCSA, 500 DCSA, and 600 DCSA." 
+            },
+            { 
+                question: "Do you provide service and spare parts support?", 
+                answer: "Yes, we provide technical support, spare parts, and after-sales service assistance." 
             }
         ],
-        ctaText: "Optimize oversized part manufacturing. Contact us for table and floor type Horizontal Boring Machine quotes.",
-        image: "/images/machines/Horizontal Boring Machine.png",
-        altText: "CNC Horizontal Boring Machine HBM for Heavy-Duty Milling and Deep Hole Boring",
-        metaTitle: "Horizontal Boring Machine | CNC HBM Milling & Boring Equipment Supplier",
-        metaDescription: "Precision Horizontal Boring Machines (HBM) for heavy-duty, multi-axis machining of large components. Explore table-type and floor-type HBM solutions with advanced CNC controls."
+        ctaText: "High-performance Double Column Semi Automatic Bandsaw Machine for accurate metal cutting applications. Hydraulic operation, rigid structure, and heavy-duty cutting performance ideal for industrial use.",
+        image: "/images/machines/Double Column Semi-Automatic Bandsaw Machine.png",
+        altText: "Double Column Semi Automatic Bandsaw Machine for Metal Cutting",
+        metaTitle: "Double Column Semi Automatic Bandsaw Machine Supplier in Nagpur | Heavy Duty Metal Cutting Bandsaw",
+        metaDescription: "High-performance Double Column Semi Automatic Bandsaw Machine for accurate metal cutting applications. Hydraulic operation, rigid structure, and heavy-duty cutting performance ideal for industrial use. Available in 200 DCSA, 330 DCSA, 425 DCSA, 500 DCSA & 600 DCSA models."
     }
 ];
 
@@ -1666,16 +1327,72 @@ const heavyMachines = [
 
 
 
+
 // --- 1. INDUSTRIAL MACHINES (Total 8 as per screenshot) ---
 const industrialMachines = [
-    { name: "Lathe Machine", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Lathe Machine.png", shortDescription: "Precision lathe machines for industrial fabrication." },
-    { name: "Milling Machine", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Milling Machine Supplier in Nagpur.png", shortDescription: "Versatile milling solutions for workshops." },
-    { name: "Drilling Machine", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Drilling Machine Supplier In Nagpur.png", shortDescription: "High-performance industrial drilling machines." },
-    { name: "Power Press Machine", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Power Press Machine.png", shortDescription: "Robust power press for metal forming." },
-    { name: "Hacksaw Machine", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Hacksaw Machine.png", shortDescription: "Heavy-duty hacksaw for metal cutting." },
-    { name: "Surface Grinder", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Surface Grinder Machine.png", shortDescription: "Precision surface grinding machines." },
-    { name: "Radial Drilling Machine", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Radial Drilling Machine Supplier in Nagpur.png", shortDescription: "Efficient radial drilling for large workpieces." },
-    { name: "Slotting Machine", dataType: "product", category: "Industrial Machines", image: "/home/mechindustrialmachine/Slotting Machine Supplier in Nagpur.png", shortDescription: "Industrial slotting machines for accuracy." }
+  {
+    name: "Lathe Machines",
+    dataType: "product",
+    category: "Industrial Machines",
+    image: "/home/mechindustrialmachine/Lathe Machine.png",
+    shortDescription: "High precision lathe machines for metal machining."
+  },
+
+  {
+    name: "Milling Machines",
+    dataType: "product",
+    category: "Industrial Machines",
+    image: "/home/mechindustrialmachine/Milling Machine Supplier in Nagpur.png",
+    shortDescription: "Advanced milling machines for workshop operations."
+  },
+
+  {
+    name: "Drilling Machines",
+    dataType: "product",
+    category: "Industrial Machines",
+    image: "/home/mechindustrialmachine/Drilling Machine Supplier In Nagpur.png",
+    shortDescription: "Heavy duty drilling machines for industrial applications."
+  },
+
+  {
+    name: "Grinding Machines",
+    dataType: "product",
+    category: "Industrial Machines",
+    image: "/home/mechindustrialmachine/Power Press Machine.png",
+    shortDescription: "Precision grinding machines for smooth surface finishing."
+  },
+
+  {
+    name: "Bandsaw Machines",
+    dataType: "product",
+    category: "Industrial Machines",
+    image: "/home/mechindustrialmachine/Hacksaw Machine.png",
+    shortDescription: "Industrial cutting machines for accurate metal cutting."
+  },
+
+  {
+    name: "Workholding Tools",
+    dataType: "product",
+    category: "Industrial Machines",
+    image: "/home/mechindustrialmachine/Surface Grinder Machine.png",
+    shortDescription: "Reliable welding machines for fabrication and repair."
+  },
+
+  {
+    name: "Finishing & Coating Machines",
+    dataType: "product",
+    category: "Industrial Machines",
+    image: "/home/mechindustrialmachine/Radial Drilling Machine Supplier in Nagpur.png",
+    shortDescription: "Powerful heavy machines for industrial manufacturing work."
+  },
+
+//   {
+//     name: "Bandsaw Machines",
+//     dataType: "product",
+//     category: "Industrial Machines",
+//     image: "/home/mechindustrialmachine/Slotting Machine Supplier in Nagpur.png",
+//     shortDescription: "High accuracy threading machines for industrial production."
+//   }
 ];
 
 // --- 2. i-NAX MACHINES (Total 4 - Placeholder path dila aahe) ---
@@ -1703,7 +1420,7 @@ const seedDB = async () => {
         console.log("🧹 Old records cleared from Database.");
 
         // 2. COMBINE ALL CATEGORIES
-        const allMachines = [...finishingCoatingMachines, ...workholdingTools, ...weldingMachines, ...threadingMachines, ...millingMachines, ...drillingMachines, ...industrialMachines, ...inaxSectionData, ...customerGallery, ...latheMachines, ...grindingMachines, ...cuttingMachines];
+        const allMachines = [...bandsawMachines, ...finishingCoatingMachines, ...workholdingTools, ...millingMachines, ...drillingMachines, ...industrialMachines, ...inaxSectionData, ...customerGallery, ...latheMachines, ...grindingMachines];
 
         // 3. INSERT NEW DATA
         await Machine.insertMany(allMachines);

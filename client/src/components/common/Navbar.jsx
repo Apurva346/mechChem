@@ -24,8 +24,6 @@ const Navbar = () => {
         'Medium & Heavy Duty Lathe Machine',
         'Extra Heavy Duty Lathe Machine',
         'Tool Room & Precision Lathe Machine',
-        'Roll Turning Lathe Machine',
-        'Facing & Gap Bed Lathe Machine',
         'Capstan Lathe Machine',
         'All Geared / Geared Head Lathe Machine',
         'Belt Driven Lathe Machine',
@@ -73,6 +71,13 @@ const Navbar = () => {
     //   ]
     // },
     {
+      category: 'Bandsaw Machines',
+      subItems: [
+        'Double Column Automatic Bandsaw Machine',
+        'Double Column Semi-Automatic Bandsaw Machine'
+      ]
+    },
+    {
       category: 'Workholding Tools',
       subItems: ['Self-Centering Lathe Chuck', 'Four Jaw Independent Chuck']
     },
@@ -82,37 +87,22 @@ const Navbar = () => {
         'Manual Surface Grinding Machine',
         'Hydraulic Surface Grinding Machine',
         'Cylindrical Grinding Machine',
-        'Tool & Cutter Grinding Machine',
-        'Pedestal Grinding Machine'
+        'Tool & Cutter Grinding Machine'
       ]
     },
     // {
     //   category: 'Shaping & Slotting Machines',
     //   subItems: ['Gear Shaping Machine', 'Partition Slotting Machine', 'Heavy Duty Slotting Machine', 'Light Duty Slotting Machine']
     // },
-    {
-      category: 'Cutting Machines',
-      subItems: ['Band Saw Machine', 'Power Hacksaw Machine']
-    },
-    {
-      category: 'Threading Machines',
-      subItems: ['Thread Rolling Machine', 'Bolt & Nut Thread Rolling Machine']
-    },
-    {
-      category: 'Welding Machines',
-      subItems: [
-        'Arc Welding Machine',
-        'MIG Welding Machine',
-        'TIG Welding Machine'
-      ]
-    },
+    // {
+    //   category: 'Cutting Machines',
+    //   subItems: ['Band Saw Machine', 'Power Hacksaw Machine']
+    // },
+    
+    
     {
       category: 'Finishing & Coating Machines',
-      subItems: ['Bench Polishing Machine', 'Powder Coating Machine']
-    },
-    {
-      category: 'Heavy Machines',
-      subItems: ['Vertical Boring Machine', 'Horizontal Boring Machine']
+      subItems: ['Powder Coating Machine']
     }
   ]
 

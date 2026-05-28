@@ -256,8 +256,8 @@ const Footer = () => {
 
   const ourMachines = [
     'Lathe Machine', 'Milling Machine', 'Drilling Machine',
-    'Radial Drilling Machine', 'Power Press Machine',
-    'Surface Grinder', 'Slotting Machine'
+    'Workholding Tools', 'Grinding Machines',
+    'Cutting Machines', 'Finishing & Coating Machines', 'Bandsaw Machines'
   ]
 
   return (
