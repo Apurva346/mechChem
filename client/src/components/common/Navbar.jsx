@@ -79,7 +79,7 @@ const Navbar = () => {
     },
     {
       category: 'Workholding Tools',
-      subItems: ['Self-Centering Lathe Chuck', 'Four Jaw Independent Chuck']
+      subItems: ['Self Centering Lathe Chuck', 'Four Jaw Independent Chuck']
     },
     {
       category: 'Grinding Machines',
@@ -101,7 +101,7 @@ const Navbar = () => {
     
     
     {
-      category: 'Finishing & Coating Machines',
+      category: 'Finishing and Coating Machines',
       subItems: ['Powder Coating Machine']
     }
   ]

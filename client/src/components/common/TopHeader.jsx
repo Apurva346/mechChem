@@ -20,10 +20,10 @@ const TopHeader = () => {
           
           <div className="flex items-center gap-3">
             {[
-              { Icon: Facebook, link: "https://facebook.com" },
-              { Icon: X, link: "https://x.com" },
-              { Icon: Youtube, link: "https://youtube.com" },
-              { Icon: Instagram, link: "https://instagram.com" }
+              { Icon: Facebook, link: "https://www.facebook.com/MechChemEngineeringServices" },
+              { Icon: X, link: "https://x.com/inaxlaser" },
+              { Icon: Youtube, link: "https://m.youtube.com/@inaxlaser" },
+              { Icon: Instagram, link: "https://www.instagram.com/inaxlaser" }
             ].map((social, index) => (
               <a 
                 key={index}

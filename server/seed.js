@@ -373,7 +373,7 @@ const latheMachines = [
             { question: "Can heavy duty lathe machines do threading operations?", answer: "Yes, they come with a threading gearbox that supports metric, inch, and module threads." }
         ],
         ctaText: "Call now for best price & quick delivery.",
-        image: "/images/machines/medium & heavy duty lathe machine.png",
+        image: "/images/machines/Heavy And Medium Duty Lathe Machine.png",
         altText: "heavy-duty-lathe-machine-nagpur",
         metaTitle: "Medium & Heavy Duty Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Supplier of Medium & Heavy Duty Lathe Machines in Nagpur. Suitable for fabrication, auto components & general engineering."
@@ -436,7 +436,7 @@ const latheMachines = [
             { question: "What is the spindle runout accuracy?", answer: "Precision lathe machines typically have spindle runout within 0.005mm." }
         ],
         ctaText: "Get free quote today for micron-level accuracy.",
-        image: "/images/machines/Tool Room & Precision Lathe Machine.jpeg",
+        image: "/images/machines/Heavy And Medium Duty Lathe Machine.png",
         altText: "high-accuracy-lathe-machine-tool-room",
         metaTitle: "Tool Room & Precision Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Tool Room & Precision Lathe Machines in Nagpur for die, mould & aerospace applications."
@@ -467,75 +467,13 @@ const latheMachines = [
             { question: "What is a high speed lathe machine used for?", answer: "Fast machining of non-ferrous materials like aluminium and brass requiring high spindle speeds." }
         ],
         ctaText: "Contact us for price & availability of High Speed Lathes.",
-        image: "/images/machines/High Speed Lathe Machine.png",
+        image: "/images/machines/Extra heavy duty lathe machine.png",
         altText: "high-rpm-lathe-machine-nagpur",
         metaTitle: "High Speed Lathe Machine Supplier in Nagpur | Mech Chem Engineering Services",
         metaDescription: "Buy High Speed Lathe Machines in Nagpur for aluminium, brass & non-ferrous machining."
     },
     {
-        name: "Roll Turning Lathe Machine",
-        category: "Lathe Machines",
-        categoryDescription: latheDesc,
-        subTitle: "Specially designed for heavy industrial rolls",
-        shortDescription: "Rigid structure and high torque drive for machining rolls in steel, paper, and textile industries.",
-        description: "Roll turning lathe machines are specially designed for machining heavy industrial rolls used in steel, paper, rubber, and textile industries. Built with an extremely rigid structure and high torque drive, these machines handle large diameter and long length rolls with precision.",
-        specifications: {
-            "Swing Over Bed": "800mm – 2500mm",
-            "Distance Between Centres": "3000mm – 12000mm",
-            "Spindle Speed": "5 – 200 RPM",
-            "Motor Power": "20 HP – 75 HP",
-            "Roll Diameter Capacity": "Up to 2000mm"
-        },
-        features: [
-            "Extra heavy duty cast iron construction",
-            "High torque drive system for roll turning",
-            "Large swing capacity for oversized rolls",
-            "Steady rest for long workpiece support",
-            "Custom bed lengths available on request"
-        ],
-        applications: ["Steel rolling mills", "Paper mills", "Rubber roller manufacturers", "Printing industries", "Textile machinery"],
-        faqs: [
-            { question: "What is a roll turning lathe machine?", answer: "A specially designed heavy duty lathe for machining large rolls used in steel and paper mills." }
-        ],
-        ctaText: "Get best price from Mech Chem Engineering Nagpur for Roll Turning Lathes.",
-        image: "/images/machines/Roll turning lathe machine.jpeg",
-        altText: "heavy-duty-roll-lathe-machine-nagpur",
-        metaTitle: "Roll Turning Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
-        metaDescription: "Heavy Duty Roll Turning Lathe Machines for steel, paper & rubber industries. Large swing capacity."
-    },
-    {
-        name: "Facing & Gap Bed Lathe Machine",
-        category: "Lathe Machines",
-        categoryDescription: latheDesc,
-        subTitle: "Removable gap section for large diameter workpieces",
-        shortDescription: "Allows machining of large diameter discs, flanges, and faceplates that won't fit on standard lathes.",
-        description: "Facing and gap bed lathe machines feature a removable gap section near the headstock, allowing machining of large diameter discs, flanges, and faceplates that would not fit on a standard lathe. Ideal for facing operations on large workpieces.",
-        specifications: {
-            "Swing Over Bed": "400mm – 1200mm",
-            "Swing In Gap": "Up to 1800mm",
-            "Distance Between Centres": "1000mm – 4000mm",
-            "Motor Power": "5 HP – 20 HP",
-            "Gap Width": "250mm – 500mm"
-        },
-        features: [
-            "Removable gap bed section for large diameter work",
-            "Suitable for disc, pulley, and flange machining",
-            "Heavy duty construction for stability",
-            "Wide range of speeds and feeds",
-            "Compatible with large faceplates and chucks"
-        ],
-        applications: ["Pump manufacturers", "Valve industry", "Flange and disc manufacturers", "Heavy engineering workshops"],
-        faqs: [
-            { question: "What is a gap bed lathe machine?", answer: "It has a removable section called the gap, allowing machining of large diameter workpieces like discs and flanges." }
-        ],
-        ctaText: "Get free quote for large diameter disc and flange machining.",
-        image: "/images/machines/Facing & Gap Bed Lathe Machine.jpeg",
-        altText: "gap-bed-lathe-machine-nagpur",
-        metaTitle: "Facing & Gap Bed Lathe Machine Supplier Nagpur | Mech Chem Engineering",
-        metaDescription: "Buy Facing & Gap Bed Lathe Machines in Nagpur for large diameter disc, flange & pulley machining."
-    },
-    {
-        name: "Capstan & Turret Lathe Machine",
+        name: "Capstan Lathe Machine",
         category: "Lathe Machines",
         categoryDescription: latheDesc,
         subTitle: "High-volume repetitive production of components",
@@ -560,7 +498,7 @@ const latheMachines = [
             { question: "What is the difference between a capstan and a turret lathe?", answer: "Capstan has a lighter turret on a slide; Turret lathe has a heavier saddle-mounted turret for larger components." }
         ],
         ctaText: "Best price for batch production lathes from Mech Chem Engineering Services.",
-        image: "/images/machines/Capstan & Turret Lathe Machine.jpeg",
+        image: "/images/machines/Capstan lathe machine.png",
         altText: "capstan-lathe-machine-nagpur",
         metaTitle: "Capstan & Turret Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Capstan & Turret Lathe Machines in Nagpur for high volume batch production."
@@ -592,7 +530,7 @@ const latheMachines = [
             { question: "What is a CNC lathe machine?", answer: "A computer-controlled machine that executes programmed operations like turning and boring with high precision." }
         ],
         ctaText: "Get free quote for CNC Lathes with Fanuc & Siemens controllers.",
-        image: "/images/machines/Cnc lathe machine.jpeg",
+        image: "/images/machines/CNC Lathe Machine.png",
         altText: "cnc-lathe-machine-nagpur",
         metaTitle: "CNC Lathe Machine Supplier in Nagpur | Mech Chem Engineering Services",
         metaDescription: "Buy CNC Lathe Machines in Nagpur. High precision, automatic turret, fast production."
@@ -623,7 +561,7 @@ const latheMachines = [
             { question: "What is the advantage of all geared lathe over belt driven lathe?", answer: "Consistent torque, less maintenance, and better for heavy cutting without slippage." }
         ],
         ctaText: "Get best price & quick delivery for All Geared Lathes in Nagpur.",
-        image: "/images/machines/All Geared Head Lathe Machine.jpeg",
+        image: "/images/machines/ALL Geared Geared Head Lathe Machine.png",
         altText: "all-geared-lathe-machine-workshop",
         metaTitle: "All Geared Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy All Geared & Geared Head Lathe Machines in Nagpur. Wide speed range, low maintenance."
@@ -654,7 +592,7 @@ const latheMachines = [
             { question: "What are the advantages of a belt driven lathe?", answer: "Affordable, quieter, and the belt acts as a safety slip mechanism against overloads." }
         ],
         ctaText: "Contact Mech Chem Engineering for free quote on economical lathes.",
-        image: "/images/machines/Belt driven lathe machine.jpeg",
+        image: "/images/machines/V Belt Drive Lathe Machine.png",
         altText: "belt-driven-lathe-machine-nagpur",
         metaTitle: "Belt Driven Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Belt Driven Lathe Machines in Nagpur at lowest price. Ideal for ITI institutes & small workshops."
@@ -872,7 +810,7 @@ const grindingMachines = [
 // --- WORKHOLDING TOOLS DATA ---
 const workholdingTools = [
     {
-        name: "Self-Centering Lathe Chuck",
+        name: "Self Centering Lathe Chuck",
         category: "Workholding Tools",
         categoryDescription: workholdingDesc,
         subTitle: "Precision Workholding for Symmetrical & Round Components",
@@ -930,7 +868,7 @@ const workholdingTools = [
         metaDescription: "Buy premium Self-Centering Lathe Chucks for fast, accurate workholding. Ideal for round and hexagonal workpieces on CNC & manual lathes. Available in 3-jaw and scroll chuck configurations."
     },
     {
-        name: "4-Jaw Independent Chuck",
+        name: "For Jaw Independent Chuck",
         category: "Workholding Tools",
         categoryDescription: workholdingDesc,
         subTitle: "Heavy-Duty Adjustability for Asymmetrical & Large Components",
@@ -997,7 +935,7 @@ const workholdingTools = [
 const finishingCoatingMachines = [
     {
         name: "Powder Coating Machine",
-        category: "Finishing & Coating Machines",
+        category: "Finishing and Coating Machines",
         categoryDescription: finishingCoatingDesc,
         subTitle: "Electrostatic Powder Coating System for Durable Surface Finishing",
         shortDescription: "The Powder Coating Machine is a complete surface finishing system that delivers superior coating quality compared to conventional liquid paint.",
@@ -1059,72 +997,8 @@ const finishingCoatingMachines = [
         altText: "Industrial Powder Coating Machine with Electrostatic Spray Gun and Curing Oven",
         metaTitle: "Powder Coating Machine | Electrostatic Spray & Curing System Manufacturer",
         metaDescription: "Industrial powder coating machines for metal surface finishing. Electrostatic spray guns, conveyor ovens, and batch curing systems. Achieve uniform, corrosion-resistant, and eco-friendly coatings."
-    },
-    {
-        name: "Bench Polishing Machine",
-        category: "Finishing & Coating Machines",
-        categoryDescription: finishingCoatingDesc,
-        subTitle: "High-Speed Bench & Floor Buffing Equipment",
-        shortDescription: "The Bench Polishing Machine is a compact, high-speed workshop tool designed for polishing, buffing, and finishing metal components.",
-        description: "The Bench Polishing Machine (also referred to as a bench buffer or polishing lathe) is a compact, high-speed workshop tool designed for polishing, buffing, and finishing metal, plastic, and composite components to achieve a bright, mirror-like finish. Featuring an extended dual-ended spindle shaft, it allows ample clearance for maneuvering large or irregularly shaped workpieces against the polishing wheels. The machine accommodates various buffing mops, stitched cotton wheels, sisal wheels, and wire brushes, which are used in combination with polishing compounds to remove scratches, burrs, scale, and surface imperfections. It is an indispensable tool in fabrication shops, jewelry manufacturing, automotive restoration, and general toolrooms.",
-        specifications: {
-            "Wheel Diameter Range": "150 mm to 300 mm",
-            "Spindle Thread / Bore": "M16 / 19 mm / 25.4 mm",
-            "Spindle Speed (Fixed)": "1,440 RPM or 2,880 RPM",
-            "Spindle Speed (Variable)": "900 RPM – 3,600 RPM (VFD controlled)",
-            "Motor Power Rating": "0.37 kW to 3.7 kW (0.5 HP to 5 HP)",
-            "Electrical Supply": "220V Single Phase / 415V Three Phase",
-            "Spindle Shaft Extension": "150 mm to 250 mm on each side",
-            "Base Mounting Style": "Bench mount / Floor pedestal mount",
-            "Working Envelope Size": "600 × 250 × 300 mm (varies by model)",
-            "Noise Level": "< 70 dB(A)"
-        },
-        features: [
-            "Extended dual-ended spindle design for maximum workpiece clearance",
-            "Heavy-duty cast iron housing to dampen vibrations and ensure stability",
-            "Compatible with cotton buffing mops, sisal wheels, and wire brushes",
-            "Variable speed control via VFD for precise matching to material types",
-            "Dust extraction hood compatibility for a clean working environment",
-            "Permanently lubricated, sealed ball bearings for maintenance-free life",
-            "Threaded shaft with heavy locking flanges for secure wheel mounting",
-            "Available in both compact bench-top and rugged pedestal configurations",
-            "Thermal overload protection to safeguard the motor from overheating",
-            "Adjustable safety eye shields and wheel guards (optional selection)"
-        ],
-        applications: [
-            "Metal fabrication and hardware polishing",
-            "Automotive trim and component restoration",
-            "Jewelry and precision instrument buffing",
-            "Toolrooms and maintenance workshops"
-        ],
-        faqs: [
-            { 
-                question: "What is a bench polishing machine used for?", 
-                answer: "It is used for deburring sharp edges, surface polishing, removing rust and scale, sharpening cutting tools, and light stock removal on small metal, plastic, or wooden workpieces." 
-            },
-            { 
-                question: "Can I use a buffing mop on a bench polishing machine?", 
-                answer: "Yes. Most bench polishing machines can accept buffing mops and polishing wheels in addition to grinding wheels, provided the wheel diameter and arbor bore are compatible." 
-            },
-            { 
-                question: "What is the difference between a bench grinder and a bench polishing machine?", 
-                answer: "A bench grinder primarily uses bonded abrasive wheels for cutting and stock removal. A bench polishing machine may use abrasive wheels, buffing mops, wire brushes, or flap wheels and is focused on finishing and surface enhancement." 
-            },
-            { 
-                question: "Is single-phase power sufficient for a bench polishing machine?", 
-                answer: "For smaller models (up to 0.5 kW / 150 mm wheel), single-phase 220V power is adequate. Larger, industrial models require three-phase 415V supply for continuous operation." 
-            },
-            { 
-                question: "How do I safely change wheels on a bench polishing machine?", 
-                answer: "Always disconnect the power before wheel changing. Use the correct spanner to remove the flange, inspect the new wheel for cracks (ring test), and ensure the flanges are properly tightened without overtorquing. Run the machine unloaded for 60 seconds after fitting a new wheel." 
-            }
-        ],
-        ctaText: "Invest in rugged Bench Polishing Machines for professional surface finishing. Perfect for deburring, buffing, and mirror polishing metals.",
-        image: "/images/machines/Bench Polishing Machine.png",
-        altText: "Heavy-Duty Bench Polishing Machine with Extended Shafts for Workshop Buffing",
-        metaTitle: "Bench Polishing Machine | High-Speed Buffing Lathe & Workshop Buffer",
-        metaDescription: "Invest in rugged Bench Polishing Machines for professional surface finishing. Perfect for deburring, buffing, and mirror polishing metals. Available with extended spindles and variable speeds."
     }
+    
 ];
 
 
@@ -1334,7 +1208,7 @@ const industrialMachines = [
     name: "Lathe Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Lathe Machine.png",
+    image: "/home/mechindustrialmachine/Extra heavy duty lathe machine.png",
     shortDescription: "High precision lathe machines for metal machining."
   },
 
@@ -1366,7 +1240,7 @@ const industrialMachines = [
     name: "Bandsaw Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Hacksaw Machine.png",
+    image: "/home/mechindustrialmachine/Double Column Automatic Bandsaw Machine.png",
     shortDescription: "Industrial cutting machines for accurate metal cutting."
   },
 
