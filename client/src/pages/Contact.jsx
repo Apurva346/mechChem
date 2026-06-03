@@ -63,7 +63,8 @@ const Contact = () => {
                 <div className="bg-orange-500 p-3 rounded-lg text-white shrink-0"><MapPin size={24} /></div>
                 <div>
                   <p className="font-black text-[#003366] uppercase text-sm mb-1 tracking-widest">📍 Address</p>
-                  <p className="text-gray-600 font-bold leading-snug">Plot No. 11 NASA Ground, Nehru Nagar, Surendra Nagar, Nagpur - 440015</p>
+                  <p className="text-gray-600 font-bold leading-snug">Plot No.27, shop No. 1, Nathuji Pise Complex, SPT Market, Great Nag Road, Nagpur-440003, Maharashtra
+</p>
                 </div>
               </div>
 
