@@ -617,3 +617,75 @@ const Home = () => {
 }
 
 export default Home
+
+
+
+7. What Our Customers Say
+      <section className='py-20 px-6 bg-white'>
+        <div className='max-w-7xl mx-auto'>
+          <h2 className='text-[#8b1d31] text-3xl lg:text-4xl font-bold mb-12 text-center underline decoration-slate-200 underline-offset-8'>
+            What Our Customers Say
+          </h2>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+            {/* Static Testimonials */}
+            <div className='space-y-8'>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <span className='absolute -top-4 -left-2 text-6xl text-slate-100 font-serif'>
+                  "
+                </span>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic relative z-10'>
+                  "Reliable machine supplier with good service support."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Fabrication Workshop, Nagpur
+                </p>
+              </div>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic'>
+                  "Quality machines and timely delivery."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Engineering Company
+                </p>
+              </div>
+              <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-sm font-bold text-sm uppercase transition-all shadow-lg active:scale-95'>
+                View More Photos
+              </button>
+            </div>
+
+            {/* Dynamic Photo Gallery from Atlas */}
+            <div className='grid grid-cols-2 gap-3 h-[350px]'>
+              <div className='space-y-3 h-full'>
+                {machines
+                  .filter(m => m.dataType === 'testimonial')
+                  .slice(0, 2)
+                  .map((t, idx) => (
+                    <div
+                      key={idx}
+                      className='h-1/2 overflow-hidden rounded-sm shadow-md'
+                    >
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                      />
+                    </div>
+                  ))}
+              </div>
+              <div className='h-full overflow-hidden rounded-sm shadow-md'>
+                {machines
+                  .filter(m => m.dataType === 'testimonial')
+                  .slice(2, 3)
+                  .map((t, idx) => (
+                    <img
+                      key={idx}
+                      src={t.image}
+                      alt={t.name}
+                      className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                    />
+                  ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

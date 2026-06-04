@@ -48,8 +48,7 @@ const Navbar = () => {
         'Radial Drilling Machine',
         'Heavy Duty Radial Drilling Machine',
         'Universal Portable Radial Drilling Machine',
-        'Geared Radial Drilling Machine',
-        'High Speed Lathe Machine'
+        'Geared Radial Drilling Machine'
       ]
     },
     // {

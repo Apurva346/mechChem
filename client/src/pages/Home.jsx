@@ -1,17 +1,22 @@
 import { Link, Links } from 'react-router-dom'
-import { 
-  ShieldCheck, 
-  Settings, 
-  Users, 
-  ThumbsUp, 
-  Layers, 
-  CircleDollarSign, 
-  Headphones, 
+import {
+  ShieldCheck,
+  Settings,
+  Users,
+  ThumbsUp,
+  Layers,
+  CircleDollarSign,
+  Headphones,
   Map,
-  Gauge, 
-  Target, 
-  Activity, BadgeIndianRupee, Factory, Cpu, Wrench, Car
-} from 'lucide-react';
+  Gauge,
+  Target,
+  Activity,
+  BadgeIndianRupee,
+  Factory,
+  Cpu,
+  Wrench,
+  Car
+} from 'lucide-react'
 // import {
 //   ShieldCheck,
 //   Users,
@@ -43,17 +48,16 @@ const Home = () => {
       .catch(err => console.log(err))
   }, [])
   return (
-    <div className='font-sans'>
+    <div className='font-sans w-full'>
       {/* --- 1. Hero Section --- */}
-      
 
-      <section className='relative overflow-hidden min-h-[580px] lg:min-h-[620px] flex flex-col justify-between bg-[#060b13] rounded-sm border border-slate-800 mx-[20px] my-6'>
+      <section className='relative overflow-hidden min-h-[580px] lg:min-h-[380px] flex flex-col justify-between w-full'>
         {/* --- Background Image & Gradient Overlay --- */}
         <div className='absolute inset-0 z-0'>
           <img
             src='/images/background/Home Page Update/Images/Industrial Machine Sales & Services.png'
             alt='Industrial Machines'
-            className='block w-full h-full object-cover opacity-35'
+            className='block w-screen h-full opacity-100'
           />
           <div className='absolute inset-0 bg-gradient-to-r from-[#060b13] via-[#060b13]/90 to-transparent'></div>
         </div>
@@ -62,14 +66,14 @@ const Home = () => {
         <div className='absolute right-0 top-0 h-full w-1/2 hidden lg:flex items-center justify-center z-10 pointer-events-none'>
           <div className='relative w-full h-full opacity-60'>
             {/* Yellow accent divider line */}
-            <div className='absolute right-1/3 top-0 bottom-0 w-[4px] bg-[#eeb44b] transform rotate-[25deg]'></div>
+            {/* <div className='absolute right-1/3 top-0 bottom-0 w-[4px] bg-[#eeb44b] transform rotate-[25deg]'></div> */}
             {/* Rotating box simulation from image */}
             <div className='absolute right-0 top-4 w-48 h-48 bg-[#eeb44b] transform rotate-45 rounded-xl opacity-20'></div>
           </div>
         </div>
 
         {/* --- Main Content Layout Grid --- */}
-        <div className='relative z-20 w-full max-w-7xl mx-auto px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-grow'>
+        <div className='relative z-20 w-full max-w-7xl mx-auto px-4 lg:px-2 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-grow'>
           {/* LEFT COLUMN: Main Typography & Icons (Takes 7 columns on Desktop) */}
           <div className='lg:col-span-7 flex flex-col justify-center'>
             {/* Subtitle Line */}
@@ -148,7 +152,6 @@ const Home = () => {
           </div>
 
           {/* RIGHT COLUMN: Performance / Precision Float Cards (Takes 5 columns on Desktop) */}
-          
         </div>
 
         {/* --- BOTTOM TRUST BAR (White Strip From Image) --- */}
@@ -216,6 +219,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
 
       {/* --- 2. Our Industrial Machines Section --- */}
       <section className='py-20 px-6 bg-slate-50'>
@@ -482,76 +486,6 @@ const Home = () => {
             />
             <div className='p-8 bg-slate-50 flex items-center justify-center italic text-slate-400'>
               Mech Chem Support
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- 7. What Our Customers Say --- */}
-      <section className='py-20 px-6 bg-white'>
-        <div className='max-w-7xl mx-auto'>
-          <h2 className='text-[#8b1d31] text-3xl lg:text-4xl font-bold mb-12 text-center underline decoration-slate-200 underline-offset-8'>
-            What Our Customers Say
-          </h2>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
-            {/* Static Testimonials */}
-            <div className='space-y-8'>
-              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
-                <span className='absolute -top-4 -left-2 text-6xl text-slate-100 font-serif'>
-                  "
-                </span>
-                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic relative z-10'>
-                  "Reliable machine supplier with good service support."
-                </p>
-                <p className='text-slate-500 mt-2 font-medium'>
-                  - Fabrication Workshop, Nagpur
-                </p>
-              </div>
-              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
-                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic'>
-                  "Quality machines and timely delivery."
-                </p>
-                <p className='text-slate-500 mt-2 font-medium'>
-                  - Engineering Company
-                </p>
-              </div>
-              <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-sm font-bold text-sm uppercase transition-all shadow-lg active:scale-95'>
-                View More Photos
-              </button>
-            </div>
-
-            {/* Dynamic Photo Gallery from Atlas */}
-            <div className='grid grid-cols-2 gap-3 h-[350px]'>
-              <div className='space-y-3 h-full'>
-                {machines
-                  .filter(m => m.dataType === 'testimonial')
-                  .slice(0, 2)
-                  .map((t, idx) => (
-                    <div
-                      key={idx}
-                      className='h-1/2 overflow-hidden rounded-sm shadow-md'
-                    >
-                      <img
-                        src={t.image}
-                        alt={t.name}
-                        className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className='h-full overflow-hidden rounded-sm shadow-md'>
-                {machines
-                  .filter(m => m.dataType === 'testimonial')
-                  .slice(2, 3)
-                  .map((t, idx) => (
-                    <img
-                      key={idx}
-                      src={t.image}
-                      alt={t.name}
-                      className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
-                    />
-                  ))}
-              </div>
             </div>
           </div>
         </div>
