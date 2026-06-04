@@ -1212,7 +1212,7 @@ const industrialMachines = [
     name: "Workholding Tools",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Four Jaw Independent Chunk.png",
+    image: "/home/mechindustrialmachine/Four Jaw Independent Chuck.png",
     shortDescription: "Reliable welding machines for fabrication and repair."
   },
 
