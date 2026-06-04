@@ -63,8 +63,15 @@ const Contact = () => {
                 <div className="bg-orange-500 p-3 rounded-lg text-white shrink-0"><MapPin size={24} /></div>
                 <div>
                   <p className="font-black text-[#003366] uppercase text-sm mb-1 tracking-widest">📍 Address</p>
-                  <p className="text-gray-600 font-bold leading-snug">Plot No.27, shop No. 1, Nathuji Pise Complex, SPT Market, Great Nag Road, Nagpur-440003, Maharashtra
-</p>
+                  <p className="text-gray-600 font-bold leading-snug">Plot No.27, shop No. 1, Nathuji Pise Complex, SPT Market, Great Nag Road, Nagpur-440003, Maharashtra</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-orange-500 p-3 rounded-lg text-white shrink-0"><MapPin size={24} /></div>
+                <div>
+                  <p className="font-black text-[#003366] uppercase text-sm mb-1 tracking-widest">📍 New i-NAX™ Experience Center Coming Soon At:</p>
+                  <p className="text-gray-600 font-bold leading-snug">Plot No. 11 NASA Ground, Nehru Nagar, Nagpur - 440015</p>
                 </div>
               </div>
 
@@ -85,13 +92,13 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="bg-orange-500 p-3 rounded-lg text-white shrink-0"><Clock size={24} /></div>
                 <div>
                   <p className="font-black text-[#003366] uppercase text-sm mb-1 tracking-widest">🕒 Business Hours</p>
                   <p className="text-gray-600 font-bold italic">Monday – Saturday: 10:00 AM to 7:00 PM</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 

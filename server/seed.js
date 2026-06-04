@@ -761,48 +761,12 @@ const grindingMachines = [
             { question: "Can carbide tools be ground?", answer: "Yes, diamond grinding wheels are used for carbide tools. Wet grinding with coolant is recommended to prevent thermal cracking." }
         ],
         ctaText: "Ensure maximum tool life. Contact us for a Tool & Cutter Grinding Machine quote.",
-        image: "/images/machines/Tool Cutter Grinding Machine.png",
+        image: "/images/machines/Tool & Cutter Grinding Machine.png",
         altText: "Tool & Cutter Grinding Machine – universal tool and cutter grinder for sharpening",
         metaTitle: "Tool & Cutter Grinding Machine | Precision Cutting Tool Sharpening Equipment",
         metaDescription: "Versatile Tool & Cutter Grinding Machine for sharpening and re-grinding end mills, drills, reamers, and milling cutters."
     },
-    {
-        name: "Pedestal Grinding Machine",
-        category: "Grinding Machines",
-        categoryDescription: grindingDesc,
-        subTitle: "Double-End Bench & Floor Grinder for Workshop Use",
-        shortDescription: "Robust floor-mounted grinding machine designed for general-purpose deburring and tool sharpening.",
-        description: "The Pedestal Grinding Machine (also known as a floor grinder) is a robust, floor-mounted machine fitted with two abrasive grinding wheels on either end of a common motor shaft. It is designed for general-purpose deburring, rough grinding, tool sharpening, descaling, and weld spatter removal. The heavy cast iron pedestal base provides stability during heavy grinding operations.",
-        specifications: {
-            "Wheel Diameter": "150 mm to 400 mm",
-            "Wheel Width": "20 mm to 50 mm",
-            "Spindle Speed": "1,400 RPM to 3,000 RPM",
-            "Motor Power": "0.37 kW to 3 kW",
-            "Wheel Grit (Coarse)": "24 to 36 grit",
-            "Wheel Grit (Fine)": "60 to 80 grit",
-            "Tool Rest Gap (max.)": "3 mm (safety standard)",
-            "Overall Height": "900 mm to 1,200 mm",
-            "Machine Weight": "40 kg to 150 kg"
-        },
-        features: [
-            "Double-end spindle with two abrasive wheels (coarse + fine)",
-            "Heavy cast iron pedestal base for floor mounting stability",
-            "Adjustable tool rests and transparent eye shields for spark protection",
-            "Sealed ball bearings for low-noise, long-life operation",
-            "Cast iron wheel guards with spark deflectors",
-            "ON/OFF switch with thermal overload protection"
-        ],
-        applications: ["Fabrication shops", "Foundries", "Maintenance departments", "General workshops"],
-        faqs: [
-            { question: "What is the maximum gap allowed between the tool rest and the grinding wheel?", answer: "Safety standards require the tool rest gap to be no more than 3 mm from the grinding wheel face to prevent accidents." },
-            { question: "How should a new grinding wheel be inspected before mounting?", answer: "New wheels should be visually inspected for cracks and then ring-tested by tapping gently with a non-metallic object." }
-        ],
-        ctaText: "Essential for every workshop. Contact Mech Chem Engineering Services today.",
-        image: "/images/machines/Pedestal Grinding Machine.png",
-        altText: "Pedestal Grinding Machine – double-end floor-mounted bench grinder for workshop",
-        metaTitle: "Pedestal Grinding Machine | Double-End Bench & Floor Grinder",
-        metaDescription: "Heavy-duty Pedestal Grinding Machine for deburring, tool sharpening, and rough grinding."
-    }
+    
 ];
 
 
@@ -924,7 +888,7 @@ const workholdingTools = [
             }
         ],
         ctaText: "Shop industrial-grade 4-Jaw Independent Chucks. Achieve unmatched centering precision and heavy-duty clamping for irregular workpieces.",
-        image: "/images/machines/4 Jaw Independent Chuck.png",
+        image: "/images/machines/Four Jaw Independent Chuck.png",
         altText: "4-Jaw Independent Lathe Chuck with Individually Adjustable Jaws for Custom Turning Setup",
         metaTitle: "4-Jaw Independent Chuck | Manual Adjusting Lathe Chuck for Irregular Components",
         metaDescription: "Shop industrial-grade 4-Jaw Independent Chucks. Achieve unmatched centering precision and heavy-duty clamping for irregular workpieces. Perfect for castings and eccentric turning."
@@ -1216,7 +1180,7 @@ const industrialMachines = [
     name: "Milling Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Milling Machine Supplier in Nagpur.png",
+    image: "/home/mechindustrialmachine/Milling Machines.png",
     shortDescription: "Advanced milling machines for workshop operations."
   },
 
@@ -1224,7 +1188,7 @@ const industrialMachines = [
     name: "Drilling Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Drilling Machine Supplier In Nagpur.png",
+    image: "/home/mechindustrialmachine/Drilling Machines.png",
     shortDescription: "Heavy duty drilling machines for industrial applications."
   },
 
@@ -1248,7 +1212,7 @@ const industrialMachines = [
     name: "Workholding Tools",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Surface Grinder Machine.png",
+    image: "/home/mechindustrialmachine/Four Jaw Independent Chunk.png",
     shortDescription: "Reliable welding machines for fabrication and repair."
   },
 

@@ -298,7 +298,7 @@ const Footer = () => {
             <div className='flex items-start gap-3 group border-t border-white/5 pt-3'>
               <MapPin size={18} className='text-[#8b1d31] shrink-0 mt-0.5 group-hover:scale-110 transition-transform' />
               <div className='text-[12px] text-gray-400 leading-snug'>
-                <span className='text-[#8b1d31] font-black block mb-1 uppercase tracking-tight text-[10px] group-hover:text-red-400 transition-colors'>
+                <span className='text-[#8b1d31] font-black block mb-1 tracking-tight text-[10px] group-hover:text-red-400 transition-colors'>
                   New i-NAX™ Experience Center coming soon at:
                 </span>
                 <p className='group-hover:text-white transition-colors duration-200'>
@@ -361,8 +361,8 @@ const Footer = () => {
 
           <div>
             <div className='flex items-center gap-3 mb-3'>
-              <h3 className='text-xl font-black tracking-tight text-white italic uppercase'>
-                i-NAX™ <span className='text-[#8b1d31] font-normal not-italic text-base lowercase tracking-normal bg-[#8b1d31]/10 px-2 py-0.5 rounded ml-1'>— CNC & Laser</span>
+              <h3 className='text-xl font-black tracking-tight text-white italic '>
+                i-NAX™ <span className='text-[#8b1d31] font-normal not-italic text-base tracking-normal bg-[#8b1d31]/10 px-2 py-0.5 rounded ml-1'>— CNC & Laser</span>
               </h3>
             </div>
 
@@ -377,25 +377,25 @@ const Footer = () => {
             <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
               <Zap size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
               <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                Fiber Laser Cutting
+                Fiber Laser Cutting Machine
               </span>
             </div>
             <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
               <Target size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
               <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                Laser Welding Machines
+                Laser Welding Machine
               </span>
             </div>
             <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
               <Settings size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
               <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                CNC Press Brake
+                CNC Press Brake Machine
               </span>
             </div>
             <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
               <ShieldCheck size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
               <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                CNC Laser Pipe Cutting
+                CNC Laser Pipe Cutting Machine
               </span>
             </div>
           </div>
