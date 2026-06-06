@@ -1243,8 +1243,8 @@ const inaxSectionData = [
 
 // --- 3. CUSTOMER TESTIMONIALS (Total 3) ---
 const customerGallery = [
-    { name: "Customer Work 1", dataType: "testimonial", image: "/home/mechindustrialmachine/Lathe Machine.png" },
-    { name: "Customer Work 2", dataType: "testimonial", image: "/home/mechindustrialmachine/Lathe Machine.png" },
+    { name: "Customer Work 1", dataType: "testimonial", image: "/home/mechindustrialmachine/cusone.jpeg" },
+    { name: "Customer Work 2", dataType: "testimonial", image: "/home/mechindustrialmachine/custwo.jpeg" },
     { name: "Customer Work 3", dataType: "testimonial", image: "/home/mechindustrialmachine/Lathe Machine.png" }
 ];
 

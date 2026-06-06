@@ -1,253 +1,19 @@
-// import React from 'react'
-// import {
-//   Facebook,
-//   Youtube,
-//   Instagram,
-//   X,
-//   Mail,
-//   Phone,
-//   MapPin,
-//   ChevronRight,
-//   Zap,
-//   Target,
-//   Settings,
-//   ShieldCheck
-// } from 'lucide-react'
-// import { Link } from 'react-router-dom'
-
-// const Footer = () => {
-//   const socialLinks = [
-//     { Icon: Facebook, link: 'https://www.facebook.com/inaxlaser' },
-//     // { Icon: X, link: 'https://x.com' },
-//     { Icon: Youtube, link: 'https://www.youtube.com/@inaxlaser' },
-//     {
-//       Icon: Instagram,
-//       link: 'https://www.instagram.com/mechchemengineeringservices'
-//     }
-//   ]
-
-//   const ourMachines = [
-//     'Lathe Machine',
-//     'Milling Machine',
-//     'Drilling Machine',
-//     'Workholding Tools',
-//     'Grinding Machines',
-//     'Finishing & Coating Machines',
-//     'Bandsaw Machines'
-//   ]
-
-//   return (
-//     <footer className='bg-[#001a33] text-white pt-20 pb-10 mt-12 border-t-4 border-[#8b1d31]'>
-//       <div className='max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
-//         {/* 1. Contact Information & Company Info */}
-//         <div className='space-y-8'>
-//           {/* Logo & Description */}
-//           <div className='flex flex-col'>
-//             <Link to='/' className='inline-block mb-4'>
-//               <img
-//                 src='/images/Mech Chem Engineering Services Logo (2).png'
-//                 alt='Mech Chem Engineering Services'
-//                 className='h-16 md:h-20 w-auto object-contain bg-white p-1 rounded-sm shadow-md'
-//               />
-//             </Link>
-//             <h2 className='text-lg font-bold leading-tight text-[#8b1d31] uppercase tracking-tighter mb-2'>
-//               Mech Chem Engineering Services
-//             </h2>
-//             <p className='text-sm text-gray-400 font-medium leading-relaxed italic border-l-2 border-[#8b1d31] pl-3'>
-//               "Delivering reliable industrial machinery solutions with
-//               precision, performance, and trusted service."
-//             </p>
-//           </div>
-
-//           {/* Addresses & Contact Details */}
-//           <div className='space-y-4'>
-//             {/* 1. Main Office Address */}
-//             <div className='flex items-start gap-3 group'>
-//               <MapPin size={22} className='text-[#8b1d31] shrink-0 mt-1' />
-//               <p className='text-[13px] text-gray-300 leading-snug group-hover:text-white transition-colors'>
-//                 Plot No.27, shop No. 1, Nathuji Pise Complex, SPT Market, Great
-//                 Nag Road, Nagpur-440003, Maharashtra.
-//               </p>
-//             </div>
-
-//             {/* 2. New i-NAX Experience Center Address */}
-//             <div className='flex items-start gap-3 group border-t border-white/5 pt-3'>
-//               <MapPin size={22} className='text-[#8b1d31] shrink-0 mt-1' />
-//               <p className='text-[13px] text-gray-300 leading-snug group-hover:text-white transition-colors'>
-//                 <span className='text-[#8b1d31] font-bold block mb-1 uppercase tracking-tight text-[11px] group-hover:text-red-400 transition-colors'>
-//                   New i-NAX™ Experience Center coming soon at:
-//                 </span>
-//                 Plot No.11 NASA Ground, Nehru Nagar, Nagpur - 440015
-//               </p>
-//             </div>
-
-//             {/* Phone Numbers */}
-//             <div className='flex items-center gap-3 group border-t border-white/5 pt-3'>
-//               <Phone size={18} className='text-[#8b1d31] shrink-0' />
-//               <div className='text-[13px] text-gray-300 font-bold group-hover:text-white transition-colors space-y-1'>
-//                 <p>
-//                   <a href='tel:+919960846786' className='hover:underline'>
-//                     +91-9960846786
-//                   </a>
-//                 </p>
-//                 <p>
-//                   <a href='tel:+919226450455' className='hover:underline'>
-//                     +91-9226450455
-//                   </a>
-//                 </p>
-//               </div>
-//             </div>
-
-//             {/* Email */}
-//             <div className='flex items-center gap-3 group'>
-//               <Mail size={18} className='text-[#8b1d31] shrink-0' />
-//               <span className='text-[13px] text-gray-300 font-bold break-all group-hover:text-white transition-colors'>
-//                 <a
-//                   href='mailto:mechchemindia@gmail.com'
-//                   className='hover:underline'
-//                 >
-//                   mechchemindia@gmail.com
-//                 </a>
-//               </span>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* 2. Our Machines (Dynamic List) */}
-//         <div>
-//           <h3 className='text-md font-black mb-8 border-b-2 border-[#8b1d31] w-fit pr-6 uppercase tracking-widest'>
-//             Our Machines
-//           </h3>
-//           <ul className='space-y-3'>
-//             {ourMachines.map(machine => (
-//               <li
-//                 key={machine}
-//                 className='flex items-center gap-2 text-sm text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-300 cursor-pointer group'
-//               >
-//                 <ChevronRight size={14} className='text-[#8b1d31]' />
-//                 <span className='font-medium'>{machine}</span>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-
-//         {/* 3. i-NAX Brand Section (Special Highlight) */}
-//         <div className='lg:col-span-2 bg-white/5 p-6 rounded-md border border-white/10 relative overflow-hidden'>
-//           <div className='absolute -top-10 -right-10 w-32 h-32 bg-[#8b1d31]/10 rounded-full blur-3xl'></div>
-
-//           <div className='flex items-center gap-3 mb-4'>
-//             <h3 className='text-2xl font-black tracking-tighter text-white italic'>
-//               i-NAX™ <span className='text-[#8b1d31]'>— CNC & Laser</span>
-//             </h3>
-//           </div>
-
-//           <p className='text-sm text-gray-300 mb-6 leading-relaxed'>
-//             i-NAX™ is our advanced brand offering modern CNC and laser cutting
-//             machines designed for precision, speed, and reliable performance in
-//             manufacturing industries.
-//           </p>
-
-//           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-//             <div className='flex items-center gap-3 bg-[#001a33] p-3 rounded border border-white/5 hover:border-[#8b1d31] transition-all group'>
-//               <Zap
-//                 size={18}
-//                 className='text-[#8b1d31] group-hover:scale-110 transition-transform'
-//               />
-//               <span className='text-[11px] font-black uppercase tracking-tight'>
-//                 Fiber Laser Cutting
-//               </span>
-//             </div>
-//             <div className='flex items-center gap-3 bg-[#001a33] p-3 rounded border border-white/5 hover:border-[#8b1d31] transition-all group'>
-//               <Target
-//                 size={18}
-//                 className='text-[#8b1d31] group-hover:scale-110 transition-transform'
-//               />
-//               <span className='text-[11px] font-black uppercase tracking-tight'>
-//                 Laser Welding Machines
-//               </span>
-//             </div>
-//             <div className='flex items-center gap-3 bg-[#001a33] p-3 rounded border border-white/5 hover:border-[#8b1d31] transition-all group'>
-//               <Settings
-//                 size={18}
-//                 className='text-[#8b1d31] group-hover:scale-110 transition-transform'
-//               />
-//               <span className='text-[11px] font-black uppercase tracking-tight'>
-//                 CNC Press Brake
-//               </span>
-//             </div>
-//             <div className='flex items-center gap-3 bg-[#001a33] p-3 rounded border border-white/5 hover:border-[#8b1d31] transition-all group'>
-//               <ShieldCheck
-//                 size={18}
-//                 className='text-[#8b1d31] group-hover:scale-110 transition-transform'
-//               />
-//               <span className='text-[11px] font-black uppercase tracking-tight'>
-//                 CNC Laser Pipe Cutting
-//               </span>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Social & Copyright Bar */}
-//       <div className='max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/10'>
-//         <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
-//           <div className='flex gap-4'>
-//             {socialLinks.map((social, index) => (
-//               <a
-//                 key={index}
-//                 href={social.link}
-//                 className='bg-white/5 hover:bg-[#8b1d31] p-3 rounded-full transition-all duration-300 group'
-//               >
-//                 <social.Icon size={18} className='group-hover:text-white' />
-//               </a>
-//             ))}
-//           </div>
-
-//           <div className='text-center md:text-right'>
-//             <p className='text-[11px] text-gray-500 uppercase tracking-[0.2em] font-bold'>
-//               &copy; {new Date().getFullYear()}{' '}
-//               <span className='text-[#8b1d31]'>
-//                 Mech Chem Engineering Services
-//               </span>
-//               . All Rights Reserved.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   )
-// }
-
-// export default Footer
-
-
-
-import React from 'react'
-import {
-  Facebook,
-  Youtube,
-  Instagram,
-  X,
-  Mail,
-  Phone,
-  MapPin,
-  ChevronRight,
-  Zap,
-  Target,
-  Settings,
-  ShieldCheck
-} from 'lucide-react'
+import React, { useState } from 'react'
+import { Facebook, Youtube, Instagram, Mail, Phone, MapPin, ChevronRight, Zap, Target, Settings, ShieldCheck, CheckCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+  };
+
   const socialLinks = [
     { Icon: Facebook, link: 'https://www.facebook.com/inaxlaser' },
-    // { Icon: X, link: 'https://x.com' },
     { Icon: Youtube, link: 'https://www.youtube.com/@inaxlaser' },
-    {
-      Icon: Instagram,
-      link: 'https://www.instagram.com/mechchemengineeringservices'
-    }
+    { Icon: Instagram, link: 'https://www.instagram.com/mechchemengineeringservices' }
   ]
 
   const ourMachines = [
@@ -261,166 +27,200 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='bg-gradient-to-b from-[#001529] to-[#000a14] text-white pt-20 pb-10 mt-16 border-t-4 border-[#8b1d31] relative overflow-hidden'>
-      {/* Decorative Top Glow */}
-      <div className='absolute top-0 left-1/4 w-96 h-20 bg-[#8b1d31]/10 rounded-full blur-3xl pointer-events-none'></div>
-
-      <div className='max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10'>
-        
-        {/* 1. Contact Information & Company Info */}
-        <div className='flex flex-col justify-between h-full space-y-6'>
-          <div className='space-y-4'>
-            <Link to='/' className='inline-block transform hover:scale-105 transition-transform duration-300'>
-              <img
-                src='/images/Mech Chem Engineering Services Logo (2).png'
-                alt='Mech Chem Engineering Services'
-                className='h-16 md:h-20 w-auto object-contain bg-white p-1.5 rounded shadow-xl'
-              />
-            </Link>
-            <h2 className='text-md font-black leading-tight text-[#8b1d31] uppercase tracking-wider'>
-              Mech Chem Engineering Services
-            </h2>
-            <p className='text-xs text-gray-400 font-medium leading-relaxed italic border-l-2 border-[#8b1d31] pl-3'>
+    <footer className='w-full mt-16 relative font-sans text-white bg-[#000a14] select-none'>
+      
+      {/* ----------------- 1. TOP RED BLOCK (IDENTITY & ALL CONTACTS) ----------------- */}
+      <div className='w-full bg-gradient-to-r from-[#8b1d31] to-[#a3223a] text-white py-8 border-b border-white/10 shadow-xl relative z-10'>
+        <div className='max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start'>
+          
+          {/* Logo, Title & Tagline */}
+          <div className='space-y-3 lg:border-r border-white/10 lg:pr-6 h-full flex flex-col justify-center'>
+            <div className='flex items-center gap-3'>
+              <Link to='/' className='inline-block bg-white p-1.5 rounded shadow-md shrink-0 transform hover:scale-105 transition-transform'>
+                <img
+                  src='/images/Mech Chem Engineering Services Logo (2).png'
+                  alt='Mech Chem Engineering Services'
+                  className='h-11 w-auto object-contain'
+                />
+              </Link>
+              <h2 className='text-xs font-black tracking-wider uppercase leading-tight'>
+                Mech Chem <br/> Engineering Services
+              </h2>
+            </div>
+            <p className='text-[11px] text-white/80 font-medium leading-relaxed italic border-l-2 border-white/30 pl-3 py-0.5'>
               "Delivering reliable industrial machinery solutions with precision, performance, and trusted service."
             </p>
           </div>
 
-          <div className='space-y-3 pt-2'>
-            {/* Main Office Address */}
+          {/* Addresses (Main Office + Experience Center) */}
+          <div className='space-y-4 lg:border-r border-white/10 lg:pr-6 h-full text-xs font-medium'>
+            {/* Main Office */}
             <div className='flex items-start gap-3 group'>
-              <MapPin size={18} className='text-[#8b1d31] shrink-0 mt-0.5 group-hover:scale-110 transition-transform' />
-              <p className='text-[12px] text-gray-400 leading-snug group-hover:text-white transition-colors duration-200'>
-                Plot No.27, shop No. 1, Nathuji Pise Complex, SPT Market, Great Nag Road, Nagpur-440003, Maharashtra.
-              </p>
+              <MapPin size={18} className='text-white/80 shrink-0 mt-0.5 group-hover:scale-110 transition-transform' />
+              <div className='space-y-0.5'>
+                <span className='text-[9px] uppercase font-black tracking-widest text-white/60 block'>Main Office Address</span>
+                <p className='text-white/90 leading-snug'>
+                  Plot No.27, shop No. 1, Nathuji Pise Complex, SPT Market, Great Nag Road, Nagpur-440003, Maharashtra.
+                </p>
+              </div>
             </div>
 
-            {/* New i-NAX Experience Center Address */}
-            <div className='flex items-start gap-3 group border-t border-white/5 pt-3'>
-              <MapPin size={18} className='text-[#8b1d31] shrink-0 mt-0.5 group-hover:scale-110 transition-transform' />
-              <div className='text-[12px] text-gray-400 leading-snug'>
-                <span className='text-[#8b1d31] font-black block mb-1 tracking-tight text-[10px] group-hover:text-red-400 transition-colors'>
-                  New i-NAX™ Experience Center coming soon at:
-                </span>
-                <p className='group-hover:text-white transition-colors duration-200'>
+            {/* Experience Center */}
+            <div className='flex items-start gap-3 group border-t border-white/10 pt-3'>
+              <MapPin size={18} className='text-white shrink-0 mt-0.5 group-hover:scale-110 transition-transform animate-pulse' />
+              <div className='space-y-0.5'>
+                <span className='text-[9px] uppercase font-black tracking-widest text-white/70 block'>New i-NAX™ Experience Center Coming Soon At:</span>
+                <p className='text-white font-bold leading-snug'>
                   Plot No.11 NASA Ground, Nehru Nagar, Nagpur - 440015
                 </p>
               </div>
             </div>
+          </div>
 
-            {/* Phone Numbers */}
-            <div className='flex items-center gap-3 group border-t border-white/5 pt-3'>
-              <Phone size={16} className='text-[#8b1d31] shrink-0' />
-              <div className='text-[12px] text-gray-400 font-bold group-hover:text-white transition-colors duration-200 space-y-0.5'>
-                <p>
-                  <a href='tel:+919960846786' className='hover:text-[#8b1d31] hover:underline transition-colors'>
-                    +91-9960846786
-                  </a>
-                </p>
-                <p>
-                  <a href='tel:+919226450455' className='hover:text-[#8b1d31] hover:underline transition-colors'>
-                    +91-9226450455
-                  </a>
-                </p>
+          {/* Contact Info (Phones & Email) */}
+          <div className='space-y-4 h-full flex flex-col justify-center text-xs font-bold'>
+            {/* Phones */}
+            <div className='flex items-center gap-3 group'>
+              <Phone size={16} className='text-white/80 shrink-0' />
+              <div>
+                <span className='text-[9px] uppercase font-black tracking-widest text-white/60 block font-medium mb-0.5'>Phone Numbers</span>
+                <div className='space-y-0.5 tracking-wide text-sm'>
+                  <p><a href='tel:+919960846786' className='hover:underline'>+91-9960846786</a></p>
+                  <p><a href='tel:+919226450455' className='hover:underline'>+91-9226450455</a></p>
+                </div>
               </div>
             </div>
 
             {/* Email */}
-            <div className='flex items-center gap-3 group'>
-              <Mail size={16} className='text-[#8b1d31] shrink-0' />
-              <span className='text-[12px] text-gray-400 font-bold break-all group-hover:text-white transition-colors duration-200'>
-                <a href='mailto:mechchemindia@gmail.com' className='hover:text-[#8b1d31] hover:underline transition-colors'>
+            <div className='flex items-center gap-3 group border-t border-white/10 pt-3'>
+              <Mail size={16} className='text-white/80 shrink-0' />
+              <div className='break-all'>
+                <span className='text-[9px] uppercase font-black tracking-widest text-white/60 block font-medium mb-0.5'>Email Address</span>
+                <a href='mailto:mechchemindia@gmail.com' className='hover:underline text-sm tracking-wide'>
                   mechchemindia@gmail.com
                 </a>
-              </span>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* 2. Our Machines (Dynamic List) */}
-        <div className='lg:pl-6'>
-          <h3 className='text-sm font-black mb-6 border-b-2 border-[#8b1d31] w-fit pr-6 uppercase tracking-widest text-white/90'>
-            Our Machines
-          </h3>
-          <ul className='space-y-2.5'>
-            {ourMachines.map(machine => (
-              <li
-                key={machine}
-                className='flex items-center gap-2 text-[13px] text-gray-400 hover:text-white hover:translate-x-1.5 border-l border-transparent hover:border-[#8b1d31] hover:pl-2 transition-all duration-300 cursor-pointer group'
-              >
-                <ChevronRight size={12} className='text-[#8b1d31] opacity-60 group-hover:opacity-100 transition-opacity' />
-                <span className='font-medium'>{machine}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* 3. i-NAX Brand Section (Special Highlight Card) */}
-        <div className='lg:col-span-2 bg-white/[0.02] p-6 rounded-xl border border-white/5 relative overflow-hidden flex flex-col justify-between shadow-2xl backdrop-blur-sm group/card hover:border-white/10 transition-colors duration-300'>
-          {/* Subtle Glow inside the card */}
-          <div className='absolute -top-12 -right-12 w-40 h-40 bg-[#8b1d31]/5 rounded-full blur-3xl group-hover/card:bg-[#8b1d31]/10 transition-colors duration-500'></div>
-
-          <div>
-            <div className='flex items-center gap-3 mb-3'>
-              <h3 className='text-xl font-black tracking-tight text-white italic '>
-                i-NAX™ <span className='text-[#8b1d31] font-normal not-italic text-base tracking-normal bg-[#8b1d31]/10 px-2 py-0.5 rounded ml-1'>— CNC & Laser</span>
-              </h3>
-            </div>
-
-            <p className='text-[13px] text-gray-400 mb-6 leading-relaxed'>
-              i-NAX™ is our advanced brand offering modern CNC and laser cutting
-              machines designed for precision, speed, and reliable performance in
-              manufacturing industries.
-            </p>
-          </div>
-
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10'>
-            <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
-              <Zap size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
-              <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                Fiber Laser Cutting Machine
-              </span>
-            </div>
-            <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
-              <Target size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
-              <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                Laser Welding Machine
-              </span>
-            </div>
-            <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
-              <Settings size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
-              <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                CNC Press Brake Machine
-              </span>
-            </div>
-            <div className='flex items-center gap-3 bg-[#001122] p-3 rounded-lg border border-white/5 hover:border-[#8b1d31]/50 hover:bg-[#001529] transition-all duration-300 group'>
-              <ShieldCheck size={16} className='text-[#8b1d31] group-hover:scale-110 group-hover:text-red-400 transition-all' />
-              <span className='text-[10px] font-extrabold uppercase tracking-wider text-gray-300 group-hover:text-white transition-colors'>
-                CNC Laser Pipe Cutting Machine
-              </span>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Social & Copyright Bar */}
-      <div className='max-w-7xl mx-auto px-6 md:px-8 mt-16 pt-8 border-t border-white/5 relative z-10'>
-        <div className='flex flex-col md:flex-row justify-between items-center gap-6'>
-          <div className='flex gap-3'>
+      {/* ----------------- 2. BOTTOM MAIN AREA (MACHINES & COMPACT FORM) ----------------- */}
+      <div className='bg-gradient-to-b from-[#001224] to-[#000a14] pt-12 pb-8 relative overflow-hidden'>
+        <div className='absolute bottom-0 right-1/4 w-80 h-40 bg-[#8b1d31]/5 rounded-full blur-3xl pointer-events-none'></div>
+
+        <div className='max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-3 gap-10 relative z-10 items-start'>
+          
+          {/* Column A: Mech Chem Our Machines List */}
+          <div>
+            <h3 className='text-2xl font-black pb-1 border-b border-white/10 uppercase tracking-widest text-[#8b1d31] mb-4 w-fit pr-6'>
+              Our Machines
+            </h3>
+            <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2 text-xs text-gray-400 font-medium'>
+              {ourMachines.map(machine => (
+                <li
+                  key={machine}
+                  className='flex items-center gap-2 hover:text-white hover:translate-x-1.5 transition-all duration-300 cursor-pointer group'
+                >
+                  <ChevronRight size={13} className='text-[#8b1d31] opacity-50 group-hover:opacity-100 transition-opacity' />
+                  <span>{machine}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column B: i-NAX CNC & Laser Machines Card */}
+          <div className='bg-white/[0.01] p-4 rounded-xl border border-white/5 shadow-xl backdrop-blur-sm h-full'>
+            <h3 className='text-sm font-black tracking-tight text-white italic mb-1.5 uppercase'>
+              i-NAX™ <span className='text-[#8b1d31] font-bold not-italic text-[10px] tracking-normal bg-[#8b1d31]/10 px-1.5 py-0.5 rounded ml-1 uppercase'>CNC & Laser</span>
+            </h3>
+            <p className='text-[11px] text-gray-400 mb-4 leading-relaxed font-medium'>
+              i-NAX™ is our advanced brand offering modern CNC and laser cutting machines designed for precision and speed.
+            </p>
+
+            <div className='grid grid-cols-1 gap-1.5'>
+              {[
+                { Icon: Zap, text: 'Fiber Laser Cutting Machine' },
+                { Icon: Target, text: 'Laser Welding Machine' },
+                { Icon: Settings, text: 'CNC Press Brake Machine' },
+                { Icon: ShieldCheck, text: 'CNC Laser Pipe Cutting Machine' }
+              ].map((item, idx) => (
+                <div key={idx} className='flex items-center gap-2 bg-[#001122]/70 p-2 rounded border border-white/5 hover:border-[#8b1d31]/30 transition-colors duration-200'>
+                  <item.Icon size={12} className='text-[#8b1d31]' />
+                  <span className='text-[9px] font-black uppercase tracking-wider text-gray-300'>{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Column C: Ultra Compact Enquiry Form */}
+          <div className='bg-white/[0.02] p-4 rounded-xl border border-white/5 shadow-2xl backdrop-blur-sm'>
+            {isSubmitted ? (
+              <div className='py-8 text-center space-y-2 animate-fadeIn'>
+                <CheckCircle size={32} className='text-emerald-500 mx-auto' />
+                <h4 className='text-xs font-black text-white uppercase tracking-wider'>Enquiry Sent!</h4>
+                <p className='text-[11px] text-gray-400 leading-relaxed font-medium px-2'>
+                  Thank you! Our team will get in touch shortly.
+                </p>
+                <button 
+                  onClick={() => setIsSubmitted(false)} 
+                  className='text-[10px] font-black uppercase text-[#8b1d31] hover:text-red-400 underline pt-2 block mx-auto'
+                >
+                  Send Again
+                </button>
+              </div>
+            ) : (
+              <div className='space-y-3'>
+                <div>
+                  <h4 className='text-xs font-black uppercase tracking-wider text-white'>Send Us a Message</h4>
+                  <p className='text-[10px] text-gray-400 italic mt-0.5'>Quick requirement or enquiry?</p>
+                </div>
+
+                <form onSubmit={handleSubmit} className='space-y-2'>
+                  <input required type='text' placeholder='Full Name' className='w-full px-3 py-2 bg-[#001122] border border-white/5 rounded-md text-xs font-semibold text-white focus:border-[#8b1d31] outline-none transition-colors' />
+                  
+                  <div className='grid grid-cols-2 gap-2'>
+                    <input required type='tel' placeholder='Phone' className='w-full px-3 py-2 bg-[#001122] border border-white/5 rounded-md text-xs font-semibold text-white focus:border-[#8b1d31] outline-none transition-colors' />
+                    <input required type='email' placeholder='Email' className='w-full px-3 py-2 bg-[#001122] border border-white/5 rounded-md text-xs font-semibold text-white focus:border-[#8b1d31] outline-none transition-colors' />
+                  </div>
+
+                  <input required type='text' placeholder='Machine Required' className='w-full px-3 py-2 bg-[#001122] border border-white/5 rounded-md text-xs font-semibold text-white focus:border-[#8b1d31] outline-none transition-colors' />
+                  <textarea required placeholder='Message' rows='1' className='w-full px-3 py-2 bg-[#001122] border border-white/5 rounded-md text-xs font-semibold text-white focus:border-[#8b1d31] outline-none resize-none h-10 transition-colors'></textarea>
+                  
+                  <button type='submit' className='w-full bg-[#8b1d31] hover:bg-red-800 text-white font-black py-2 rounded-md transition-colors text-xs uppercase tracking-widest shadow shadow-black/30 active:scale-[0.99]'>
+                    Send Enquiry
+                  </button>
+                </form>
+              </div>
+            )}
+          </div>
+
+        </div>
+      </div>
+
+      {/* ----------------- 3. COPYRIGHT & SOCIAL BAR ----------------- */}
+      <div className='w-full bg-[#00050a] py-5 border-t border-white/5 relative z-10'>
+        <div className='max-w-7xl mx-auto px-6 md:px-8 flex flex-col sm:flex-row justify-between items-center gap-4'>
+          
+          {/* Social Media Links */}
+          <div className='flex gap-2'>
             {socialLinks.map((social, index) => (
               <a
                 key={index}
                 href={social.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className='bg-white/[0.03] hover:bg-[#8b1d31] p-3 rounded-xl border border-white/5 hover:border-transparent transition-all duration-300 transform hover:-translate-y-1 group'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='bg-white/[0.02] hover:bg-[#8b1d31] p-2.5 rounded-lg border border-white/5 hover:border-transparent transition-all duration-300 transform hover:-translate-y-0.5 group'
               >
-                <social.Icon size={16} className='text-gray-400 group-hover:text-white group-hover:scale-110 transition-all' />
+                <social.Icon size={14} className='text-gray-400 group-hover:text-white transition-colors' />
               </a>
             ))}
           </div>
 
-          <div className='text-center md:text-right'>
-            <p className='text-[10px] text-gray-500 uppercase tracking-[0.25em] font-bold leading-relaxed'>
+          {/* Copyright Statement */}
+          <div className='text-center sm:text-right'>
+            <p className='text-[10px] text-gray-500 uppercase tracking-[0.2em] font-bold leading-relaxed'>
               &copy; {new Date().getFullYear()}{' '}
               <span className='text-[#8b1d31] tracking-normal font-black'>
                 Mech Chem Engineering Services
@@ -428,8 +228,10 @@ const Footer = () => {
               . All Rights Reserved.
             </p>
           </div>
+
         </div>
       </div>
+
     </footer>
   )
 }

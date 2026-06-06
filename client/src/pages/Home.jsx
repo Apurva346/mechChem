@@ -17,23 +17,7 @@ import {
   Wrench,
   Car
 } from 'lucide-react'
-// import {
-//   ShieldCheck,
-//   Users,
-//   Settings,
-//   BadgeIndianRupee,
-//   Truck,
-//   Headset,
-//   Factory,
-//   Wrench,
-//   Car,
-//   Cpu,
-//   Zap,
-//   Target,
-//   Box,
-//   Scissors,
-//   ChevronRight
-// } from 'lucide-react'
+
 import React, { useState, useEffect } from 'react' // useState ani useEffect add kara
 import axios from 'axios'
 
@@ -50,7 +34,6 @@ const Home = () => {
   return (
     <div className='font-sans w-full'>
       {/* --- 1. Hero Section --- */}
-
       <section className='relative overflow-hidden min-h-[580px] lg:min-h-[380px] flex flex-col justify-between w-full'>
         {/* --- Background Image & Gradient Overlay --- */}
         <div className='absolute inset-0 z-0'>
@@ -82,7 +65,7 @@ const Home = () => {
               <span className='text-xs sm:text-sm uppercase tracking-[0.2em] font-semibold text-slate-300'>
                 Trusted Supplier Of
               </span>
-              <div className='w-8 h-[2px] bg-white opacity-60'></div>
+              <div className='w-8 h-[2px] bg-white opacity-100'></div>
             </div>
 
             {/* Main Big Heading */}
@@ -155,7 +138,7 @@ const Home = () => {
         </div>
 
         {/* --- BOTTOM TRUST BAR (White Strip From Image) --- */}
-        <div className='w-full bg-white border-t border-slate-200 py-5 px-6 lg:px-12 z-20'>
+        <div className='w-full bg-slate border-t border-slate-900 py-5 px-6 lg:px-12 z-20'>
           <div className='max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 lg:divide-x lg:divide-slate-200/80'>
             {/* Feature 1 */}
             <div className='flex items-center gap-3.5 pl-0 lg:pl-4'>
@@ -163,10 +146,10 @@ const Home = () => {
                 <Layers size={24} />
               </div>
               <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-slate-950 uppercase tracking-wider leading-tight'>
+                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
                   Wide Range
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-slate-500 uppercase mt-0.5'>
+                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
                   Of Machines
                 </span>
               </div>
@@ -178,10 +161,10 @@ const Home = () => {
                 <CircleDollarSign size={24} />
               </div>
               <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-slate-950 uppercase tracking-wider leading-tight'>
+                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
                   Competitive
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-slate-500 uppercase mt-0.5'>
+                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
                   Prices
                 </span>
               </div>
@@ -193,10 +176,10 @@ const Home = () => {
                 <Headphones size={24} />
               </div>
               <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-slate-950 uppercase tracking-wider leading-tight'>
+                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
                   After Sales
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-slate-500 uppercase mt-0.5'>
+                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
                   Support
                 </span>
               </div>
@@ -208,10 +191,10 @@ const Home = () => {
                 <Map size={24} />
               </div>
               <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-slate-950 uppercase tracking-wider leading-tight'>
+                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
                   Serving Across
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-slate-500 uppercase mt-0.5'>
+                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
                   Maharashtra
                 </span>
               </div>
@@ -219,38 +202,44 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
       {/* --- 2. Our Industrial Machines Section --- */}
-      <section className='py-20 px-6 bg-slate-50'>
+      <section className='py-20 px-6 bg-gradient-to-b from-slate-50 to-white'>
         <div className='max-w-7xl mx-auto text-center'>
-          <h2 className='text-3xl font-bold mb-12 uppercase tracking-tight text-slate-800'>
+          <h2 className='text-4xl lg:text-5xl font-extrabold uppercase tracking-tight text-slate-900'>
             Our Industrial Machines
           </h2>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
+
+          <div className='w-24 h-1 bg-[#eeb44b] mx-auto mt-4 mb-14 rounded-full'></div>
+
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10'>
             {machines
               .filter(m => m.category === 'Industrial Machines')
               .map(machine => (
                 <div
                   key={machine._id}
-                  className='bg-white p-4 rounded-xl shadow-sm border hover:shadow-md transition group'
+                  className='bg-white p-5 rounded-2xl border border-slate-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group overflow-hidden'
                 >
-                  <div className='overflow-hidden rounded-lg mb-4 h-44 flex items-center justify-center bg-slate-50'>
+                  {/* Image */}
+                  <div className='overflow-hidden rounded-xl mb-5 h-52 flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100'>
                     <img
                       src={machine.image}
                       alt={machine.name}
-                      className='max-h-full object-contain group-hover:scale-105 transition-transform'
+                      className='max-h-full object-contain group-hover:scale-110 transition-transform duration-500'
                     />
                   </div>
-                  <h4 className='font-bold text-lg mb-2 text-slate-800'>
+
+                  {/* Title */}
+                  <h4 className='font-extrabold text-xl mb-3 text-slate-900 tracking-tight'>
                     {machine.name}
                   </h4>
-                  <p className='text-sm text-slate-500 mb-4 line-clamp-2'>
+
+                  {/* Description */}
+                  <p className='text-sm text-slate-600 mb-5 leading-relaxed line-clamp-2 min-h-[48px]'>
                     {machine.shortDescription ||
                       'High precision and durable machine for industrial manufacturing tasks.'}
                   </p>
 
-                  {/* ✅ दुरुस्त केलेला कोड: machines ऐवजी machine? वापरलं आणि category चा slug बनवला */}
+                  {/* Button */}
                   <Link
                     to={`/category/${
                       machine?.name
@@ -262,7 +251,7 @@ const Home = () => {
                         : ''
                     }`}
                   >
-                    <button className='w-full bg-slate-800 text-white py-2 rounded hover:bg-slate-900 transition font-semibold'>
+                    <button className='w-full bg-[#0f172a] text-white py-3 rounded-lg font-bold tracking-wide hover:bg-[#8b1d31] transition-all duration-300 shadow-lg'>
                       View Details
                     </button>
                   </Link>
@@ -271,9 +260,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* --- 3. i-NAX Promo & Product Cards --- */}
-
       <div className='mx-[20px] my-6 rounded-sm overflow-hidden border border-slate-800'>
         {/* i-NAX Banner */}
         <section className='relative bg-[#0a0f1a] min-h-[480px] lg:min-h-[520px] flex items-center py-12'>
@@ -388,29 +375,36 @@ const Home = () => {
           </div>
         </section>
       </div>
-
       {/* --- 4. Why Choose Us (Services) --- */}
-      <section className='bg-slate-50 py-16 px-6'>
-        <div className='max-w-7xl mx-auto mb-20 text-center'>
-          <h2 className='text-[#8b1d31] text-3xl lg:text-4xl font-bold mb-12'>
+      
+      <section className='bg-gradient-to-b from-slate-50 via-white to-slate-100 py-24 px-6'>
+        {/* Why Choose Us */}
+        <div className='max-w-7xl mx-auto mb-24 text-center'>
+          <h2 className='text-[#8b1d31] text-4xl lg:text-5xl font-extrabold mb-4'>
             Why Choose Mech Chem Engineering Services
           </h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+
+          <div className='w-24 h-1 bg-[#eeb44b] mx-auto mb-14 rounded-full'></div>
+
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
             <FeatureCard
               icon={<ShieldCheck className='w-10 h-10 text-[#8b1d31]' />}
               title='Trusted Supplier'
               desc='Reliable machines and dependable service support.'
             />
+
             <FeatureCard
               icon={<Users className='w-10 h-10 text-[#8b1d31]' />}
               title='Experienced Team'
               desc='Skilled professionals ensuring accurate installation.'
             />
+
             <FeatureCard
               icon={<Settings className='w-10 h-10 text-[#8b1d31]' />}
               title='Performance Tested'
               desc='Durable machines built for long-term industrial use.'
             />
+
             <FeatureCard
               icon={<BadgeIndianRupee className='w-10 h-10 text-[#8b1d31]' />}
               title='Competitive Pricing'
@@ -419,36 +413,41 @@ const Home = () => {
           </div>
         </div>
 
-        {/* --- 5. Industries We Serve (Banner with Blur) --- */}
-        <div className='relative mb-20 overflow-hidden rounded-md py-16 max-w-7xl mx-auto'>
+        {/* Industries We Serve */}
+        <div className='relative mb-24 overflow-hidden rounded-3xl py-20 max-w-7xl mx-auto shadow-2xl'>
           <div className='absolute inset-0 z-0'>
             <img
               src='/images/background/Home Page Update/Images/Industrial Machinery Sales & Services.png'
               alt='Industries'
               className='w-full h-full object-cover blur-sm scale-110'
             />
-            <div className='absolute inset-0 bg-slate-950/75'></div>
+            <div className='absolute inset-0 bg-slate-950/80'></div>
           </div>
-          <div className='relative z-10 px-8'>
-            <h2 className='text-white bg-[#8b1d31] py-3 px-8 w-fit text-2xl font-bold mb-10 rounded-r-full shadow-lg'>
+
+          <div className='relative z-10 px-8 lg:px-12'>
+            <h2 className='text-white text-4xl lg:text-5xl font-extrabold mb-14 uppercase tracking-wide'>
               Industries We Serve
             </h2>
+
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
               <IndustryCard
                 icon={<Factory />}
                 title='Fabrication'
                 desc='Metal cutting and structural work machines.'
               />
+
               <IndustryCard
                 icon={<Cpu />}
                 title='Manufacturing'
                 desc='Solutions for production units and plants.'
               />
+
               <IndustryCard
                 icon={<Wrench />}
                 title='Workshops'
                 desc='Precision machining for daily operations.'
               />
+
               <IndustryCard
                 icon={<Car />}
                 title='Automotive'
@@ -458,34 +457,111 @@ const Home = () => {
           </div>
         </div>
 
-        {/* --- 6. Services Grid --- */}
+        {/* Our Services */}
         <div className='max-w-7xl mx-auto text-center'>
-          <h2 className='text-[#1e293b] text-3xl font-bold mb-12 border-b-2 border-[#8b1d31] w-fit mx-auto pb-2'>
+          <h2 className='text-4xl lg:text-5xl font-extrabold text-slate-900 uppercase tracking-tight'>
             Our Services
           </h2>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-200 bg-white shadow-sm'>
+
+          <div className='w-24 h-1 bg-[#8b1d31] mx-auto mt-4 mb-14 rounded-full'></div>
+
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
             <ServiceItem
               title='Machine Installation'
               desc='Professional engineering installation.'
             />
+
             <ServiceItem
               title='Machine Repair'
               desc='Quick response repair services.'
             />
+
             <ServiceItem
               title='Spare Parts'
               desc='Genuine parts for all machines.'
             />
+
             <ServiceItem
               title='Fast Delivery'
               desc='Timely delivery for all services.'
             />
+
             <ServiceItem
               title='AMC Support'
               desc='Annual maintenance contract support.'
             />
-            <div className='p-8 bg-slate-50 flex items-center justify-center italic text-slate-400'>
+
+            <div className='bg-gradient-to-r from-[#8b1d31] to-red-800 text-white rounded-2xl p-8 flex items-center justify-center font-bold text-lg shadow-xl'>
               Mech Chem Support
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* 7. What Our Customers Say */}
+      <section className='py-20 px-6 bg-white'>
+        <div className='max-w-7xl mx-auto'>
+          <h2 className='text-[#8b1d31] text-3xl lg:text-4xl font-bold mb-12 text-center underline decoration-slate-200 underline-offset-8'>
+            What Our Customers Say
+          </h2>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+            {/* Static Testimonials */}
+            <div className='space-y-8'>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <span className='absolute -top-4 -left-2 text-6xl text-slate-100 font-serif'>
+                  "
+                </span>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic relative z-10'>
+                  "Reliable machine supplier with good service support."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Fabrication Workshop, Nagpur
+                </p>
+              </div>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic'>
+                  "Quality machines and timely delivery."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Engineering Company
+                </p>
+              </div>
+              <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-sm font-bold text-sm uppercase transition-all shadow-lg active:scale-95'>
+                View More Photos
+              </button>
+            </div>
+
+            {/* Dynamic Photo Gallery from Atlas */}
+            <div className='grid grid-cols-2 gap-3 h-[350px]'>
+              <div className='space-y-3 h-full'>
+                {machines
+                  .filter(m => m.dataType === 'testimonial')
+                  .slice(0, 2)
+                  .map((t, idx) => (
+                    <div
+                      key={idx}
+                      className='h-1/2 overflow-hidden rounded-sm shadow-md'
+                    >
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                      />
+                    </div>
+                  ))}
+              </div>
+              <div className='h-full overflow-hidden rounded-sm shadow-md'>
+                {machines
+                  .filter(m => m.dataType === 'testimonial')
+                  .slice(2, 3)
+                  .map((t, idx) => (
+                    <img
+                      key={idx}
+                      src={t.image}
+                      alt={t.name}
+                      className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                    />
+                  ))}
+              </div>
             </div>
           </div>
         </div>
