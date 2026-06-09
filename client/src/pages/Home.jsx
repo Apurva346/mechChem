@@ -34,6 +34,7 @@ const Home = () => {
   return (
     <div className='font-sans w-full'>
       {/* --- 1. Hero Section --- */}
+
       <section className='relative overflow-hidden min-h-[580px] lg:min-h-[380px] flex flex-col justify-between w-full'>
         {/* --- Background Image & Gradient Overlay --- */}
         <div className='absolute inset-0 z-0'>
@@ -48,16 +49,13 @@ const Home = () => {
         {/* --- Diagonal Accent Graphics (Right Side Visuals) --- */}
         <div className='absolute right-0 top-0 h-full w-1/2 hidden lg:flex items-center justify-center z-10 pointer-events-none'>
           <div className='relative w-full h-full opacity-60'>
-            {/* Yellow accent divider line */}
-            {/* <div className='absolute right-1/3 top-0 bottom-0 w-[4px] bg-[#eeb44b] transform rotate-[25deg]'></div> */}
-            {/* Rotating box simulation from image */}
             <div className='absolute right-0 top-4 w-48 h-48 bg-[#eeb44b] transform rotate-45 rounded-xl opacity-20'></div>
           </div>
         </div>
 
         {/* --- Main Content Layout Grid --- */}
         <div className='relative z-20 w-full max-w-7xl mx-auto px-4 lg:px-2 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-grow'>
-          {/* LEFT COLUMN: Main Typography & Icons (Takes 7 columns on Desktop) */}
+          {/* LEFT COLUMN: Main Typography & Icons */}
           <div className='lg:col-span-7 flex flex-col justify-center'>
             {/* Subtitle Line */}
             <div className='flex items-center gap-3 mb-3'>
@@ -90,7 +88,7 @@ const Home = () => {
               <span className='text-slate-600 mx-1.5'>|</span> Workshop Machines
             </p>
 
-            {/* 4 Feature Columns row (Directly from Image) */}
+            {/* 4 Feature Columns row */}
             <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 max-w-xl'>
               <div className='flex flex-col items-start gap-1.5'>
                 <ShieldCheck className='text-[#eeb44b]' size={22} />
@@ -133,72 +131,72 @@ const Home = () => {
               </Link>
             </div>
           </div>
-
-          {/* RIGHT COLUMN: Performance / Precision Float Cards (Takes 5 columns on Desktop) */}
         </div>
 
-        {/* --- BOTTOM TRUST BAR (White Strip From Image) --- */}
-        <div className='w-full bg-slate border-t border-slate-900 py-5 px-6 lg:px-12 z-20'>
-          <div className='max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 lg:divide-x lg:divide-slate-200/80'>
+        {/* --- BOTTOM TRUST BAR (अपूर्वा, तुझा ओरिजिनल कंटेंन्ट आता विना-स्क्रोल एकाच ओळीत बसेल) --- */}
+        <div className='w-full bg-slate border-t border-slate-900 py-3 px-1 sm:px-6 lg:px-12 z-20'>
+          <div className='max-w-7xl mx-auto flex justify-between lg:grid lg:grid-cols-4 gap-0.5 sm:gap-4 lg:divide-x lg:divide-slate-200/80'>
+            
             {/* Feature 1 */}
-            <div className='flex items-center gap-3.5 pl-0 lg:pl-4'>
-              <div className='text-slate-800 p-2.5 bg-slate-100 rounded-lg shrink-0'>
-                <Layers size={24} />
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-4'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <Layers className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
               </div>
-              <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
                   Wide Range
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
                   Of Machines
                 </span>
               </div>
             </div>
 
             {/* Feature 2 */}
-            <div className='flex items-center gap-3.5 pl-0 lg:pl-8'>
-              <div className='text-slate-800 p-2.5 bg-slate-100 rounded-lg shrink-0'>
-                <CircleDollarSign size={24} />
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <CircleDollarSign className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
               </div>
-              <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
                   Competitive
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
                   Prices
                 </span>
               </div>
             </div>
 
             {/* Feature 3 */}
-            <div className='flex items-center gap-3.5 pl-0 lg:pl-8'>
-              <div className='text-slate-800 p-2.5 bg-slate-100 rounded-lg shrink-0'>
-                <Headphones size={24} />
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <Headphones className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
               </div>
-              <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
                   After Sales
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
                   Support
                 </span>
               </div>
             </div>
 
             {/* Feature 4 */}
-            <div className='flex items-center gap-3.5 pl-0 lg:pl-8'>
-              <div className='text-slate-800 p-2.5 bg-slate-100 rounded-lg shrink-0'>
-                <Map size={24} />
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <Map className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
               </div>
-              <div className='flex flex-col'>
-                <span className='text-xs sm:text-sm font-extrabold text-[#eeb44b] uppercase tracking-wider leading-tight'>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
                   Serving Across
                 </span>
-                <span className='text-[10px] sm:text-xs font-semibold text-white uppercase mt-0.5'>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
                   Maharashtra
                 </span>
               </div>
             </div>
+
           </div>
         </div>
       </section>
