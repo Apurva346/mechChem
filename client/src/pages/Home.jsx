@@ -39,7 +39,7 @@ const Home = () => {
         {/* --- Background Image & Gradient Overlay --- */}
         <div className='absolute inset-0 z-0'>
           <img
-            src='/images/background/Home Page Update/Images/Industrial Machine Sales & Services.png'
+            src='/images/background/Home Page Update/Images/IndustrialMachineSalesServices.png'
             alt='Industrial Machines'
             className='block w-screen h-full opacity-100'
           />
@@ -136,11 +136,10 @@ const Home = () => {
         {/* --- BOTTOM TRUST BAR (अपूर्वा, तुझा ओरिजिनल कंटेंन्ट आता विना-स्क्रोल एकाच ओळीत बसेल) --- */}
         <div className='w-full bg-slate border-t border-slate-900 py-3 px-1 sm:px-6 lg:px-12 z-20'>
           <div className='max-w-7xl mx-auto flex justify-between lg:grid lg:grid-cols-4 gap-0.5 sm:gap-4 lg:divide-x lg:divide-slate-200/80'>
-            
             {/* Feature 1 */}
             <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-4'>
               <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
-                <Layers className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
+                <Layers className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
               </div>
               <div className='flex flex-col min-w-0'>
                 <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
@@ -155,7 +154,7 @@ const Home = () => {
             {/* Feature 2 */}
             <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
               <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
-                <CircleDollarSign className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
+                <CircleDollarSign className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
               </div>
               <div className='flex flex-col min-w-0'>
                 <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
@@ -170,7 +169,7 @@ const Home = () => {
             {/* Feature 3 */}
             <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
               <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
-                <Headphones className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
+                <Headphones className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
               </div>
               <div className='flex flex-col min-w-0'>
                 <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
@@ -185,7 +184,7 @@ const Home = () => {
             {/* Feature 4 */}
             <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
               <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
-                <Map className="w-3.5 h-3.5 sm:w-6 sm:h-6" />
+                <Map className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
               </div>
               <div className='flex flex-col min-w-0'>
                 <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
@@ -196,7 +195,171 @@ const Home = () => {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section className='relative overflow-hidden min-h-[580px] lg:min-h-[380px] flex flex-col justify-between w-full bg-[#060b13]'>
+        {/* --- Background Image & Gradient Overlay --- */}
+        <div className='absolute inset-0 z-0'>
+          {/* Image will only display on large desktop screens; stays hidden on mobile to avoid compression */}
+          <img
+            src='/images/background/Home Page Update/Images/IndustrialMachineSalesServices.png'
+            alt='Industrial Machines'
+            className='hidden lg:block w-screen h-full opacity-100 object-cover'
+          />
+          <div className='absolute inset-0 bg-gradient-to-r from-[#060b13] via-[#060b13]/90 to-transparent'></div>
+        </div>
+
+        {/* --- Diagonal Accent Graphics (Right Side Visuals) --- */}
+        <div className='absolute right-0 top-0 h-full w-1/2 hidden lg:flex items-center justify-center z-10 pointer-events-none'>
+          <div className='relative w-full h-full opacity-60'>
+            <div className='absolute right-0 top-4 w-48 h-48 bg-[#eeb44b] transform rotate-45 rounded-xl opacity-20'></div>
+          </div>
+        </div>
+
+        {/* --- Main Content Layout Grid --- */}
+        <div className='relative z-20 w-full max-w-7xl mx-auto px-4 lg:px-2 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-grow'>
+          {/* LEFT COLUMN: Main Typography & Icons */}
+          <div className='lg:col-span-7 flex flex-col justify-center'>
+            {/* Subtitle Line */}
+            <div className='flex items-center gap-3 mb-3'>
+              <div className='w-8 h-[2px] bg-white opacity-60'></div>
+              <span className='text-xs sm:text-sm uppercase tracking-[0.2em] font-semibold text-slate-300'>
+                Trusted Supplier Of
+              </span>
+              <div className='w-8 h-[2px] bg-white opacity-100'></div>
+            </div>
+
+            {/* Main Big Heading */}
+            <h1 className='text-4xl sm:text-6xl font-extrabold tracking-tight leading-none mb-4'>
+              <span className='text-white block uppercase'>Industrial</span>
+              <span className='text-[#eeb44b] block uppercase mt-1'>
+                Machines
+              </span>
+            </h1>
+
+            {/* Location & Experience Line */}
+            <p className='text-sm sm:text-lg font-bold text-slate-200 tracking-wide uppercase mb-4'>
+              In Nagpur - Serving Maharashtra{' '}
+              <span className='text-[#eeb44b]'>Since 2012</span>
+            </p>
+
+            {/* Machine Links / Categories Ribbon */}
+            <p className='text-xs sm:text-sm text-slate-400 font-medium tracking-wider uppercase border-b border-slate-800/80 pb-6 mb-6 max-w-xl'>
+              Lathe <span className='text-slate-600 mx-1.5'>|</span> Milling
+              <span className='text-slate-600 mx-1.5'>|</span> Drilling
+              <span className='text-slate-600 mx-1.5'>|</span> Power Press
+              <span className='text-slate-600 mx-1.5'>|</span> Workshop Machines
+            </p>
+
+            {/* 4 Feature Columns row - HIDDEN ON MOBILE (hidden), VISIBLE ON DESKTOP (lg:grid) */}
+            <div className='hidden lg:grid grid-cols-4 gap-4 mb-8 max-w-xl'>
+              <div className='flex flex-col items-start gap-1.5'>
+                <ShieldCheck className='text-[#eeb44b]' size={22} />
+                <span className='text-[11px] font-bold uppercase tracking-wider text-white leading-tight'>
+                  Trusted Since 2012
+                </span>
+              </div>
+              <div className='flex flex-col items-start gap-1.5'>
+                <Settings className='text-[#eeb44b]' size={22} />
+                <span className='text-[11px] font-bold uppercase tracking-wider text-white leading-tight'>
+                  Quality Machines
+                </span>
+              </div>
+              <div className='flex flex-col items-start gap-1.5'>
+                <Users className='text-[#eeb44b]' size={22} />
+                <span className='text-[11px] font-bold uppercase tracking-wider text-white leading-tight'>
+                  Expert Support
+                </span>
+              </div>
+              <div className='flex flex-col items-start gap-1.5'>
+                <ThumbsUp className='text-[#eeb44b]' size={22} />
+                <span className='text-[11px] font-bold uppercase tracking-wider text-white leading-tight'>
+                  Reliable Service
+                </span>
+              </div>
+            </div>
+
+            {/* CTA Action Buttons */}
+            <div className='flex flex-wrap gap-4 mt-2'>
+              <Link to='/contact'>
+                <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-red-800 shadow-xl transition-all active:scale-98'>
+                  Get Quote
+                </button>
+              </Link>
+
+              <Link to='/allmachine'>
+                <button className='bg-[#eeb44b] text-slate-950 px-8 py-3 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-yellow-500 shadow-xl transition-all active:scale-98'>
+                  View Products
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* --- BOTTOM TRUST BAR --- */}
+        <div className='w-full bg-slate border-t border-slate-900 py-3 px-1 sm:px-6 lg:px-12 z-20'>
+          <div className='max-w-7xl mx-auto flex justify-between lg:grid lg:grid-cols-4 gap-0.5 sm:gap-4 lg:divide-x lg:divide-slate-200/80'>
+            {/* Feature 1 */}
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-4'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <Layers className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
+              </div>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
+                  Wide Range
+                </span>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
+                  Of Machines
+                </span>
+              </div>
+            </div>
+
+            {/* Feature 2 */}
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <CircleDollarSign className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
+              </div>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
+                  Competitive
+                </span>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
+                  Prices
+                </span>
+              </div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <Headphones className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
+              </div>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
+                  After Sales
+                </span>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
+                  Support
+                </span>
+              </div>
+            </div>
+
+            {/* Feature 4 */}
+            <div className='flex items-center gap-1 sm:gap-2.5 pl-0 lg:pl-8'>
+              <div className='text-slate-800 p-1 sm:p-2.5 bg-slate-100 rounded shrink-0'>
+                <Map className='w-3.5 h-3.5 sm:w-6 sm:h-6' />
+              </div>
+              <div className='flex flex-col min-w-0'>
+                <span className='text-[8px] sm:text-xs font-extrabold text-[#eeb44b] uppercase tracking-tighter sm:tracking-wider leading-none block whitespace-nowrap'>
+                  Serving Across
+                </span>
+                <span className='text-[7px] sm:text-[10px] font-semibold text-white uppercase mt-0.5 tracking-tighter sm:tracking-normal block whitespace-nowrap'>
+                  Maharashtra
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -374,7 +537,7 @@ const Home = () => {
         </section>
       </div>
       {/* --- 4. Why Choose Us (Services) --- */}
-      
+
       <section className='bg-gradient-to-b from-slate-50 via-white to-slate-100 py-24 px-6'>
         {/* Why Choose Us */}
         <div className='max-w-7xl mx-auto mb-24 text-center'>

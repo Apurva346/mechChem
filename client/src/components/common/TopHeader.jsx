@@ -72,14 +72,7 @@ const TopHeader = () => {
             </a>
           </div>
           
-          <div className="h-3 w-px bg-white/20"></div> {/* नंबर्सच्या मधली लहान लाईन */}
           
-          <div className="flex items-center gap-1.5 group">
-            <Phone size={13} className="text-orange-500" />
-            <a href="tel:+919226450455" className="hover:text-orange-500 hover:underline transition-colors">
-              +91-9226450455
-            </a>
-          </div>
         </div>
 
         {/* Right Section: Social Icons & Email */}

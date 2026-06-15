@@ -280,7 +280,7 @@ const Footer = () => {
             <div className='flex items-center gap-3'>
               <Link to='/' className='inline-block bg-white p-1.5 rounded shadow-md shrink-0 transform hover:scale-105 transition-transform'>
                 <img
-                  src='/images/Mech Chem Engineering Services Logo (2).png'
+                  src='/images/MechChemEngineeringServicesLogo.png'
                   alt='Mech Chem Engineering Services'
                   className='h-11 w-auto object-contain'
                 />

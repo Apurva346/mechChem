@@ -117,7 +117,7 @@ const Navbar = () => {
           {/* LOGO */}
           <Link to='/' className='shrink-0 flex items-center group py-2'>
             <img
-              src='/images/mechchem-logo.png'
+              src='/images/mechchemlogo.png'
               alt='Mech Chem Engineering Services'
               className='h-14 md:h-14 lg:h-18 w-auto object-contain transition-transform duration-300 group-hover:scale-105'
             />
