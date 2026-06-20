@@ -38,7 +38,7 @@ const millingMachines = [
             { question: "Is this machine suitable for continuous industrial use?", answer: "Yes, it is designed for long working hours and heavy workloads." }
         ],
         ctaText: "Searching for a powerful machining setup? Get in touch with our specialists to discuss capacity and delivery timelines.",
-        image: "/images/machines/heavydutymillingmachine.png",
+        image: "/images/machines/heavy-duty-milling-machine.png",
         altText: "heavy-duty-milling-machine",
         metaTitle: "Heavy Duty Milling Machine Dealer in Nagpur | Industrial Milling Equipment",
         metaDescription: "Trusted heavy duty milling machine supplier in Nagpur offering robust machines for heavy machining and industrial manufacturing."
@@ -63,7 +63,7 @@ const millingMachines = [
             { question: "What is the advantage of a turret milling machine?", answer: "It provides flexibility for precision machining and multi-directional operations." }
         ],
         ctaText: "Upgrade your workshop with a flexible milling solution. Contact us today for professional support.",
-        image: "/images/machines/turretmillingmachine.png",
+        image: "/images/machines/turret-milling-machine.png",
         altText: "turret-milling-machine",
         metaTitle: "Turret Milling Machine Dealer in Nagpur | Precision Milling Machine",
         metaDescription: "Dependable supplier of turret milling systems in Nagpur delivering accurate machining performance."
@@ -87,7 +87,7 @@ const millingMachines = [
             { question: "What is a universal milling machine used for?", answer: "It is used for milling, drilling, slotting, and gear cutting operations." }
         ],
         ctaText: "Get in touch with us to explore how our universal milling machines can enhance your production efficiency.",
-        image: "/images/machines/universalmillingmachine.png",
+        image: "/images/machines/universal-milling-machine.png",
         altText: "industrial-milling-machine-nagpur"
     },
     {
@@ -109,7 +109,7 @@ const millingMachines = [
             { question: "Is this machine suitable for industrial production work?", answer: "Yes, it is widely used in manufacturing and machining industries." }
         ],
         ctaText: "Need a precision milling system for accurate metal cutting? Reach out to us now.",
-        image: "/images/machines/verticalmillingmachine.png",
+        image: "/images/machines/vertical-milling-machine.png",
         altText: "metal-cutting-milling-machine"
     }
 ];
@@ -139,7 +139,7 @@ const drillingMachines = [
             { question: "Do you provide installation support?", answer: "Yes, we provide machine delivery, installation, and service assistance." }
         ],
         ctaText: "Searching for a versatile milling and drilling solution? Contact us for professional support.",
-        image: "/images/machines/VerticalMillingCumDrillingMachine.png",
+        image: "/images/machines/Vertical-Milling-Cum-Drilling-Machine.png",
         altText: "vertical-milling-cum-drilling-machine",
         metaTitle: "Vertical Milling Cum Drilling Machine Supplier in Nagpur Maharashtra",
         metaDescription: "Buy vertical milling - drilling machine from a trusted supplier in Nagpur. Suitable for engineering workshops, fabrication units, and industrial machining applications."
@@ -171,7 +171,7 @@ const drillingMachines = [
             { question: "What industries commonly use heavy drilling machines?", answer: "Fabrication, engineering, manufacturing, and heavy machinery industries." }
         ],
         ctaText: "Need high-capacity drilling? Contact Mech Chem Engineering Services today.",
-        image: "/images/machines/HeavyDrillingMachine.png",
+        image: "/images/machines/Heavy-Drilling-Machine.png",
         altText: "industrial heavy duty drilling machine Supplier",
         metaTitle: "Heavy Duty Drilling Machine Supplier for Industrial Use",
         metaDescription: "Durable heavy drilling machine designed for high-precision and large-capacity drilling operations in workshops, fabrication units, and industrial applications."
@@ -199,7 +199,7 @@ const drillingMachines = [
             { question: "Do you supply drilling machines to nearby industrial areas?", answer: "Yes, we supply machines across Nagpur, Maharashtra, and surrounding regions." }
         ],
         ctaText: "Discuss your large workpiece drilling requirements with us today.",
-        image: "/images/machines/HeavyDutyRadialDrillingMachine.png",
+        image: "/images/machines/Heavy-Duty-Radial-Drilling-Machine.png",
         altText: "heavy-duty-radial-drilling-machine",
         metaTitle: "Heavy Duty Radial Drilling Machine Supplier in Nagpur Maharashtra",
         metaDescription: "Buy heavy duty radial drill machine from a trusted supplier in Nagpur. Ideal for heavy fabrication, engineering industries, and large-scale drilling operations."
@@ -227,7 +227,7 @@ const drillingMachines = [
             { question: "Do you provide service and support after installation?", answer: "Yes, we offer complete machine supply, installation, and maintenance assistance." }
         ],
         ctaText: "Improve your fabrication efficiency. Get in touch for a Radial Drilling Machine quote.",
-        image: "/images/machines/RadialDrillingMachine.png",
+        image: "/images/machines/Radial-Drilling-Machine.png",
         altText: "radial-drilling-machine",
         metaTitle: "Radial Drilling Machine Supplier in Nagpur | Industrial Drill Machine",
         metaDescription: "Trusted radial drill machine supplier in Nagpur offering reliable drilling equipment for fabrication shops, engineering industries, and manufacturing units."
@@ -252,7 +252,7 @@ const drillingMachines = [
             { question: "What is the benefit of a geared radial drill?", answer: "It provides constant torque and easier speed adjustments compared to belt-driven models." }
         ],
         ctaText: "Searching for high precision drilling? Contact us to know more about Geared Radial Drills.",
-        image: "/images/machines/GearedRadialDrillingMachine.png",
+        image: "/images/machines/Geared-Radial-Drilling-Machine.png",
         altText: "geared-radial-drilling-machine"
     },
     {
@@ -299,7 +299,7 @@ const drillingMachines = [
                 answer: "While portable, it is built with high-quality materials to handle significant drilling capacities in industrial environments."
             }
         ],
-        image: "/images/machines/UniversalPortableRadialDrillingMachine.jpeg",
+        image: "/images/machines/Universal-Portable-Radial-Drilling-Machine.jpeg",
         altText: "universal-portable-radial-drilling-machine-nagpur",
         metaTitle: "Universal Portable Radial Drilling Machine Supplier in Nagpur",
         metaDescription: "Reliable supplier of Universal Portable Radial Drilling Machines in Nagpur. Ideal for large workpiece drilling at any angle."
@@ -341,7 +341,7 @@ const latheMachines = [
             { question: "Is a light duty lathe machine suitable for beginners?", answer: "Yes, simple to operate and widely used in ITI institutes and training centres." }
         ],
         ctaText: "Get free quote from Mech Chem Engineering Services.",
-        image: "/images/machines/Light duty lathe machine.png",
+        image: "/images/machines/Light-duty-lathe-machine.png",
         altText: "light-duty-lathe-machine-nagpur",
         metaTitle: "Light Duty Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Light Duty Lathe Machine in Nagpur at competitive prices. Ideal for small workshops, ITI institutes & job shops."
@@ -373,7 +373,7 @@ const latheMachines = [
             { question: "Can heavy duty lathe machines do threading operations?", answer: "Yes, they come with a threading gearbox that supports metric, inch, and module threads." }
         ],
         ctaText: "Call now for best price & quick delivery.",
-        image: "/images/machines/HeavyAndMediumDutyLatheMachine.png",
+        image: "/images/machines/Heavy-And-Medium-Duty-Lathe-Machine.png",
         altText: "heavy-duty-lathe-machine-nagpur",
         metaTitle: "Medium & Heavy Duty Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Supplier of Medium & Heavy Duty Lathe Machines in Nagpur. Suitable for fabrication, auto components & general engineering."
@@ -404,7 +404,7 @@ const latheMachines = [
             { question: "What is an extra heavy duty lathe machine?", answer: "A large industrial lathe designed to machine very heavy and large diameter workpieces such as shafts, rolls, and flanges." }
         ],
         ctaText: "Get best price from Mech Chem Engineering.",
-        image: "/images/machines/Extraheavydutylathemachine.png",
+        image: "/images/machines/Extra-heavy-duty-lathe-machine.png",
         altText: "extra-heavy-duty-lathe-machine-nagpur",
         metaTitle: "Extra Heavy Duty Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Extra Heavy Duty Lathe Machines in Nagpur for steel, paper & power industries. High torque, large swing capacity."
@@ -436,7 +436,7 @@ const latheMachines = [
             { question: "What is the spindle runout accuracy?", answer: "Precision lathe machines typically have spindle runout within 0.005mm." }
         ],
         ctaText: "Get free quote today for micron-level accuracy.",
-        image: "/images/machines/HeavyAndMediumDutyLatheMachine.png",
+        image: "/images/machines/Heavy-And-Medium-Duty-Lathe-Machine.png",
         altText: "high-accuracy-lathe-machine-tool-room",
         metaTitle: "Tool Room & Precision Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Tool Room & Precision Lathe Machines in Nagpur for die, mould & aerospace applications."
@@ -467,7 +467,7 @@ const latheMachines = [
             { question: "What is a high speed lathe machine used for?", answer: "Fast machining of non-ferrous materials like aluminium and brass requiring high spindle speeds." }
         ],
         ctaText: "Contact us for price & availability of High Speed Lathes.",
-        image: "/images/machines/Extraheavydutylathemachine.png",
+        image: "/images/machines/Extra-heavy-duty-lathe-machine.png",
         altText: "high-rpm-lathe-machine-nagpur",
         metaTitle: "High Speed Lathe Machine Supplier in Nagpur | Mech Chem Engineering Services",
         metaDescription: "Buy High Speed Lathe Machines in Nagpur for aluminium, brass & non-ferrous machining."
@@ -498,7 +498,7 @@ const latheMachines = [
             { question: "What is the difference between a capstan and a turret lathe?", answer: "Capstan has a lighter turret on a slide; Turret lathe has a heavier saddle-mounted turret for larger components." }
         ],
         ctaText: "Best price for batch production lathes from Mech Chem Engineering Services.",
-        image: "/images/machines/Capstanlathemachine.png",
+        image: "/images/machines/Capstan-lathe-machine.png",
         altText: "capstan-lathe-machine-nagpur",
         metaTitle: "Capstan & Turret Lathe Machine Supplier Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Capstan & Turret Lathe Machines in Nagpur for high volume batch production."
@@ -530,7 +530,7 @@ const latheMachines = [
             { question: "What is a CNC lathe machine?", answer: "A computer-controlled machine that executes programmed operations like turning and boring with high precision." }
         ],
         ctaText: "Get free quote for CNC Lathes with Fanuc & Siemens controllers.",
-        image: "/images/machines/CNCLatheMachine.png",
+        image: "/images/machines/CNC-Lathe-Machine.png",
         altText: "cnc-lathe-machine-nagpur",
         metaTitle: "CNC Lathe Machine Supplier in Nagpur | Mech Chem Engineering Services",
         metaDescription: "Buy CNC Lathe Machines in Nagpur. High precision, automatic turret, fast production."
@@ -561,7 +561,7 @@ const latheMachines = [
             { question: "What is the advantage of all geared lathe over belt driven lathe?", answer: "Consistent torque, less maintenance, and better for heavy cutting without slippage." }
         ],
         ctaText: "Get best price & quick delivery for All Geared Lathes in Nagpur.",
-        image: "/images/machines/ALLGearedGearedHeadLatheMachine.png",
+        image: "/images/machines/ALL-Geared-Geared-Head-Lathe-Machine.png",
         altText: "all-geared-lathe-machine-workshop",
         metaTitle: "All Geared Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy All Geared & Geared Head Lathe Machines in Nagpur. Wide speed range, low maintenance."
@@ -592,7 +592,7 @@ const latheMachines = [
             { question: "What are the advantages of a belt driven lathe?", answer: "Affordable, quieter, and the belt acts as a safety slip mechanism against overloads." }
         ],
         ctaText: "Contact Mech Chem Engineering for free quote on economical lathes.",
-        image: "/images/machines/VBeltDriveLatheMachine.png",
+        image: "/images/machines/V-Belt-Drive-Lathe-Machine.png",
         altText: "belt-driven-lathe-machine-nagpur",
         metaTitle: "Belt Driven Lathe Machine Supplier in Nagpur | Mech Chem Engineering",
         metaDescription: "Buy Belt Driven Lathe Machines in Nagpur at lowest price. Ideal for ITI institutes & small workshops."
@@ -641,7 +641,7 @@ const grindingMachines = [
             { question: "What is the difference between manual and hydraulic surface grinding machines?", answer: "In a manual machine, the table traverse and cross-feed are controlled by hand; in a hydraulic machine, the table reciprocates automatically via a hydraulic cylinder." }
         ],
         ctaText: "Need high-precision manual surface grinding? Contact us for technical details.",
-        image: "/images/machines/ManualSurfaceGrindingMachine.png",
+        image: "/images/machines/Manual-Surface-Grinding-Machine.png",
         altText: "Manual Surface Grinding Machine – precision surface grinder with manual table traverse and magnetic chuck",
         metaTitle: "Manual Surface Grinding Machine | Precision Flat Surface Finishing Equipment",
         metaDescription: "High-precision Manual Surface Grinding Machine for flat surface finishing of metal components. Explore key features and technical specifications."
@@ -684,7 +684,7 @@ const grindingMachines = [
             { question: "What is automatic cross-feed?", answer: "Automatic cross-feed advances the table laterally by a set increment at each reversal, ensuring consistent step-over for each grinding pass." }
         ],
         ctaText: "Optimise your production. Get in touch for a Hydraulic Surface Grinding Machine quote.",
-        image: "/images/machines/HydraulicSurfaceGrindingMachine.png",
+        image: "/images/machines/Hydraulic-Surface-Grinding-Machine.png",
         altText: "Hydraulic Surface Grinding Machine – automatic hydraulic table reciprocating surface grinder",
         metaTitle: "Hydraulic Surface Grinding Machine | Automatic Table Surface Grinder",
         metaDescription: "High-performance Hydraulic Surface Grinding Machine with automatic table reciprocation for consistent flat surface finishing."
@@ -723,7 +723,7 @@ const grindingMachines = [
             { question: "Can taper surfaces be ground?", answer: "Yes, the workpiece table or wheelhead can be swiveled to grind tapered shafts, Morse taper bores, and conical surfaces." }
         ],
         ctaText: "Looking for precision shaft grinding? Contact us for a quote today.",
-        image: "/images/machines/Cylindrical Grinding Machine.png",
+        image: "/images/machines/Cylindrical-Grinding-Machine.png",
         altText: "Cylindrical Grinding Machine – precision OD cylindrical grinder for shafts",
         metaTitle: "Cylindrical Grinding Machine | OD & ID Precision Cylindrical Grinder",
         metaDescription: "Precision Cylindrical Grinding Machine for external and internal grinding of shafts, spindles, and bores."
@@ -761,7 +761,7 @@ const grindingMachines = [
             { question: "Can carbide tools be ground?", answer: "Yes, diamond grinding wheels are used for carbide tools. Wet grinding with coolant is recommended to prevent thermal cracking." }
         ],
         ctaText: "Ensure maximum tool life. Contact us for a Tool & Cutter Grinding Machine quote.",
-        image: "/images/machines/ToolCutterGrindingMachine.png",
+        image: "/images/machines/Tool-Cutter-Grinding-Machine.png",
         altText: "Tool & Cutter Grinding Machine – universal tool and cutter grinder for sharpening",
         metaTitle: "Tool & Cutter Grinding Machine | Precision Cutting Tool Sharpening Equipment",
         metaDescription: "Versatile Tool & Cutter Grinding Machine for sharpening and re-grinding end mills, drills, reamers, and milling cutters."
@@ -826,7 +826,7 @@ const workholdingTools = [
             }
         ],
         ctaText: "Buy premium Self-Centering Lathe Chucks for fast, accurate workholding. Ideal for round and hexagonal workpieces on CNC & manual lathes.",
-        image: "/images/machines/SelfCenteringLatheChuck.png",
+        image: "/images/machines/Self-Centering-Lathe-Chuck.png",
         altText: "Self-Centering 3-Jaw Lathe Chuck for CNC and Manual Turning Operations",
         metaTitle: "Self-Centering Lathe Chuck | Automatic Jaw Chuck for CNC & Manual Lathes",
         metaDescription: "Buy premium Self-Centering Lathe Chucks for fast, accurate workholding. Ideal for round and hexagonal workpieces on CNC & manual lathes. Available in 3-jaw and scroll chuck configurations."
@@ -888,7 +888,7 @@ const workholdingTools = [
             }
         ],
         ctaText: "Shop industrial-grade 4-Jaw Independent Chucks. Achieve unmatched centering precision and heavy-duty clamping for irregular workpieces.",
-        image: "/images/machines/FourJawIndependentChuck.png",
+        image: "/images/machines/Four-Jaw-Independent-Chuck.png",
         altText: "4-Jaw Independent Lathe Chuck with Individually Adjustable Jaws for Custom Turning Setup",
         metaTitle: "4-Jaw Independent Chuck | Manual Adjusting Lathe Chuck for Irregular Components",
         metaDescription: "Shop industrial-grade 4-Jaw Independent Chucks. Achieve unmatched centering precision and heavy-duty clamping for irregular workpieces. Perfect for castings and eccentric turning."
@@ -957,7 +957,7 @@ const finishingCoatingMachines = [
             }
         ],
         ctaText: "Get high-efficiency Powder Coating Machines for a superior finish. Available in batch and automatic conveyor models for industrial metal coating.",
-        image: "/images/machines/PowderCoatingMachine.png",
+        image: "/images/machines/Powder-Coating-Machine.png",
         altText: "Industrial Powder Coating Machine with Electrostatic Spray Gun and Curing Oven",
         metaTitle: "Powder Coating Machine | Electrostatic Spray & Curing System Manufacturer",
         metaDescription: "Industrial powder coating machines for metal surface finishing. Electrostatic spray guns, conveyor ovens, and batch curing systems. Achieve uniform, corrosion-resistant, and eco-friendly coatings."
@@ -1059,7 +1059,7 @@ const bandsawMachines = [
             }
         ],
         ctaText: "High-performance Double Column Automatic Bandsaw Machine for accurate and heavy-duty metal cutting. Ideal for industrial cutting applications with hydraulic control, automatic indexing, and precision cutting.",
-        image: "/images/machines/DoubleColumnAutomaticBandsawMachine.png",
+        image: "/images/machines/Double-Column-Automatic-BandsawMachine.png",
         altText: "Double Column Automatic Bandsaw Machine for Industrial Heavy Duty Metal Cutting",
         metaTitle: "Double Column Automatic Bandsaw Machine Supplier in Nagpur | Heavy Duty Metal Cutting Bandsaw",
         metaDescription: "High-performance Double Column Automatic Bandsaw Machine for accurate and heavy-duty metal cutting. Ideal for industrial cutting applications with hydraulic control, automatic indexing, and precision cutting. Available in 200 DCA, 330 DCA & 425 DCA models."
@@ -1154,7 +1154,7 @@ const bandsawMachines = [
             }
         ],
         ctaText: "High-performance Double Column Semi Automatic Bandsaw Machine for accurate metal cutting applications. Hydraulic operation, rigid structure, and heavy-duty cutting performance ideal for industrial use.",
-        image: "/images/machines/DoubleColumnSemiAutomaticBandsawMachine.png",
+        image: "/images/machines/Double-Column-Semi-Automatic-BandsawMachine.png",
         altText: "Double Column Semi Automatic Bandsaw Machine for Metal Cutting",
         metaTitle: "Double Column Semi Automatic Bandsaw Machine Supplier in Nagpur | Heavy Duty Metal Cutting Bandsaw",
         metaDescription: "High-performance Double Column Semi Automatic Bandsaw Machine for accurate metal cutting applications. Hydraulic operation, rigid structure, and heavy-duty cutting performance ideal for industrial use. Available in 200 DCSA, 330 DCSA, 425 DCSA, 500 DCSA & 600 DCSA models."
@@ -1172,7 +1172,7 @@ const industrialMachines = [
     name: "Lathe Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Extraheavydutylathemachine.png",
+    image: "/home/mechindustrialmachine/Extra-heavy-duty-lathe-machine.png",
     shortDescription: "High precision lathe machines for metal machining."
   },
 
@@ -1180,7 +1180,7 @@ const industrialMachines = [
     name: "Milling Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/MillingMachines.png",
+    image: "/home/mechindustrialmachine/Milling-Machines.png",
     shortDescription: "Advanced milling machines for workshop operations."
   },
 
@@ -1188,7 +1188,7 @@ const industrialMachines = [
     name: "Drilling Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/DrillingMachines.png",
+    image: "/home/mechindustrialmachine/Drilling-Machines.png",
     shortDescription: "Heavy duty drilling machines for industrial applications."
   },
 
@@ -1196,7 +1196,7 @@ const industrialMachines = [
     name: "Grinding Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/HydraulicSurfaceGrindingMachine.png",
+    image: "/home/mechindustrialmachine/Hydraulic-Surface-Grinding-Machine.png",
     shortDescription: "Precision grinding machines for smooth surface finishing."
   },
 
@@ -1204,7 +1204,7 @@ const industrialMachines = [
     name: "Bandsaw Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/DoubleColumnAutomaticBandsawMachine.png",
+    image: "/home/mechindustrialmachine/Double-Column-Automatic-Bandsaw-Machine.png",
     shortDescription: "Industrial cutting machines for accurate metal cutting."
   },
 
@@ -1212,7 +1212,7 @@ const industrialMachines = [
     name: "Workholding Tools",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/FourJawIndependentChuck.png",
+    image: "/home/mechindustrialmachine/Four-Jaw-Independent-Chuck.png",
     shortDescription: "Reliable welding machines for fabrication and repair."
   },
 
@@ -1220,17 +1220,11 @@ const industrialMachines = [
     name: "Finishing & Coating Machines",
     dataType: "product",
     category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/RadialDrillingMachineSupplierinNagpur.png",
+    image: "/home/mechindustrialmachine/Radial-Drilling-Machine-SupplierinNagpur.png",
     shortDescription: "Powerful heavy machines for industrial manufacturing work."
   },
 
-//   {
-//     name: "Bandsaw Machines",
-//     dataType: "product",
-//     category: "Industrial Machines",
-//     image: "/home/mechindustrialmachine/Slotting Machine Supplier in Nagpur.png",
-//     shortDescription: "High accuracy threading machines for industrial production."
-//   }
+
 ];
 
 // --- 2. i-NAX MACHINES (Total 4 - Placeholder path dila aahe) ---
@@ -1243,8 +1237,8 @@ const inaxSectionData = [
 
 // --- 3. CUSTOMER TESTIMONIALS (Total 3) ---
 const customerGallery = [
-    { name: "Customer Work 1", dataType: "testimonial", image: "/home/mechindustrialmachine/cusone.png" },
-    { name: "Customer Work 2", dataType: "testimonial", image: "/home/mechindustrialmachine/custwo.png" },
+    { name: "Customer Work 1", dataType: "testimonial", image: "/home/mechindustrialmachine/cus-one.png" },
+    { name: "Customer Work 2", dataType: "testimonial", image: "/home/mechindustrialmachine/cus-two.png" },
     { name: "Customer Work 3", dataType: "testimonial", image: "/home/mechindustrialmachine/Lathe Machine.png" }
 ];
 

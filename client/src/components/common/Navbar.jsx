@@ -51,24 +51,7 @@ const Navbar = () => {
         'Geared Radial Drilling Machine'
       ]
     },
-    // {
-    //   category: 'Sheet Metal Machines',
-    //   isGrouped: true,
-    //   groups: [
-    //     {
-    //       groupName: 'Shearing Machines',
-    //       items: ['Hydraulic Shearing Machine', 'Hydraulic Sheet Shearing Machine', 'Metal Forming Shearing Machine']
-    //     },
-    //     {
-    //       groupName: 'Press Brake Machines',
-    //       items: ['Hydraulic Press Brake Machine']
-    //     },
-    //     {
-    //       groupName: 'Power Press Machines',
-    //       items: ['H Type Power Press Machine', 'C Type Power Press Machine', 'C Type Hydraulic Power Press Machine']
-    //     }
-    //   ]
-    // },
+    
     {
       category: 'Bandsaw Machines',
       subItems: [
@@ -89,15 +72,6 @@ const Navbar = () => {
         'Tool & Cutter Grinding Machine'
       ]
     },
-    // {
-    //   category: 'Shaping & Slotting Machines',
-    //   subItems: ['Gear Shaping Machine', 'Partition Slotting Machine', 'Heavy Duty Slotting Machine', 'Light Duty Slotting Machine']
-    // },
-    // {
-    //   category: 'Cutting Machines',
-    //   subItems: ['Band Saw Machine', 'Power Hacksaw Machine']
-    // },
-    
     
     {
       category: 'Finishing and Coating Machines',
@@ -117,7 +91,7 @@ const Navbar = () => {
           {/* LOGO */}
           <Link to='/' className='shrink-0 flex items-center group py-2'>
             <img
-              src='/images/mechchemlogo.png'
+              src='/images/mech-chem-logo.png'
               alt='Mech Chem Engineering Services'
               className='h-14 md:h-14 lg:h-18 w-auto object-contain transition-transform duration-300 group-hover:scale-105'
             />
@@ -179,7 +153,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Sidebar */}
+        
         {/* Mobile Sidebar */}
         {mobileMenu && (
           <div className='lg:hidden bg-white border-t absolute w-full left-0 shadow-2xl max-h-[75vh] overflow-y-auto z-[100] border-b-4 border-orange-500'>
@@ -380,79 +354,3 @@ const Navbar = () => {
 
 export default Navbar
 
-// {mobileMenu && (
-//           <div className='lg:hidden bg-white border-t absolute w-full left-0 shadow-2xl max-h-[85vh] overflow-y-auto z-[100] border-b-4 border-orange-500'>
-//             <div className='flex flex-col p-6 space-y-4'>
-//               <Link to='/' onClick={() => setMobileMenu(false)} className='font-black border-b pb-2 uppercase text-sm text-[#003366]'>
-//                 Home
-//               </Link>
-
-//               {/* Mobile Machines Accordion */}
-//               <div className="flex flex-col">
-//                 <p className='text-[10px] text-orange-500 uppercase tracking-widest font-black mb-4 underline'>
-//                   Machines Categories
-//                 </p>
-//                 <div className='pl-2 flex flex-col space-y-2'>
-//                   {fabrication.map((item, index) => (
-//                     <div key={index} className="border-b border-gray-50 pb-2">
-//                       <div className="flex justify-between items-center">
-//                         {/* Category Link (Direct to Category Page) */}
-//                         <Link
-//                           to={`/category/${formatId(item.category)}`}
-//                           onClick={() => setMobileMenu(false)}
-//                           className="text-sm font-black text-[#003366] uppercase hover:text-orange-500"
-//                         >
-//                           {item.category}
-//                         </Link>
-//                         <button onClick={() => toggleCategory(index)} className="p-1">
-//                           {openCategory === index ? <ChevronDown size={18}/> : <ChevronRight size={18}/>}
-//                         </button>
-//                       </div>
-
-//                       {/* Sub-items list (Mobile Accordion) */}
-//                       {openCategory === index && (
-//                         <div className="pl-4 mt-3 flex flex-col space-y-3 border-l-2 border-orange-100">
-//                           {item.isGrouped ? (
-//                             item.groups.map((group, gIdx) => (
-//                               <div key={gIdx} className="space-y-2">
-//                                 <p className="text-[10px] font-bold text-gray-400 uppercase">{group.groupName}</p>
-//                                 {group.items.map((sub, sIdx) => (
-//                                   <Link
-//                                     key={sIdx}
-//                                     to={`/machine/${formatId(sub)}`}
-//                                     onClick={() => setMobileMenu(false)}
-//                                     className="block text-[12px] font-bold text-gray-600 hover:text-orange-500 uppercase"
-//                                   >
-//                                     {sub}
-//                                   </Link>
-//                                 ))}
-//                               </div>
-//                             ))
-//                           ) : (
-//                             item.subItems?.map((sub, sIdx) => (
-//                               <Link
-//                                 key={sIdx}
-//                                 to={`/machine/${formatId(sub)}`}
-//                                 onClick={() => setMobileMenu(false)}
-//                                 className="block text-[12px] font-bold text-gray-600 hover:text-orange-500 uppercase"
-//                               >
-//                                 {sub}
-//                               </Link>
-//                             ))
-//                           )}
-//                         </div>
-//                       )}
-//                     </div>
-//                   ))}
-//                 </div>
-//               </div>
-
-//               <Link to='/about' onClick={() => setMobileMenu(false)} className='font-black border-b border-t pt-4 pb-2 uppercase text-sm text-[#003366]'>
-//                 About Us
-//               </Link>
-//               <Link to='/contact' onClick={() => setMobileMenu(false)} className='font-black pb-2 uppercase text-sm text-orange-500'>
-//                 Contact Us
-//               </Link>
-//             </div>
-//           </div>
-//         )}
