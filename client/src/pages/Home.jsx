@@ -20,6 +20,7 @@ import {
 
 import React, { useState, useEffect } from 'react' // useState ani useEffect add kara
 import axios from 'axios'
+import { Helmet } from 'react-helmet-async'
 
 const Home = () => {
   const [machines, setMachines] = useState([])
@@ -31,13 +32,113 @@ const Home = () => {
       .then(res => setMachines(res.data))
       .catch(err => console.log(err))
   }, [])
+
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Mech Chem Engineering Services',
+    image: 'https://www.mechchemindia.com/images/mechchem-logo.png',
+    '@id': 'https://www.mechchemindia.com/#localbusiness',
+    url: 'https://mechchemindia.com',
+    telephone: '+91-9960846786',
+    priceRange: '50,000 to 50,00000',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress:
+        'Plot No.27, shop No. 1, Nathuji Pise Complex, SPT Market, Great Nag Road, Nagpur-440003, Maharashtra',
+      addressLocality: 'Nagpur',
+      postalCode: '440003',
+      addressCountry: 'IN'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 21.136917,
+      longitude: 79.089655
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ],
+      opens: '10:00',
+      closes: '20:00'
+    },
+    sameAs: [
+      'https://www.facebook.com/MechChemEngineeringServices',
+      'https://x.com/inaxlaser',
+      'https://www.instagram.com/inaxlaser',
+      'https://www.youtube.com/@inaxlaser',
+      'https://www.mechchemindia.com/'
+    ]
+  }
+  console.log("Testimonial Data:", machines?.filter(m => m.dataType === 'testimonial'))
   return (
     <div className='font-sans w-full'>
-      {/* --- 1. Hero Section --- */}
+      <Helmet>
+        <title>
+          Best Industrial Machines Supplier in Nagpur Since 2012 | Mech Chem
+          Engineering Services
+        </title>
 
-      
+        <meta
+          name='description'
+          content='Buy Workshop Machineries, Tools and Accessories. We deals in Lathe, milling, drilling, grinding, and industrial machines with sales, service, and support.'
+        />
 
-      <section className='relative overflow-hidden min-h-[580px] lg:min-h-[380px] flex flex-col justify-between w-full bg-[#060b13]'>
+        <meta
+          name='keywords'
+          content='industrial machine supplier, industrial machine supplier in Nagpur, industrial machinery dealer, machine tools supplier, workshop equipment supplier, industrial machines in Maharashtra, workshop machinery supplier, machine tools dealer in Nagpur, industrial equipment supplier, industrial machine tools supplier, workshop machines supplier, metal working machines supplier, machine installation services, industrial machinery supplier in India, machine tools and accessories supplier, workshop machines dealer, industrial machine dealer in Maharashtra'
+        />
+
+        <meta name='revisit-after' content='1 days' />
+        <meta name='robots' content='index,follow' />
+
+        <link rel='canonical' href='https://www.mechchemindia.com/' />
+
+        {/* Open Graph */}
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content='https://www.facebook.com/MechChemEngineeringServices'
+        />
+        <meta
+          property='og:title'
+          content='Best Industrial Machines Supplier in Nagpur Since 2012 | Mech Chem Engineering Services'
+        />
+        <meta
+          property='og:description'
+          content='Buy Workshop Machineries, Tools and Accessories. We deals in Lathe, milling, drilling, grinding, and industrial machines with sales, service, and support.'
+        />
+        <meta
+          property='og:image'
+          content='https://www.mechchemindia.com/images/mechchem-logo.png'
+        />
+
+        {/* Twitter */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://x.com/inaxlaser' />
+        <meta
+          property='twitter:title'
+          content='Best Industrial Machines Supplier in Nagpur Since 2012 | Mech Chem Engineering Services'
+        />
+        <meta
+          property='twitter:description'
+          content='Buy Workshop Machineries, Tools and Accessories. We deals in Lathe, milling, drilling, grinding, and industrial machines with sales, service, and support.'
+        />
+        <meta
+          property='twitter:image'
+          content='https://www.mechchemindia.com/images/mechchem-logo.png'
+        />
+
+        <script type='application/ld+json'>{JSON.stringify(schemaData)}</script>
+      </Helmet>
+
+      <section className='relative pt-20 overflow-hidden min-h-[580px] lg:min-h-[380px] flex flex-col justify-between w-full bg-[#060b13]'>
         {/* --- Background Image & Gradient Overlay --- */}
         <div className='absolute inset-0 z-0'>
           {/* Image will only display on large desktop screens; stays hidden on mobile to avoid compression */}
@@ -560,6 +661,79 @@ const Home = () => {
                       className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
                     />
                   ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='py-20 px-6 bg-white'>
+        <div className='max-w-7xl mx-auto'>
+          <h2 className='text-[#8b1d31] text-3xl lg:text-4xl font-bold mb-12 text-center underline decoration-slate-200 underline-offset-8'>
+            What Our Customers Say
+          </h2>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+            {/* Static Testimonials */}
+            <div className='space-y-8'>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <span className='absolute -top-4 -left-2 text-6xl text-slate-100 font-serif'>
+                  "
+                </span>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic relative z-10'>
+                  "Reliable machine supplier with good service support."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Fabrication Workshop, Nagpur
+                </p>
+              </div>
+              <div className='relative border-l-4 border-slate-200 pl-6 py-2'>
+                <p className='text-xl lg:text-2xl font-bold text-slate-800 leading-tight italic'>
+                  "Quality machines and timely delivery."
+                </p>
+                <p className='text-slate-500 mt-2 font-medium'>
+                  - Engineering Company
+                </p>
+              </div>
+              <button className='bg-[#8b1d31] text-white px-8 py-3 rounded-sm font-bold text-sm uppercase transition-all shadow-lg active:scale-95'>
+                View More Photos
+              </button>
+            </div>
+
+            {/* Dynamic Photo Gallery from Atlas (FIXED CODE) */}
+            <div className='grid grid-cols-2 gap-3 h-[350px]'>
+              {/* Column 1: Displaying first 2 images */}
+              <div className='space-y-3 h-full'>
+                {machines &&
+                  machines
+                    .filter(m => m.dataType === 'testimonial')
+                    .slice(0, 2)
+                    .map((t, idx) => (
+                      <div
+                        key={idx}
+                        className='h-1/2 overflow-hidden rounded-sm shadow-md'
+                      >
+                        <img
+                          src={t.image}
+                          alt={t.name}
+                          className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                        />
+                      </div>
+                    ))}
+              </div>
+
+              {/* Column 2: Displaying the 3rd image (Ata ithe map properly lavla aahe) */}
+              <div className='h-full overflow-hidden rounded-sm shadow-md'>
+                {machines &&
+                  machines
+                    .filter(m => m.dataType === 'testimonial')
+                    .slice(2, 3)
+                    .map((t, idx) => (
+                      <img
+                        key={idx}
+                        src={t.image}
+                        alt={t.name}
+                        className='w-full h-full object-cover hover:scale-110 transition-transform duration-500'
+                      />
+                    ))}
               </div>
             </div>
           </div>
