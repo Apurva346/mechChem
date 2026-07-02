@@ -51,7 +51,7 @@
 //         'Geared Radial Drilling Machine'
 //       ]
 //     },
-    
+
 //     {
 //       category: 'Bandsaw Machines',
 //       subItems: [
@@ -72,7 +72,7 @@
 //         'Tool & Cutter Grinding Machine'
 //       ]
 //     },
-    
+
 //     {
 //       category: 'Finishing and Coating Machines',
 //       subItems: ['Powder Coating Machine']
@@ -84,14 +84,13 @@
 //   }
 
 //   return (
-    
 
 //     {/* Parent header la relative elements disturb n karnyasathi content flow madheach thevle */}
 //       <div className='w-full relative z-50'>
-        
+
 //         {/* Ha scroll sobat varti nighun jail */}
 //         <TopHeader />
-        
+
 //         {/* Ha barobar top-0 la aalyavar thitthech fix (sticky) hoil */}
 //         <nav className='bg-white border-b sticky top-0 shadow-md w-full z-50'>
 //           <div className='w-full px-8 md:px-3 flex justify-between items-center h-24 '>
@@ -259,9 +258,9 @@
 //     <div className='w-full relative z-50'>
 //       {/* Ha scroll sobat varti nighun jail */}
 //       <TopHeader />
-      
+
 //       {/* Ha barobar top-0 la aalyavar thitthech fix (sticky) hoil */}
-      
+
 //       <nav className='bg-white border-b fixed top-10 shadow-md w-full z-50'>
 //         <div className='w-full px-8 md:px-3 flex justify-between items-center h-24 '>
 //           {/* LOGO */}
@@ -345,13 +344,12 @@
 //           </div>
 //         )}
 //       </nav>
-      
+
 //     </div>
 //   )
 // }
 
 // export default Navbar
-
 
 import TopHeader from './TopHeader'
 import DropdownMenu from './DropdownMenu'
@@ -456,11 +454,13 @@ const Navbar = () => {
     <div className='w-full relative z-50'>
       {/* Ha scroll sobat varti nighun jail */}
       <TopHeader />
-      
+
       {/* 3. Tailwind classes dynamic kele: Scroll zalya var top-0 hoil ani transition mule smooth disel */}
-      <nav className={`bg-white border-b fixed left-0 w-full z-50 shadow-md  ${
-        isScrolled ? 'top-0' : 'top-10'
-      }`}>
+      <nav
+        className={`bg-white border-b fixed left-0 w-full z-50 shadow-md  ${
+          isScrolled ? 'top-0' : 'top-10'
+        }`}
+      >
         <div className='w-full px-8 md:px-3 flex justify-between items-center h-24 '>
           {/* LOGO */}
           <Link to='/' className='shrink-0 flex items-center group py-2'>
@@ -486,14 +486,20 @@ const Navbar = () => {
               formatId={formatId}
             />
 
+            
+
             <a
               href='https://inaxlaser.mechchemindia.com/'
               target='_blank'
               rel='noopener noreferrer'
-              className='text-[#003366] hover:text-orange-500 font-black uppercase text-[13px] tracking-widest transition-colors'
+              className='flex items-center gap-2 text-[#003366] hover:text-orange-500 font-black uppercase text-[13px] tracking-widest transition-colors'
             >
-              i-NAX
+              i-NAX™
+              <span className='bg-gradient-to-r from-red-500 to-orange-500 text-white text-[9px] font-bold px-2 py-0.5 rounded-full animate-pulse'>
+                NEW
+              </span>
             </a>
+
 
             <Link
               to='/about'

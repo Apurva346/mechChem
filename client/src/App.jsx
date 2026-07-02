@@ -9,6 +9,7 @@ import WhatsAppFloat from './components/common/WhatsAppFloat'
 import CategoryPage from './pages/CategoryPage'
 import Services from './pages/Services'
 import AllMachines from './pages/AllMachines'
+import Examople from './pages/examople'
 
 function App () {
   return (
@@ -29,7 +30,7 @@ function App () {
           </Routes>
         </main>
         <WhatsAppFloat />
-
+        {/* <Examople /> */}
         <Footer />
       </div>
     </Router>

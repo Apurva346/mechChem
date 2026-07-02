@@ -117,7 +117,7 @@ const Services = () => {
       <section className="relative w-screen bg-slate-900 text-white py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div className="relative max-w-5xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight pt-10">
             Machine Services in <span className="text-blue-500">Vidarbha</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 font-light">

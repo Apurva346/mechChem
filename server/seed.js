@@ -766,7 +766,7 @@ const grindingMachines = [
         metaTitle: "Tool & Cutter Grinding Machine | Precision Cutting Tool Sharpening Equipment",
         metaDescription: "Versatile Tool & Cutter Grinding Machine for sharpening and re-grinding end mills, drills, reamers, and milling cutters."
     },
-    
+
 ];
 
 
@@ -808,21 +808,21 @@ const workholdingTools = [
             "CNC and manual lathe applications"
         ],
         faqs: [
-            { 
-                question: "What is the difference between a 3-jaw and a 4-jaw chuck?", 
-                answer: "A 3-jaw chuck is self-centering and moves all jaws together, making it ideal for round or hexagonal stock. A 4-jaw independent chuck allows each jaw to move separately, which is necessary for irregular shapes and off-center turning." 
+            {
+                question: "What is the difference between a 3-jaw and a 4-jaw chuck?",
+                answer: "A 3-jaw chuck is self-centering and moves all jaws together, making it ideal for round or hexagonal stock. A 4-jaw independent chuck allows each jaw to move separately, which is necessary for irregular shapes and off-center turning."
             },
-            { 
-                question: "Can I use a self-centering chuck on a CNC lathe?", 
-                answer: "Yes. CNC lathes typically use hydraulic or pneumatic self-centering chucks for automated, high-speed operation, whereas manual lathes use manual scroll chucks." 
+            {
+                question: "Can I use a self-centering chuck on a CNC lathe?",
+                answer: "Yes. CNC lathes typically use hydraulic or pneumatic self-centering chucks for automated, high-speed operation, whereas manual lathes use manual scroll chucks."
             },
-            { 
-                question: "What are soft jaws and when are they used?", 
-                answer: "Soft jaws are un-hardened steel or aluminum jaws that can be machined to match a specific workpiece diameter. They provide maximum surface contact and prevent marking on pre-machined surfaces." 
+            {
+                question: "What are soft jaws and when are they used?",
+                answer: "Soft jaws are un-hardened steel or aluminum jaws that can be machined to match a specific workpiece diameter. They provide maximum surface contact and prevent marking on pre-machined surfaces."
             },
-            { 
-                question: "How often should a lathe chuck be lubricated?", 
-                answer: "For production environments, the chuck should be greased daily through the grease nipples using high-pressure chuck grease to maintain gripping force and prevent wear." 
+            {
+                question: "How often should a lathe chuck be lubricated?",
+                answer: "For production environments, the chuck should be greased daily through the grease nipples using high-pressure chuck grease to maintain gripping force and prevent wear."
             }
         ],
         ctaText: "Buy premium Self-Centering Lathe Chucks for fast, accurate workholding. Ideal for round and hexagonal workpieces on CNC & manual lathes.",
@@ -866,25 +866,25 @@ const workholdingTools = [
             "Complex workpieces requiring high concentricity"
         ],
         faqs: [
-            { 
-                question: "How do I center a workpiece in a 4-jaw independent chuck?", 
-                answer: "Mount a dial test indicator on the tool post, place the tip on the workpiece OD, and rotate the spindle by hand. Adjust opposite jaw pairs alternately while watching the indicator until runout is within tolerance." 
+            {
+                question: "How do I center a workpiece in a 4-jaw independent chuck?",
+                answer: "Mount a dial test indicator on the tool post, place the tip on the workpiece OD, and rotate the spindle by hand. Adjust opposite jaw pairs alternately while watching the indicator until runout is within tolerance."
             },
-            { 
-                question: "What workpieces are best suited for a 4-jaw independent chuck?", 
-                answer: "Castings, forgings, square billets, rectangular plates, off-center boring jobs, and any workpiece where concentricity must be maintained to an existing machined feature." 
+            {
+                question: "What workpieces are best suited for a 4-jaw independent chuck?",
+                answer: "Castings, forgings, square billets, rectangular plates, off-center boring jobs, and any workpiece where concentricity must be maintained to an existing machined feature."
             },
-            { 
-                question: "Is a 4-jaw independent chuck slower to set up?", 
-                answer: "Yes, setup takes longer than a self-centering chuck. However, it provides superior accuracy and versatility that cannot be matched by scroll-type chucks for complex workpieces." 
+            {
+                question: "Is a 4-jaw independent chuck slower to set up?",
+                answer: "Yes, setup takes longer than a self-centering chuck. However, it provides superior accuracy and versatility that cannot be matched by scroll-type chucks for complex workpieces."
             },
-            { 
-                question: "Can I use soft jaws in a 4-jaw independent chuck?", 
-                answer: "Yes. Un-hardened (soft) jaws can be mounted and bored to a custom profile for gentle clamping of finished surfaces or delicate parts." 
+            {
+                question: "Can I use soft jaws in a 4-jaw independent chuck?",
+                answer: "Yes. Un-hardened (soft) jaws can be mounted and bored to a custom profile for gentle clamping of finished surfaces or delicate parts."
             },
-            { 
-                question: "What sizes are available?", 
-                answer: "Independent 4-jaw chucks are available from 160 mm (for bench lathes) up to 1250 mm or larger for heavy-duty industrial vertical boring mills." 
+            {
+                question: "What sizes are available?",
+                answer: "Independent 4-jaw chucks are available from 160 mm (for bench lathes) up to 1250 mm or larger for heavy-duty industrial vertical boring mills."
             }
         ],
         ctaText: "Shop industrial-grade 4-Jaw Independent Chucks. Achieve unmatched centering precision and heavy-duty clamping for irregular workpieces.",
@@ -935,25 +935,25 @@ const finishingCoatingMachines = [
             "Industrial machinery frames and enclosures"
         ],
         faqs: [
-            { 
-                question: "What are the primary benefits of powder coating over liquid paint?", 
-                answer: "Powder coating provides a thicker, more durable finish that resists chipping, scratching, and fading. It is also more cost-effective because overspray can be reclaimed, and it is eco-friendly as it contains no solvents or VOCs." 
+            {
+                question: "What are the primary benefits of powder coating over liquid paint?",
+                answer: "Powder coating provides a thicker, more durable finish that resists chipping, scratching, and fading. It is also more cost-effective because overspray can be reclaimed, and it is eco-friendly as it contains no solvents or VOCs."
             },
-            { 
-                question: "What is the typical curing temperature and time for powder coating?", 
-                answer: "Most powders require a curing oven temperature between 180°C and 200°C (350°F to 400°F) for 10 to 20 minutes, depending on the metal thickness and powder specifications." 
+            {
+                question: "What is the typical curing temperature and time for powder coating?",
+                answer: "Most powders require a curing oven temperature between 180°C and 200°C (350°F to 400°F) for 10 to 20 minutes, depending on the metal thickness and powder specifications."
             },
-            { 
-                question: "Can non-metallic materials be powder coated?", 
-                answer: "Powder coating requires the substrate to be electrically conductive to attract the charged powder. However, specialized powders and processes exist for coating MDF (medium-density fiberboard) and certain plastics." 
+            {
+                question: "Can non-metallic materials be powder coated?",
+                answer: "Powder coating requires the substrate to be electrically conductive to attract the charged powder. However, specialized powders and processes exist for coating MDF (medium-density fiberboard) and certain plastics."
             },
-            { 
-                question: "How efficient is the powder recovery system?", 
-                answer: "Modern powder coating booths with multi-cyclone or cartridge filter recovery systems can achieve up to 95% to 98% material utilization by collecting and reusing overspray." 
+            {
+                question: "How efficient is the powder recovery system?",
+                answer: "Modern powder coating booths with multi-cyclone or cartridge filter recovery systems can achieve up to 95% to 98% material utilization by collecting and reusing overspray."
             },
-            { 
-                question: "What surface preparation is needed before powder coating?", 
-                answer: "The metal must be thoroughly cleaned of oil, grease, rust, and scale via degreasing, shot blasting, or chemical phosphating to ensure proper coating adhesion." 
+            {
+                question: "What surface preparation is needed before powder coating?",
+                answer: "The metal must be thoroughly cleaned of oil, grease, rust, and scale via degreasing, shot blasting, or chemical phosphating to ensure proper coating adhesion."
             }
         ],
         ctaText: "Get high-efficiency Powder Coating Machines for a superior finish. Available in batch and automatic conveyor models for industrial metal coating.",
@@ -962,7 +962,7 @@ const finishingCoatingMachines = [
         metaTitle: "Powder Coating Machine | Electrostatic Spray & Curing System Manufacturer",
         metaDescription: "Industrial powder coating machines for metal surface finishing. Electrostatic spray guns, conveyor ovens, and batch curing systems. Achieve uniform, corrosion-resistant, and eco-friendly coatings."
     }
-    
+
 ];
 
 
@@ -1033,29 +1033,29 @@ const bandsawMachines = [
             "Machine operation consultation"
         ],
         faqs: [
-            { 
-                question: "What materials can this bandsaw machine cut?", 
-                answer: "The machine can cut mild steel, stainless steel, alloy steel, solid bars, pipes, square sections, and structural materials." 
+            {
+                question: "What materials can this bandsaw machine cut?",
+                answer: "The machine can cut mild steel, stainless steel, alloy steel, solid bars, pipes, square sections, and structural materials."
             },
-            { 
-                question: "Is this machine fully automatic?", 
-                answer: "Yes, this is a fully automatic hydraulic bandsaw machine designed for continuous industrial production." 
+            {
+                question: "Is this machine fully automatic?",
+                answer: "Yes, this is a fully automatic hydraulic bandsaw machine designed for continuous industrial production."
             },
-            { 
-                question: "What cutting sizes are available?", 
-                answer: "The machine is available in 200 DCA, 330 DCA, and 425 DCA models with different cutting capacities." 
+            {
+                question: "What cutting sizes are available?",
+                answer: "The machine is available in 200 DCA, 330 DCA, and 425 DCA models with different cutting capacities."
             },
-            { 
-                question: "Does the machine include coolant and hydraulic systems?", 
-                answer: "Yes, the machine comes with built-in hydraulic and coolant systems for efficient operation and longer blade life." 
+            {
+                question: "Does the machine include coolant and hydraulic systems?",
+                answer: "Yes, the machine comes with built-in hydraulic and coolant systems for efficient operation and longer blade life."
             },
-            { 
-                question: "Where is this machine commonly used?", 
-                answer: "It is commonly used in fabrication industries, engineering workshops, steel plants, and manufacturing industries." 
+            {
+                question: "Where is this machine commonly used?",
+                answer: "It is commonly used in fabrication industries, engineering workshops, steel plants, and manufacturing industries."
             },
-            { 
-                question: "Do you provide installation and service support?", 
-                answer: "Yes, we provide installation guidance, technical support, spare parts support, and maintenance assistance." 
+            {
+                question: "Do you provide installation and service support?",
+                answer: "Yes, we provide installation guidance, technical support, spare parts support, and maintenance assistance."
             }
         ],
         ctaText: "High-performance Double Column Automatic Bandsaw Machine for accurate and heavy-duty metal cutting. Ideal for industrial cutting applications with hydraulic control, automatic indexing, and precision cutting.",
@@ -1128,29 +1128,29 @@ const bandsawMachines = [
             "After-sales service support"
         ],
         faqs: [
-            { 
-                question: "What materials can this machine cut?", 
-                answer: "The machine can cut mild steel, stainless steel, alloy steel, pipes, bars, square sections, and structural materials." 
+            {
+                question: "What materials can this machine cut?",
+                answer: "The machine can cut mild steel, stainless steel, alloy steel, pipes, bars, square sections, and structural materials."
             },
-            { 
-                question: "Is this machine suitable for industrial production?", 
-                answer: "Yes, the machine is designed for heavy-duty industrial metal cutting applications." 
+            {
+                question: "Is this machine suitable for industrial production?",
+                answer: "Yes, the machine is designed for heavy-duty industrial metal cutting applications."
             },
-            { 
-                question: "What is the difference between automatic and semi automatic bandsaw machines?", 
-                answer: "Semi automatic bandsaw machines require partial operator control, while automatic models perform cutting cycles automatically." 
+            {
+                question: "What is the difference between automatic and semi automatic bandsaw machines?",
+                answer: "Semi automatic bandsaw machines require partial operator control, while automatic models perform cutting cycles automatically."
             },
-            { 
-                question: "Does the machine include hydraulic operation?", 
-                answer: "Yes, the machine comes with hydraulic feed control and hydraulic band tension systems." 
+            {
+                question: "Does the machine include hydraulic operation?",
+                answer: "Yes, the machine comes with hydraulic feed control and hydraulic band tension systems."
             },
-            { 
-                question: "Which models are available?", 
-                answer: "Available models include 200 DCSA, 330 DCSA, 425 DCSA, 500 DCSA, and 600 DCSA." 
+            {
+                question: "Which models are available?",
+                answer: "Available models include 200 DCSA, 330 DCSA, 425 DCSA, 500 DCSA, and 600 DCSA."
             },
-            { 
-                question: "Do you provide service and spare parts support?", 
-                answer: "Yes, we provide technical support, spare parts, and after-sales service assistance." 
+            {
+                question: "Do you provide service and spare parts support?",
+                answer: "Yes, we provide technical support, spare parts, and after-sales service assistance."
             }
         ],
         ctaText: "High-performance Double Column Semi Automatic Bandsaw Machine for accurate metal cutting applications. Hydraulic operation, rigid structure, and heavy-duty cutting performance ideal for industrial use.",
@@ -1168,61 +1168,61 @@ const bandsawMachines = [
 
 // --- 1. INDUSTRIAL MACHINES (Total 8 as per screenshot) ---
 const industrialMachines = [
-  {
-    name: "Lathe Machines",
-    dataType: "product",
-    category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Extra-heavy-duty-lathe-machine.png",
-    shortDescription: "High precision lathe machines for metal machining."
-  },
+    {
+        name: "Lathe Machines",
+        dataType: "product",
+        category: "Industrial Machines",
+        image: "/home/mechindustrialmachine/Extra-heavy-duty-lathe-machine.png",
+        shortDescription: "High precision lathe machines for metal machining."
+    },
 
-  {
-    name: "Milling Machines",
-    dataType: "product",
-    category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Milling-Machines.png",
-    shortDescription: "Advanced milling machines for workshop operations."
-  },
+    {
+        name: "Milling Machines",
+        dataType: "product",
+        category: "Industrial Machines",
+        image: "/home/mechindustrialmachine/Milling-Machines.png",
+        shortDescription: "Advanced milling machines for workshop operations."
+    },
 
-  {
-    name: "Drilling Machines",
-    dataType: "product",
-    category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Drilling-Machines.png",
-    shortDescription: "Heavy duty drilling machines for industrial applications."
-  },
+    {
+        name: "Drilling Machines",
+        dataType: "product",
+        category: "Industrial Machines",
+        image: "/home/mechindustrialmachine/Drilling-Machines.png",
+        shortDescription: "Heavy duty drilling machines for industrial applications."
+    },
 
-  {
-    name: "Grinding Machines",
-    dataType: "product",
-    category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Hydraulic-Surface-Grinding-Machine.png",
-    shortDescription: "Precision grinding machines for smooth surface finishing."
-  },
+    {
+        name: "Grinding Machines",
+        dataType: "product",
+        category: "Industrial Machines",
+        image: "/home/mechindustrialmachine/Hydraulic-Surface-Grinding-Machine.png",
+        shortDescription: "Precision grinding machines for smooth surface finishing."
+    },
 
-  {
-    name: "Bandsaw Machines",
-    dataType: "product",
-    category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Double-Column-Automatic-Bandsaw-Machine.png",
-    shortDescription: "Industrial cutting machines for accurate metal cutting."
-  },
+    {
+        name: "Bandsaw Machines",
+        dataType: "product",
+        category: "Industrial Machines",
+        image: "/home/mechindustrialmachine/Double-Column-Automatic-Bandsaw-Machine.png",
+        shortDescription: "Industrial cutting machines for accurate metal cutting."
+    },
 
-  {
-    name: "Workholding Tools",
-    dataType: "product",
-    category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Four-Jaw-Independent-Chuck.png",
-    shortDescription: "Reliable welding machines for fabrication and repair."
-  },
+    {
+        name: "Workholding Tools",
+        dataType: "product",
+        category: "Industrial Machines",
+        image: "/home/mechindustrialmachine/Four-Jaw-Independent-Chuck.png",
+        shortDescription: "Reliable welding machines for fabrication and repair."
+    },
 
-  {
-    name: "Finishing & Coating Machines",
-    dataType: "product",
-    category: "Industrial Machines",
-    image: "/home/mechindustrialmachine/Radial-Drilling-Machine-SupplierinNagpur.png",
-    shortDescription: "Powerful heavy machines for industrial manufacturing work."
-  },
+    {
+        name: "Finishing & Coating Machines",
+        dataType: "product",
+        category: "Industrial Machines",
+        image: "/home/mechindustrialmachine/Radial-Drilling-Machine-SupplierinNagpur.png",
+        shortDescription: "Powerful heavy machines for industrial manufacturing work."
+    },
 
 
 ];
@@ -1237,33 +1237,110 @@ const inaxSectionData = [
 
 // --- 3. CUSTOMER TESTIMONIALS (Total 3) ---
 const customerGallery = [
-    { name: "Customer Work 1", dataType: "testimonial", image: "/home/mechindustrialmachine/cus-one.png" },
-    { name: "Customer Work 2", dataType: "testimonial", image: "/home/mechindustrialmachine/cus-two.png" },
-    { name: "Customer Work 3", dataType: "testimonial", image: "/home/mechindustrialmachine/Lathe Machine.png" }
+
+    {
+        name: "Customer Work 1",
+        dataType: "testimonial",
+        image: "/home/mechindustrialmachine/cus-one.png"
+    },
+    {
+        name: "Customer Work 2",
+        dataType: "testimonial",
+        image: "/home/mechindustrialmachine/cus-two.png"
+    },
+    {
+        name: "Customer Work 3",
+        dataType: "testimonial",
+        image: "/home/mechindustrialmachine/lathe-machine.png"
+    }
+
 ];
 
+// const seedDB = async () => {
+//     try {
+//         await mongoose.connect(MONGO_URI);
+//         console.log("🚀 Connected to MongoDB Cluster...");
+
+//         // 1. DELETE ALL OLD DATA (Safety First)
+//         await Machine.deleteMany({});
+//         console.log("🧹 Old records cleared from Database.");
+
+//         // 2. COMBINE ALL CATEGORIES
+//         const allMachines = [...bandsawMachines, ...finishingCoatingMachines, ...workholdingTools, ...millingMachines, ...drillingMachines, ...industrialMachines, ...inaxSectionData, ...customerGallery, ...latheMachines, ...grindingMachines];
+
+
+//         console.log("Customer Gallery:", customerGallery.length)
+
+//         console.log(
+//             allMachines.filter(item => item.dataType === "testimonial")
+//         )
+
+//         // 3. INSERT NEW DATA
+//         await Machine.insertMany(allMachines);
+//         console.log(`✅ Success: ${allMachines.length} Machines (Milling & Drilling) Seeded Successfully!`);
+
+//         process.exit();
+//     } catch (err) {
+//         console.error("❌ Seeding Error:", err);
+//         process.exit(1);
+//     }
+// };
+
 const seedDB = async () => {
-    try {
-        await mongoose.connect(MONGO_URI);
-        console.log("🚀 Connected to MongoDB Cluster...");
+try {
+await mongoose.connect(MONGO_URI);
+console.log("🚀 Connected to MongoDB Cluster...");
 
-        // 1. DELETE ALL OLD DATA (Safety First)
-        await Machine.deleteMany({});
-        console.log("🧹 Old records cleared from Database.");
+// 1. DELETE ALL OLD DATA
+await Machine.deleteMany({});
+console.log("🧹 Old records cleared from Database.");
 
-        // 2. COMBINE ALL CATEGORIES
-        const allMachines = [...bandsawMachines, ...finishingCoatingMachines, ...workholdingTools, ...millingMachines, ...drillingMachines, ...industrialMachines, ...inaxSectionData, ...customerGallery, ...latheMachines, ...grindingMachines];
+// 2. COMBINE ALL CATEGORIES
+const allMachines = [
+  ...bandsawMachines,
+  ...finishingCoatingMachines,
+  ...workholdingTools,
+  ...millingMachines,
+  ...drillingMachines,
+  ...industrialMachines,
+  ...inaxSectionData,
+  ...customerGallery,
+  ...latheMachines,
+  ...grindingMachines
+];
 
-        // 3. INSERT NEW DATA
-        await Machine.insertMany(allMachines);
-        console.log(`✅ Success: ${allMachines.length} Machines (Milling & Drilling) Seeded Successfully!`);
+console.log("Customer Gallery Length:", customerGallery.length);
 
-        process.exit();
-    } catch (err) {
-        console.error("❌ Seeding Error:", err);
-        process.exit(1);
-    }
+console.log(
+  "Testimonials Before Insert:",
+  allMachines.filter(item => item.dataType === "testimonial")
+);
+
+// 3. INSERT NEW DATA
+const inserted = await Machine.insertMany(allMachines);
+
+console.log(
+  "Inserted Testimonials:",
+  inserted.filter(item => item.dataType === "testimonial")
+);
+
+console.log(
+  "Inserted Testimonials Count:",
+  inserted.filter(item => item.dataType === "testimonial").length
+);
+
+console.log(
+  `✅ Success: ${allMachines.length} Machines Seeded Successfully!`
+);
+
+process.exit();
+
+} catch (err) {
+console.error("❌ Seeding Error:", err);
+process.exit(1);
+}
 };
+
 
 seedDB();
 

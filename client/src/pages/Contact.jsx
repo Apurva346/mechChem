@@ -40,7 +40,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen pt-20">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-8 md:px-20 pt-16">
         <h2 className="text-4xl font-black text-[#003366] uppercase tracking-tighter">

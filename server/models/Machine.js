@@ -4,19 +4,19 @@ const MachineSchema = new mongoose.Schema({
     // Machine Details
     name: { type: String, required: true },
     category: { type: String, required: false }, // e.g., "Milling Machines"
-    
+
     // NEW: Category Context (Common for all machines in this category)
     categoryDescription: { type: String }, // User ne kontyahi machine var click kel tari he aadhi disel
 
     // Machine Specifics
-    subTitle: { type: String }, 
+    subTitle: { type: String },
     shortDescription: { type: String }, // Machine cards var dakhvnya sathi (2-3 lines)
     description: { type: String }, // Main long description
-    
+
     specifications: { type: Object },
     features: [String],
     applications: [String],
-    
+
     // FAQ Section
     faqs: [
         {
@@ -24,12 +24,16 @@ const MachineSchema = new mongoose.Schema({
             answer: { type: String }
         }
     ],
-    
+
+    dataType: {
+        type: String
+    },
+
     // Marketing & Media
     ctaText: { type: String },
     image: { type: String },
     altText: { type: String },
-    
+
     // SEO Fields
     metaTitle: { type: String },
     metaDescription: { type: String }
